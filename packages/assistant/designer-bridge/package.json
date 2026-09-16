@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/assistant-designer-bridge",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Designer contribution bridge for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
