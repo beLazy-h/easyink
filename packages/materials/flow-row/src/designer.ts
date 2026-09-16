@@ -11,12 +11,12 @@ import type {
   SelectionType,
   SubPropertySchema,
   TransactionAPI,
-} from '@easyink/core'
-import type { BindingRef, MaterialNode } from '@easyink/schema'
-import type { BindingDisplayFormat } from '@easyink/shared'
+} from '@hcxz/core'
+import type { BindingRef, MaterialNode } from '@hcxz/schema'
+import type { BindingDisplayFormat } from '@hcxz/shared'
 import type { FlowColumnLayoutRect } from './rendering'
 import type { FlowColumnDef } from './schema'
-import { keyboardCursorMiddleware, selectionMiddleware, undoBoundaryMiddleware } from '@easyink/core'
+import { keyboardCursorMiddleware, selectionMiddleware, undoBoundaryMiddleware } from '@hcxz/core'
 import {
   IconAlignBottom,
   IconAlignMiddle,
@@ -27,7 +27,7 @@ import {
   IconTextAlignCenter,
   IconTextAlignLeft,
   IconTextAlignRight,
-} from '@easyink/icons/svg-strings'
+} from '@hcxz/icons/svg-strings'
 import {
   createPointerGesture,
   materialToolbarButtonStyle,
@@ -35,7 +35,7 @@ import {
   materialToolbarGroupStyle,
   materialToolbarIconStyle,
   materialToolbarShellStyle,
-} from '@easyink/shared'
+} from '@hcxz/shared'
 import { computed, defineComponent, h, onUnmounted, ref, watch } from 'vue'
 import {
   computeFlowColumnRects,

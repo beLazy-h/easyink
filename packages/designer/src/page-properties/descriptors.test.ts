@@ -1,5 +1,5 @@
-import type { DocumentSchema, PageSchema, TextWatermarkPageLayerConfig } from '@easyink/schema'
-import { PAPER_PRESETS } from '@easyink/shared'
+import type { DocumentSchema, PageSchema, TextWatermarkPageLayerConfig } from '@hcxz/schema'
+import { PAPER_PRESETS } from '@hcxz/shared'
 import { describe, expect, it } from 'vitest'
 import { createPagePropertyDescriptors } from './descriptors'
 import { filterVisible } from './resolve'

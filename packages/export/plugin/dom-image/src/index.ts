@@ -13,4 +13,4 @@ export type {
   RenderPagesToImageOptions,
   RenderPageToImageOptions,
 } from './image'
-export { resolveCanvasScale } from '@easyink/export-dom-capture'
+export { resolveCanvasScale } from '@hcxz/export-dom-capture'

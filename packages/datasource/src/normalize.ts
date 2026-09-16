@@ -1,6 +1,6 @@
 import type { DataFieldNode, DataSourceDescriptor, DataUnionBinding } from './types'
 
-import { deepClone, normalizeFieldPath } from '@easyink/shared'
+import { deepClone, normalizeFieldPath } from '@hcxz/shared'
 
 function normalizeUnion(union: DataUnionBinding): void {
   if (union.key != null && union.path == null) {

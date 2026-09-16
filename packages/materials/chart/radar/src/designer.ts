@@ -1,7 +1,7 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
 import type { ChartRadarProps } from './schema'
-import { createChartDesignerRenderHost, mountECharts } from '@easyink/material-chart-kernel'
-import { getNodeProps } from '@easyink/schema'
+import { createChartDesignerRenderHost, mountECharts } from '@hcxz/material-chart-kernel'
+import { getNodeProps } from '@hcxz/schema'
 import { createChartRadarPreviewOption } from './options'
 
 export function createChartRadarExtension(_context: MaterialExtensionContext): MaterialDesignerExtension {

@@ -1,14 +1,14 @@
-import type { PropSchema } from '@easyink/core'
-import type { TableDataSchema } from '@easyink/schema'
-import { UpdateTableVisibilityCommand } from '@easyink/material-table-kernel'
+import type { PropSchema } from '@hcxz/core'
+import type { TableDataSchema } from '@hcxz/schema'
+import { UpdateTableVisibilityCommand } from '@hcxz/material-table-kernel'
 import {
   FONT_STYLE_OPTIONS,
   FONT_WEIGHT_OPTIONS,
   HORIZONTAL_ALIGN_OPTIONS,
   STROKE_STYLE_OPTIONS,
   VERTICAL_ALIGN_OPTIONS,
-} from '@easyink/prop-schemas'
-import { isTableNode } from '@easyink/schema'
+} from '@hcxz/prop-schemas'
+import { isTableNode } from '@hcxz/schema'
 
 export const tableDataBaseDesignerPropSchemas: PropSchema[] = [
   { key: 'borderWidth', label: 'designer.property.borderWidth', type: 'number', group: 'table-border', min: 0, max: 10, step: 1 },

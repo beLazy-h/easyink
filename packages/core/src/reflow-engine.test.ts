@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { runFlowYReflow } from './reflow-engine'
 

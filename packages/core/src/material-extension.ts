@@ -1,5 +1,5 @@
-import type { BindingRef, DocumentSchema, MaterialNode } from '@easyink/schema'
-import type { BindingDisplayFormat, PropSchemaType } from '@easyink/shared'
+import type { BindingRef, DocumentSchema, MaterialNode } from '@hcxz/schema'
+import type { BindingDisplayFormat, PropSchemaType } from '@hcxz/shared'
 import type { Command } from './command'
 import type { BehaviorRegistration, EditingSessionRef, MaterialGeometry, SelectionDecorationDef, SelectionType, TransactionAPI } from './editing-session'
 

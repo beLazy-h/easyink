@@ -1,7 +1,7 @@
-import type { ManagedPrintInput, ManagedPrintViewer, ManagedPrintViewerOptions, PrintDriverRequestContext, PrintDriverValue } from '@easyink/print-core'
-import type { ViewerPrintPageSizeMode } from '@easyink/viewer'
+import type { ManagedPrintInput, ManagedPrintViewer, ManagedPrintViewerOptions, PrintDriverRequestContext, PrintDriverValue } from '@hcxz/print-core'
+import type { ViewerPrintPageSizeMode } from '@hcxz/viewer'
 import type { LodopClientLike, PrintPagesOptions } from './client'
-import { createManagedPrintViewer, resolvePrintDriverValue } from '@easyink/print-core'
+import { createManagedPrintViewer, resolvePrintDriverValue } from '@hcxz/print-core'
 import { createLodopDriver } from './driver'
 
 export interface LodopPrinterOptions extends ManagedPrintViewerOptions {

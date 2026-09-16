@@ -101,7 +101,7 @@ Schema validation 只接受已声明的页面介质；`normalizeDocumentSchema()
 
 `page.layers` 表达整页级、非元素级的渲染层。当前支持 `kind='watermark'`、`type='text'` 的文字水印层。默认文字水印 id 为 `page-watermark`，默认 `placement='over-content'`，默认 `zIndex=0`，`zIndex` 只在所属 placement band 内排序，范围固定为 `0..999`，不能穿透到其它 band。
 
-Designer 和 Viewer 都通过 `@easyink/core` 的 `resolvePageLayerPlans()`、`groupPageLayerPlansByPlacement()` 和 `resolvePageLayerStackIndex()` 消费页面层计划；不得在两端各自实现 layer 排序、层级或水印 tile 生成规则。Viewer 对相同页面尺寸缓存 layer buckets，避免多页同尺寸重复生成水印 tile。
+Designer 和 Viewer 都通过 `@hcxz/core` 的 `resolvePageLayerPlans()`、`groupPageLayerPlansByPlacement()` 和 `resolvePageLayerStackIndex()` 消费页面层计划；不得在两端各自实现 layer 排序、层级或水印 tile 生成规则。Viewer 对相同页面尺寸缓存 layer buckets，避免多页同尺寸重复生成水印 tile。
 
 `page.layers` 与 `node.repeat.scope='every-output-page'` 的边界：
 
@@ -202,13 +202,13 @@ Designer 不直接读取 `page.width/page.height` 渲染唯一页面，而是消
 
 ## 24.8 代码边界
 
-- `@easyink/schema`：类型、默认层、validation，以及 invalid mode 的 loose input 回退。
-- `@easyink/core`：页面模型解析、回流、分页、编辑表面计划、页面增删命令、页面 layer plan 与层级规则。
-- `@easyink/viewer`：编排字体、绑定、测量、layout/pagination、page overlay 复制、页面 layer 渲染、打印策略。
-- `@easyink/designer`：消费 `EditorSurfacePlan` 做编辑态投影、重复预览、页面 layer 预览和页面工具栏。
-- `@easyink/material-*`：只提供渲染、测量和局部分页能力，不决定全局页面模型。
+- `@hcxz/schema`：类型、默认层、validation，以及 invalid mode 的 loose input 回退。
+- `@hcxz/core`：页面模型解析、回流、分页、编辑表面计划、页面增删命令、页面 layer plan 与层级规则。
+- `@hcxz/viewer`：编排字体、绑定、测量、layout/pagination、page overlay 复制、页面 layer 渲染、打印策略。
+- `@hcxz/designer`：消费 `EditorSurfacePlan` 做编辑态投影、重复预览、页面 layer 预览和页面工具栏。
+- `@hcxz/material-*`：只提供渲染、测量和局部分页能力，不决定全局页面模型。
 
-`packages/viewer/src/stack-flow-layout.ts` 仍作为历史 helper 和测试资产存在；ViewerRuntime 的主路径已经使用 `@easyink/core` 的正交 layout/pagination pipeline。
+`packages/viewer/src/stack-flow-layout.ts` 仍作为历史 helper 和测试资产存在；ViewerRuntime 的主路径已经使用 `@hcxz/core` 的正交 layout/pagination pipeline。
 
 ## 24.9 后续扩展边界
 

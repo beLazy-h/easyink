@@ -1,5 +1,5 @@
-import type { DocumentSchema } from '@easyink/schema'
-import { SCHEMA_VERSION } from '@easyink/shared'
+import type { DocumentSchema } from '@hcxz/schema'
+import { SCHEMA_VERSION } from '@hcxz/shared'
 import { flowInvoiceTemplate } from './datasources'
 import { badgeDemoData, badgeTemplate } from './templates/badge'
 import {

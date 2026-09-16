@@ -1,5 +1,5 @@
-import type { AssistantResult, AssistantTaskInput } from '@easyink/assistant-capabilities'
-import type { RuntimeLLMConfig, RuntimeLLMProviderOption } from '@easyink/assistant-llm'
+import type { AssistantResult, AssistantTaskInput } from '@hcxz/assistant-capabilities'
+import type { RuntimeLLMConfig, RuntimeLLMProviderOption } from '@hcxz/assistant-llm'
 import type {
   AssistantEventRecord,
   AssistantProjectionSnapshotRecord,
@@ -7,7 +7,7 @@ import type {
   AssistantSourceSampleRecord,
   AssistantTaskRecord,
   AssistantVersionRecord,
-} from '@easyink/assistant-store'
+} from '@hcxz/assistant-store'
 
 export interface AssistantTaskResponse {
   task: AssistantTaskRecord

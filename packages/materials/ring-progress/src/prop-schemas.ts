@@ -1,8 +1,8 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 import {
   FONT_STYLE_OPTIONS,
   FONT_WEIGHT_OPTIONS,
-} from '@easyink/prop-schemas'
+} from '@hcxz/prop-schemas'
 
 export const ringProgressDesignerPropSchemas: PropSchema[] = [
   { key: 'value', label: 'materials.ringProgress.property.value', type: 'number', group: 'content', min: 0, max: 100, step: 1 },

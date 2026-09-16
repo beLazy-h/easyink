@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const svgStarDesignerPropSchemas: PropSchema[] = [
   { key: 'fillColor', label: 'materials.svgStar.property.fillColor', type: 'color', group: 'appearance' },

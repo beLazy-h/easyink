@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HistoryEntry } from '@easyink/core'
+import type { HistoryEntry } from '@hcxz/core'
 import { nextTick, ref, watchEffect } from 'vue'
 import { useDesignerStore } from '../composables'
 

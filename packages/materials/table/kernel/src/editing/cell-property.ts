@@ -1,9 +1,9 @@
-import type { Selection, SubPropertySchema, TransactionAPI } from '@easyink/core'
-import type { CellBorderSchema, CellTypography, MaterialNode, TableNode } from '@easyink/schema'
-import type { BindingDisplayFormat } from '@easyink/shared'
+import type { Selection, SubPropertySchema, TransactionAPI } from '@hcxz/core'
+import type { CellBorderSchema, CellTypography, MaterialNode, TableNode } from '@hcxz/schema'
+import type { BindingDisplayFormat } from '@hcxz/shared'
 import type { TableCellPayload, TableEditingDelegate } from './types'
-import { isTableNode } from '@easyink/schema'
-import { isObject } from '@easyink/shared'
+import { isTableNode } from '@hcxz/schema'
+import { isObject } from '@hcxz/shared'
 import { CELL_PROP_SCHEMAS } from '../cell-schemas'
 
 function readTypographyValue(typography: CellTypography | undefined, key: string): unknown {

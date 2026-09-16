@@ -1,6 +1,6 @@
-import type { DocumentSchema } from '@easyink/schema'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { RulerCoordinateContext } from './ruler-coordinate'
-import { createEditorSurfacePlan } from '@easyink/core'
+import { createEditorSurfacePlan } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import {
   getCanvasRulerOrigin,

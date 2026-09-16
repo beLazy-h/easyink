@@ -1,5 +1,5 @@
-import type { ViewerRuntime } from '@easyink/viewer'
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
+import type { ViewerRuntime } from '@hcxz/viewer'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
 
 export function setupPlaygroundViewerMaterials(viewer: ViewerRuntime): void {
   registerBuiltinViewerMaterials((type, binding, extension) => {

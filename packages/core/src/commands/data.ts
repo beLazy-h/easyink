@@ -1,8 +1,8 @@
-import type { BindingRef, MaterialBinding, MaterialNode } from '@easyink/schema'
-import type { BindingDisplayFormat } from '@easyink/shared'
+import type { BindingRef, MaterialBinding, MaterialNode } from '@hcxz/schema'
+import type { BindingDisplayFormat } from '@hcxz/shared'
 import type { Command } from '../command'
-import { getBindingRefs } from '@easyink/schema'
-import { deepClone, generateId } from '@easyink/shared'
+import { getBindingRefs } from '@hcxz/schema'
+import { deepClone, generateId } from '@hcxz/shared'
 import { findNode } from './helpers'
 
 // ─── Data Commands ──────────────────────────────────────────────────

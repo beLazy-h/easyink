@@ -1,4 +1,4 @@
-import type { BindingDisplayFormat, MaterialUseToken } from '@easyink/shared'
+import type { BindingDisplayFormat, MaterialUseToken } from '@hcxz/shared'
 
 /**
  * Descriptor for a data source. The field tree is the backbone

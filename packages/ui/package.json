@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/ui",
+  "name": "@hcxz/ui",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "UI components for EasyInk designer workbench",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -34,8 +34,8 @@
     "@codemirror/language": "catalog:framework",
     "@codemirror/state": "catalog:framework",
     "@codemirror/view": "catalog:framework",
-    "@easyink/icons": "workspace:*",
-    "@easyink/shared": "workspace:*",
+    "@hcxz/icons": "workspace:*",
+    "@hcxz/shared": "workspace:*",
     "@lezer/highlight": "catalog:framework"
   }
 }

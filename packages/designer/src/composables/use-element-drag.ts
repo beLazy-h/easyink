@@ -1,6 +1,6 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
-import { createEditorSurfacePlan, isInteractable, MoveMaterialCommand } from '@easyink/core'
+import { createEditorSurfacePlan, isInteractable, MoveMaterialCommand } from '@hcxz/core'
 import { markRaw } from 'vue'
 import { createGeometryService } from '../editing/geometry-service'
 import { collectSnapCandidates, computeSnap, getSelectionBox } from '../snap'

@@ -1,4 +1,4 @@
-import type { ConditionCompareOperator, ConditionGroup, ConditionQuantifier, ConditionRow, ConditionValue, MaterialNode } from '@easyink/schema'
+import type { ConditionCompareOperator, ConditionGroup, ConditionQuantifier, ConditionRow, ConditionValue, MaterialNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { evaluateCondition, resolveConditionalNode } from './condition'
 

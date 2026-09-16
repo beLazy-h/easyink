@@ -1,5 +1,5 @@
-import type { PropSchema } from '@easyink/core'
-import { UpdateMaterialBehaviorCommand } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
+import { UpdateMaterialBehaviorCommand } from '@hcxz/core'
 
 type MaterialNode = Parameters<NonNullable<PropSchema['read']>>[0]
 

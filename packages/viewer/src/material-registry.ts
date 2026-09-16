@@ -1,8 +1,8 @@
-import type { MaterialBindingDefinition, MaterialConditionDefinition } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialBindingDefinition, MaterialConditionDefinition } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { FragmentPaginator, MaterialViewerExtension, ViewerMeasureContext, ViewerMeasureResult, ViewerRenderContext, ViewerRenderOutput, ViewerRenderSize } from './types'
-import { resolveMaterialConditionCapability, trustedViewerHtml } from '@easyink/core'
-import { escapeHtml } from '@easyink/shared'
+import { resolveMaterialConditionCapability, trustedViewerHtml } from '@hcxz/core'
+import { escapeHtml } from '@hcxz/shared'
 
 /**
  * Registry mapping material type strings to their viewer render extensions.

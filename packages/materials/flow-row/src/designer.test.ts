@@ -1,4 +1,4 @@
-import { normalizeDocumentSchema } from '@easyink/schema'
+import { normalizeDocumentSchema } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { createFlowRowExtension, FLOW_COLUMN_SELECTION_TYPE } from './designer'
 import { createFlowRowNode } from './schema'

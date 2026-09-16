@@ -1,4 +1,4 @@
-import { clamp } from '@easyink/shared'
+import { clamp } from '@hcxz/shared'
 
 export interface RGB { r: number, g: number, b: number }
 export interface HSV { h: number, s: number, v: number }

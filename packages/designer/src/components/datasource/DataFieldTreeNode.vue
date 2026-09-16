@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
 import type { DatasourceFieldDragData } from '../../composables/use-designer-drag-drop'
 import {
   IconChevronRight,
   IconFolderClosed,
   IconFolderOpen,
   IconGripVertical,
-} from '@easyink/icons'
+} from '@hcxz/icons'
 import { inject } from 'vue'
 import { DESIGNER_DRAG_DROP_KEY } from '../../composables/use-designer-drag-drop'
 import { dataFieldTreeKey, resolveDataFieldPath } from './field-path'

@@ -1,3 +1,3 @@
-# @easyink/material-signature
+# @hcxz/material-signature
 
 Signature pad material for EasyInk.

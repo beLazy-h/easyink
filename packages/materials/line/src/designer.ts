@@ -1,7 +1,7 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { LineProps } from './schema'
-import { getNodeProps } from '@easyink/schema'
+import { getNodeProps } from '@hcxz/schema'
 
 function buildHtml(node: MaterialNode, unit: string): string {
   const props = getNodeProps<Partial<LineProps>>(node)

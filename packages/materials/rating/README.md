@@ -1,3 +1,3 @@
-# @easyink/material-rating
+# @hcxz/material-rating
 
 Rating material for EasyInk.

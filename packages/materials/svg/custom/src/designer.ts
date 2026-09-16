@@ -1,8 +1,8 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { SvgCustomProps } from './schema'
-import { getBindingRefs, getNodeProps } from '@easyink/schema'
-import { escapeAttr, escapeHtml } from '@easyink/shared'
+import { getBindingRefs, getNodeProps } from '@hcxz/schema'
+import { escapeAttr, escapeHtml } from '@hcxz/shared'
 import { buildSvgCustomMarkup } from './rendering'
 
 function buildSvgLogoPlaceholder(label?: string): string {

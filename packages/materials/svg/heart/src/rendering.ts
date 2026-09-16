@@ -1,5 +1,5 @@
 import type { SvgHeartProps } from './schema'
-import { escapeHtml } from '@easyink/shared'
+import { escapeHtml } from '@hcxz/shared'
 
 interface HeartRenderSize {
   width: number

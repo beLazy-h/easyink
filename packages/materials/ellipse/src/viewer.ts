@@ -1,7 +1,7 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { EllipseProps } from './schema'
-import { trustedViewerHtml } from '@easyink/core'
-import { getNodeProps } from '@easyink/schema'
+import { trustedViewerHtml } from '@hcxz/core'
+import { getNodeProps } from '@hcxz/schema'
 import { buildEllipseSvg } from './svg'
 
 export function renderEllipse(node: MaterialNode, unit = 'mm') {

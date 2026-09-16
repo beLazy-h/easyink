@@ -1,7 +1,7 @@
-import type { Command } from '@easyink/core'
-import type { TableDataSchema, TableNode } from '@easyink/schema'
-import { isTableDataNode } from '@easyink/schema'
-import { generateId } from '@easyink/shared'
+import type { Command } from '@hcxz/core'
+import type { TableDataSchema, TableNode } from '@hcxz/schema'
+import { isTableDataNode } from '@hcxz/schema'
+import { generateId } from '@hcxz/shared'
 
 // ─── Validation Utilities ───────────────────────────────────────────
 

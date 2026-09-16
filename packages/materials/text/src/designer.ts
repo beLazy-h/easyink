@@ -1,7 +1,7 @@
-import type { MaterialControlPolicy, MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
-import { getBindingRefs } from '@easyink/schema'
-import { escapeHtml } from '@easyink/shared'
+import type { MaterialControlPolicy, MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
+import { getBindingRefs } from '@hcxz/schema'
+import { escapeHtml } from '@hcxz/shared'
 import { getTextProps, isTextAutoHeight, measureTextNode } from './layout'
 import { getTextContainerStyles, getTextContentStyles } from './rendering'
 

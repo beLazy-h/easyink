@@ -1,4 +1,4 @@
-import type { DataSourceDescriptor } from '@easyink/designer'
+import type { DataSourceDescriptor } from '@hcxz/designer'
 
 interface DataFieldNode {
   name: string

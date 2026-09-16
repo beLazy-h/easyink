@@ -1,6 +1,6 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
-import { RemoveMaterialCommand, UpdateMaterialMetaCommand } from '@easyink/core'
+import { RemoveMaterialCommand, UpdateMaterialMetaCommand } from '@hcxz/core'
 import { removeFromSelection } from './selection-api'
 
 type MaterialMetaUpdates = Partial<Record<'hidden' | 'locked', boolean | undefined>>

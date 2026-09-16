@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { BindingFormatDiagnostic } from './binding-format'
 import type { MaterialConditionCapability } from './condition'
 import type { LayoutDiagnostic, LayoutFragment } from './layout-plan'

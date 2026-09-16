@@ -1,5 +1,5 @@
 import type { ConditionValueType, DocumentSchema } from './types'
-import { isObject, SCHEMA_VERSION } from '@easyink/shared'
+import { isObject, SCHEMA_VERSION } from '@hcxz/shared'
 import { isConditionLiteralValueValid, isConditionValueType } from './condition-values'
 import { PAGE_LAYER_MAX_Z_INDEX, PAGE_LAYER_MIN_Z_INDEX } from './defaults'
 

@@ -1,5 +1,5 @@
-import type { BindingRef } from '@easyink/schema'
-import { BLOCKED_PATH_KEYS, FIELD_PATH_SEPARATOR } from '@easyink/shared'
+import type { BindingRef } from '@hcxz/schema'
+import { BLOCKED_PATH_KEYS, FIELD_PATH_SEPARATOR } from '@hcxz/shared'
 
 /**
  * Resolve a binding reference against the runtime data root.

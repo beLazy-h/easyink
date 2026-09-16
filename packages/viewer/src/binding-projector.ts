@@ -1,8 +1,8 @@
-import type { MaterialBindingDefinition } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialBindingDefinition } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ProjectedBinding } from './types'
-import { formatBindingDisplayValue, hasBindingFormat, resolveBindingValue } from '@easyink/core'
-import { getBindingRefs } from '@easyink/schema'
+import { formatBindingDisplayValue, hasBindingFormat, resolveBindingValue } from '@hcxz/core'
+import { getBindingRefs } from '@hcxz/schema'
 
 /**
  * Resolve all bindings for a material node against the provided data.

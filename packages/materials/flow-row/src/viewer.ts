@@ -1,6 +1,6 @@
-import type { ViewerMeasureContext, ViewerRenderContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
-import { trustedViewerHtml } from '@easyink/core'
+import type { ViewerMeasureContext, ViewerRenderContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
+import { trustedViewerHtml } from '@hcxz/core'
 import { measureFlowRows, renderFlowRowsHtml, resolveFlowRows } from './rendering'
 
 export function renderFlowRow(node: MaterialNode, context: ViewerRenderContext) {

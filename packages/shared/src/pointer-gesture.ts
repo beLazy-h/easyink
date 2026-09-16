@@ -18,7 +18,7 @@
  *
  * Design constraints
  * ------------------
- * - No Vue dependency: usable from `@easyink/material-table-kernel`
+ * - No Vue dependency: usable from `@hcxz/material-table-kernel`
  *   (which has Vue as an optional peer) and any non-Vue executor.
  * - Pure function, no module-level state — multiple concurrent gestures
  *   on different elements coexist safely.

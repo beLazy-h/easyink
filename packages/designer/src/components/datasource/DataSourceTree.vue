@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
-import { IconChevronRight, IconDatabase } from '@easyink/icons'
-import { EiIcon } from '@easyink/ui'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
+import { IconChevronRight, IconDatabase } from '@hcxz/icons'
+import { EiIcon } from '@hcxz/ui'
 import DataFieldTreeNode from './DataFieldTreeNode.vue'
 import { dataFieldTreeKey } from './field-path'
 

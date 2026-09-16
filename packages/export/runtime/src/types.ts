@@ -1,4 +1,4 @@
-import type { DiagnosticSeverity, ExportEntry, ExportFormat, ExportPhase } from '@easyink/shared'
+import type { DiagnosticSeverity, ExportEntry, ExportFormat, ExportPhase } from '@hcxz/shared'
 
 export interface ExportDispatchState {
   phase: ExportPhase

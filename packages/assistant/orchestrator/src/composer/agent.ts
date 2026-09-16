@@ -1,6 +1,6 @@
-import type { LLMClient } from '@easyink/assistant-llm'
-import type { MaterialKnowledgeRegistry } from '@easyink/assistant-material-knowledge'
-import type { ToolManifest } from '@easyink/assistant-tool-registry'
+import type { LLMClient } from '@hcxz/assistant-llm'
+import type { MaterialKnowledgeRegistry } from '@hcxz/assistant-material-knowledge'
+import type { ToolManifest } from '@hcxz/assistant-tool-registry'
 import type {
   ComposerAgentOptions,
   ComposerEventHandler,
@@ -9,17 +9,17 @@ import type {
   ComposerStep,
   ToolCallRecord,
 } from './types'
-import { createRegistryFromManifest, MaterialKnowledgeRegistry as KnowledgeRegistry } from '@easyink/assistant-material-knowledge'
-import { ScenarioClassifier } from '@easyink/assistant-scenario-templates'
-import { SchemaBuilder } from '@easyink/assistant-schema-builder'
+import { createRegistryFromManifest, MaterialKnowledgeRegistry as KnowledgeRegistry } from '@hcxz/assistant-material-knowledge'
+import { ScenarioClassifier } from '@hcxz/assistant-scenario-templates'
+import { SchemaBuilder } from '@hcxz/assistant-schema-builder'
 import {
   createDataTools,
   createLayoutTools,
   createMaterialTools,
   createSchemaTools,
   ToolRegistry,
-} from '@easyink/assistant-tool-registry'
-import { TypeAligner } from '@easyink/assistant-type-aligner'
+} from '@hcxz/assistant-tool-registry'
+import { TypeAligner } from '@hcxz/assistant-type-aligner'
 
 const MAX_ITERATIONS = 15
 

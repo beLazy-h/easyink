@@ -9,12 +9,12 @@ description: EasyInk 自定义物料开发：同时覆盖 Schema、Designer 和 
 先看一版最小实现：
 
 ```ts
-import type { DesignerMaterialBundle, DesignerStore, MaterialDesignerExtension } from '@easyink/designer'
-import type { MaterialNode } from '@easyink/schema'
-import type { ViewerRuntime } from '@easyink/viewer'
-import { trustedViewerHtml } from '@easyink/core'
-import { registerMaterialBundle } from '@easyink/designer'
-import { IconText } from '@easyink/icons'
+import type { DesignerMaterialBundle, DesignerStore, MaterialDesignerExtension } from '@hcxz/designer'
+import type { MaterialNode } from '@hcxz/schema'
+import type { ViewerRuntime } from '@hcxz/viewer'
+import { trustedViewerHtml } from '@hcxz/core'
+import { registerMaterialBundle } from '@hcxz/designer'
+import { IconText } from '@hcxz/icons'
 
 export const PRICE_TAG_TYPE = 'price-tag'
 
@@ -204,8 +204,8 @@ Designer 接收的是 `DesignerMaterialBundle`。你可以把这个 bundle 直�
 
 ```vue
 <script setup lang="ts">
-import { builtinDesignerMaterialBundle } from '@easyink/builtin/basic'
-import { EasyInkDesigner } from '@easyink/designer'
+import { builtinDesignerMaterialBundle } from '@hcxz/builtin/basic'
+import { EasyInkDesigner } from '@hcxz/designer'
 import { priceTagDesignerBundle } from './price-tag'
 
 const runtimeConfig = {
@@ -223,13 +223,13 @@ const runtimeConfig = {
 </template>
 ```
 
-这段代码保留了内置基础物料，同时追加你的 `price-tag` 物料。如果你想保留全部内置物料，把导入路径换成 `@easyink/builtin/all`。
+这段代码保留了内置基础物料，同时追加你的 `price-tag` 物料。如果你想保留全部内置物料，把导入路径换成 `@hcxz/builtin/all`。
 
 如果你已经在项目里用 `setupStore` 注册物料，也不用改 bundle 结构。`setupStore` 仍然适合需要直接操作 store 的初始化逻辑：
 
 ```vue
 <script setup lang="ts">
-import { EasyInkDesigner } from '@easyink/designer'
+import { EasyInkDesigner } from '@hcxz/designer'
 import { registerPriceTagDesigner } from './price-tag'
 
 function setupStore(store) {
@@ -440,8 +440,8 @@ export function createPriceTagDesignerExtension(): MaterialDesignerExtension {
 Viewer 需要按同一个 `type` 再注册一次：
 
 ```ts
-import { trustedViewerHtml } from '@easyink/core'
-import { createViewer } from '@easyink/viewer'
+import { trustedViewerHtml } from '@hcxz/core'
+import { createViewer } from '@hcxz/viewer'
 
 const viewer = createViewer({ container })
 
@@ -522,7 +522,7 @@ viewer.open({
 如果物料消费的不是单个字段，而是一组目标 records，例如柱状图、折线图、透视卡片，可以声明 `binding.kind='data-contract'` 并在其中放入 contract。此时物料说清楚自己需要什么目标模型，节点 binding 只保存用户从数据源拖来的映射。
 
 ```ts
-import type { MaterialDataContract } from '@easyink/core'
+import type { MaterialDataContract } from '@hcxz/core'
 
 export const SALES_CHART_CONTRACT = {
   version: 3,
@@ -577,7 +577,7 @@ registerMaterialBundle(store, {
 Viewer 渲染器里由物料自己消费 contract 解析结果：
 
 ```ts
-import { resolveMaterialDataContract } from '@easyink/core'
+import { resolveMaterialDataContract } from '@hcxz/core'
 
 viewer.registerMaterial('sales-chart', {
   kind: 'data-contract',
@@ -697,7 +697,7 @@ viewer.registerMaterial(PRICE_TAG_TYPE, priceTagViewerExtension)
 如果你希望 AI 助手能理解你的自定义物料并在生成模板时正确使用它，需要在 `aiDescriptor` 中声明 `knowledge` 字段：
 
 ```ts
-import type { AIMaterialDescriptor } from '@easyink/shared'
+import type { AIMaterialDescriptor } from '@hcxz/shared'
 
 export const priceTagAIMaterialDescriptor = {
   type: 'price-tag',

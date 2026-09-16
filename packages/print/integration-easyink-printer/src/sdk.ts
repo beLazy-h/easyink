@@ -1,8 +1,8 @@
-import type { ManagedPrintViewer, ManagedPrintViewerOptions } from '@easyink/print-core'
-import type { DocumentSchema, ViewerTaskCallbacks } from '@easyink/viewer'
+import type { ManagedPrintViewer, ManagedPrintViewerOptions } from '@hcxz/print-core'
+import type { DocumentSchema, ViewerTaskCallbacks } from '@hcxz/viewer'
 import type { EasyInkPrinterClient, EasyInkPrinterClientOptions, EasyInkPrinterPaperSize, EasyInkPrinterPrintHtmlOptions, EasyInkPrinterUserData } from './client'
 import type { EasyInkPrinterDriverPrintOptions, EasyInkPrinterDriverSubmitMode } from './driver'
-import { createManagedPrintViewer } from '@easyink/print-core'
+import { createManagedPrintViewer } from '@hcxz/print-core'
 import { createEasyInkPrinterClient } from './client'
 import { createEasyInkPrinterDriver } from './driver'
 

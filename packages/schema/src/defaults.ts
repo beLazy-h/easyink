@@ -1,6 +1,6 @@
-import type { LayoutStrategyKind, PageMode, PageModelKind, PaginationStrategyKind, ReflowStrategyKind, UnitType } from '@easyink/shared'
+import type { LayoutStrategyKind, PageMode, PageModelKind, PaginationStrategyKind, ReflowStrategyKind, UnitType } from '@hcxz/shared'
 import type { DocumentLayoutConfig, DocumentSchema, DocumentSchemaInput, GuideSchema, PageLayerConfig, PageModelConfig, PageSchema, PaginationConfig, ReflowConfig, TextWatermarkPageLayerConfig } from './types'
-import { DEFAULT_PAGE_HEIGHT_MM, DEFAULT_PAGE_WIDTH_MM, isObject, SCHEMA_VERSION } from '@easyink/shared'
+import { DEFAULT_PAGE_HEIGHT_MM, DEFAULT_PAGE_WIDTH_MM, isObject, SCHEMA_VERSION } from '@hcxz/shared'
 
 const UNIT_TYPES = new Set<UnitType>(['mm', 'pt', 'px', 'inch'])
 const PAGE_MODES = new Set<PageMode>(['fixed', 'continuous'])

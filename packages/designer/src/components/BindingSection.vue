@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { BindingFormatEditorDefinition } from '@easyink/core'
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { BindingRef, MaterialNode } from '@easyink/schema'
-import type { BindingDisplayFormat } from '@easyink/shared'
-import { EiButton } from '@easyink/ui'
+import type { BindingFormatEditorDefinition } from '@hcxz/core'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { BindingRef, MaterialNode } from '@hcxz/schema'
+import type { BindingDisplayFormat } from '@hcxz/shared'
+import { EiButton } from '@hcxz/ui'
 import { computed } from 'vue'
 import BindingFormatEditor from './BindingFormatEditor.vue'
 

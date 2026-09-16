@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/print-integration-lodop",
+  "name": "@hcxz/print-integration-lodop",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Official LODOP client and managed document printer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/print-core": "workspace:*",
-    "@easyink/viewer": "workspace:*"
+    "@hcxz/print-core": "workspace:*",
+    "@hcxz/viewer": "workspace:*"
   }
 }

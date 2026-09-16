@@ -1,4 +1,4 @@
-import type { RuntimeLLMConfig, RuntimeLLMProvider, RuntimeLLMProviderOption } from '@easyink/assistant-llm'
+import type { RuntimeLLMConfig, RuntimeLLMProvider, RuntimeLLMProviderOption } from '@hcxz/assistant-llm'
 
 export type AssistantLLMConfigPersistence = 'memory' | 'session' | 'local'
 

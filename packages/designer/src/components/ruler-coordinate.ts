@@ -1,6 +1,6 @@
-import type { EditorSurfacePlan } from '@easyink/core'
-import type { UnitType } from '@easyink/shared'
-import { getEditorSurfacePageLeft, UnitManager } from '@easyink/core'
+import type { EditorSurfacePlan } from '@hcxz/core'
+import type { UnitType } from '@hcxz/shared'
+import { getEditorSurfacePageLeft, UnitManager } from '@hcxz/core'
 
 export type RulerDirection = 'horizontal' | 'vertical'
 

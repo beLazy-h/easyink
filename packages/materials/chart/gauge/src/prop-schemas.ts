@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const chartGaugeDesignerPropSchemas: PropSchema[] = [
   { key: 'progressColor', label: 'materials.chartGauge.property.progressColor', type: 'color', group: 'appearance' },

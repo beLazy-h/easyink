@@ -1,14 +1,14 @@
-import type { DatasourceDropHandler, MaterialDesignerExtension, MaterialExtensionContext, SelectionType } from '@easyink/core'
-import type { TableEditingDelegate } from '@easyink/material-table-kernel'
-import type { BindingRef, MaterialNode, TableNode } from '@easyink/schema'
-import type { UnitType } from '@easyink/shared'
+import type { DatasourceDropHandler, MaterialDesignerExtension, MaterialExtensionContext, SelectionType } from '@hcxz/core'
+import type { TableEditingDelegate } from '@hcxz/material-table-kernel'
+import type { BindingRef, MaterialNode, TableNode } from '@hcxz/schema'
+import type { UnitType } from '@hcxz/shared'
 import type { TableStaticProps } from './schema'
 import {
   keyboardCursorMiddleware,
   selectionMiddleware,
   undoBoundaryMiddleware,
   UnitManager,
-} from '@easyink/core'
+} from '@hcxz/core'
 import {
   computeCellRect,
   createTableCellDecorationComponent,
@@ -25,8 +25,8 @@ import {
   renderPlainTextCell,
   renderTableHtml,
   resolveMergeOwner,
-} from '@easyink/material-table-kernel'
-import { getNodeProps, isTableNode } from '@easyink/schema'
+} from '@hcxz/material-table-kernel'
+import { getNodeProps, isTableNode } from '@hcxz/schema'
 
 function buildHtml(node: MaterialNode, unit: UnitType, context: MaterialExtensionContext): string {
   if (!isTableNode(node)) {

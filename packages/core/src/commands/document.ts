@@ -1,8 +1,8 @@
-import type { DocumentSchema, ElementGroupSchema, GuideSchema, MaterialNode, PageSchema, RenderCondition } from '@easyink/schema'
+import type { DocumentSchema, ElementGroupSchema, GuideSchema, MaterialNode, PageSchema, RenderCondition } from '@hcxz/schema'
 import type { Command } from '../command'
 import type { EditorSurfacePlan } from '../editor-surface-plan'
 import type { MaterialResizeSideEffect } from '../material-extension'
-import { deepClone, generateId } from '@easyink/shared'
+import { deepClone, generateId } from '@hcxz/shared'
 import { asRecord, findNode, findNodeLocation, getByPath, setByPath } from './helpers'
 
 // ─── Document Commands ──────────────────────────────────────────────

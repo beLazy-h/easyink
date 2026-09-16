@@ -1,4 +1,4 @@
-import type { AssistantTaskInput, AssistantWorkflowStep } from '@easyink/assistant-capabilities'
+import type { AssistantTaskInput, AssistantWorkflowStep } from '@hcxz/assistant-capabilities'
 import { Annotation, END, START, StateGraph } from '@langchain/langgraph'
 
 export interface AssistantGraphState {

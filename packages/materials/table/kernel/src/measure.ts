@@ -1,4 +1,4 @@
-import type { TableCellSchema, TableRowSchema, TableTopologySchema, TableTypography } from '@easyink/schema'
+import type { TableCellSchema, TableRowSchema, TableTopologySchema, TableTypography } from '@hcxz/schema'
 import type { TableBaseProps } from './types'
 import { computeColumnWidths } from './geometry'
 import { TABLE_BASE_DEFAULTS, TABLE_TYPOGRAPHY_DEFAULTS } from './types'

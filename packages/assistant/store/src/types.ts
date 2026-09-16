@@ -2,9 +2,9 @@ import type {
   AssistantResult,
   AssistantTaskInput,
   AssistantWorkflowStep,
-} from '@easyink/assistant-capabilities'
+} from '@hcxz/assistant-capabilities'
 
-export type { AssistantResult, AssistantTaskInput } from '@easyink/assistant-capabilities'
+export type { AssistantResult, AssistantTaskInput } from '@hcxz/assistant-capabilities'
 
 export type AssistantTaskStatus = 'queued' | 'running' | 'waiting' | 'review' | 'done' | 'failed' | 'cancelled'
 

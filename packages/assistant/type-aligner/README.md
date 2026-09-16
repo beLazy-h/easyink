@@ -1,4 +1,4 @@
-# @easyink/assistant-type-aligner
+# @hcxz/assistant-type-aligner
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-type-aligner?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-type-aligner) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-type-aligner?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-type-aligner)
 

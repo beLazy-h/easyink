@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const chartScatterDesignerPropSchemas: PropSchema[] = [
   { key: 'pointColor', label: 'materials.chartScatter.property.pointColor', type: 'color', group: 'appearance' },

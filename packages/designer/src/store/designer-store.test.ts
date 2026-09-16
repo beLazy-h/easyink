@@ -1,5 +1,5 @@
-import type { FontProvider } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { FontProvider } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { MaterialDefinition } from '../types'
 import { describe, expect, it, vi } from 'vitest'
 import { registerMaterialBundle } from '../materials/registry'

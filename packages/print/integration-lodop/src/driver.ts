@@ -1,7 +1,7 @@
-import type { PrintDriverBaseOptions } from '@easyink/print-core'
-import type { PrintDriver, ViewerPrintContext } from '@easyink/viewer'
+import type { PrintDriverBaseOptions } from '@hcxz/print-core'
+import type { PrintDriver, ViewerPrintContext } from '@hcxz/viewer'
 import type { LodopClientLike, PrintPagesOptions } from './client'
-import { getViewerPages, resolvePrintDriverValue, resolveViewerPrintSize } from '@easyink/print-core'
+import { getViewerPages, resolvePrintDriverValue, resolveViewerPrintSize } from '@hcxz/print-core'
 
 /**
  * Configures the official Viewer print driver for LODOP.

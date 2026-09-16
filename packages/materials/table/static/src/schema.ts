@@ -1,7 +1,7 @@
-import type { TableBaseProps } from '@easyink/material-table-kernel'
-import type { MaterialNode, TableNode } from '@easyink/schema'
-import { createDefaultLayout, createDefaultTopology, TABLE_BASE_CAPABILITIES, TABLE_BASE_DEFAULTS } from '@easyink/material-table-kernel'
-import { convertUnit, generateId } from '@easyink/shared'
+import type { TableBaseProps } from '@hcxz/material-table-kernel'
+import type { MaterialNode, TableNode } from '@hcxz/schema'
+import { createDefaultLayout, createDefaultTopology, TABLE_BASE_CAPABILITIES, TABLE_BASE_DEFAULTS } from '@hcxz/material-table-kernel'
+import { convertUnit, generateId } from '@hcxz/shared'
 
 export const TABLE_STATIC_TYPE = 'table-static'
 

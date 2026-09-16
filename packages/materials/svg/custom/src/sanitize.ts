@@ -1,4 +1,4 @@
-import { escapeHtml } from '@easyink/shared'
+import { escapeHtml } from '@hcxz/shared'
 
 const SVG_NS = 'http://www.w3.org/2000/svg'
 const ELEMENT_NODE = 1

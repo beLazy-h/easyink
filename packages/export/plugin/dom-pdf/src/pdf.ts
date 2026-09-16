@@ -1,4 +1,4 @@
-import type { ExportDiagnostic, ExportFormatPlugin, ExportProgress } from '@easyink/export-runtime'
+import type { ExportDiagnostic, ExportFormatPlugin, ExportProgress } from '@hcxz/export-runtime'
 import type { jsPDF as JsPDFType } from 'jspdf'
 import {
   createCanvasCaptureOptions,
@@ -6,12 +6,12 @@ import {
   cropForeignObjectOffset,
   isLikelyBlankForeignObjectCanvas as isLikelyBlankCaptureCanvas,
   waitForRenderableAssets,
-} from '@easyink/export-dom-capture'
+} from '@hcxz/export-dom-capture'
 
 const DEFAULT_EXPORT_DPI = 300
 const DEFAULT_ASSET_LOAD_TIMEOUT_MS = 10000
 
-export { resolveCanvasScale } from '@easyink/export-dom-capture'
+export { resolveCanvasScale } from '@hcxz/export-dom-capture'
 
 export interface PdfPageSize {
   widthMm: number

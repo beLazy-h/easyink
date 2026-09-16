@@ -1,14 +1,14 @@
-import type { DatasourceDropHandler, MaterialControlPolicy, MaterialDesignerExtension, MaterialExtensionContext, SelectionType } from '@easyink/core'
-import type { TableEditingDelegate } from '@easyink/material-table-kernel'
-import type { BindingRef, MaterialNode, TableDataSchema, TableNode, TableRowSchema } from '@easyink/schema'
-import type { UnitType } from '@easyink/shared'
+import type { DatasourceDropHandler, MaterialControlPolicy, MaterialDesignerExtension, MaterialExtensionContext, SelectionType } from '@hcxz/core'
+import type { TableEditingDelegate } from '@hcxz/material-table-kernel'
+import type { BindingRef, MaterialNode, TableDataSchema, TableNode, TableRowSchema } from '@hcxz/schema'
+import type { UnitType } from '@hcxz/shared'
 import type { TableDataProps } from './schema'
 import {
   keyboardCursorMiddleware,
   selectionMiddleware,
   undoBoundaryMiddleware,
   UnitManager,
-} from '@easyink/core'
+} from '@hcxz/core'
 import {
   computeCellRectWithPlaceholders,
   computeRowScaleWithVirtualRows,
@@ -26,8 +26,8 @@ import {
   renderPlainTextCell,
   renderTableHtml,
   resolveMergeOwner,
-} from '@easyink/material-table-kernel'
-import { getNodeProps, isTableNode } from '@easyink/schema'
+} from '@hcxz/material-table-kernel'
+import { getNodeProps, isTableNode } from '@hcxz/schema'
 
 const ROLE_BG_MAP: Record<string, keyof TableDataProps> = {
   header: 'headerBackground',

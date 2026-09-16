@@ -1,7 +1,7 @@
-import type { CommandManager, TransactionAPI, TxOptions } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { CommandManager, TransactionAPI, TxOptions } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DiagnosticsChannel } from '../store/diagnostics'
-import { PatchCommand } from '@easyink/core'
+import { PatchCommand } from '@hcxz/core'
 import { create } from 'mutative'
 
 /**

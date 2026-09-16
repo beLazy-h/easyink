@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { EditorSurfacePagePlan, MaterialDesignerRenderContext, Rect } from '@easyink/core'
+import type { EditorSurfacePagePlan, MaterialDesignerRenderContext, Rect } from '@hcxz/core'
 import type { ResizeHandle } from '../composables/use-element-resize'
 import type { MarqueeRect } from '../composables/use-marquee-select'
 import type { WorkspaceWindowState } from '../types'
@@ -12,7 +12,7 @@ import {
   readNodeRepeatScope,
   resolvePageLayerPlans,
   resolvePageLayerStackIndex,
-} from '@easyink/core'
+} from '@hcxz/core'
 import { computed, onMounted, onUnmounted, provide, ref, watch } from 'vue'
 import { useDesignerStore } from '../composables'
 import { DESIGNER_DRAG_DROP_KEY, useDesignerDragDrop } from '../composables/use-designer-drag-drop'

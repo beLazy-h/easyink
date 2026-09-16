@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { BindingCodeExample } from './binding-format-templates'
-import { EiCodeMirrorEditor } from '@easyink/ui'
+import { EiCodeMirrorEditor } from '@hcxz/ui'
 import { computed, ref } from 'vue'
 import {
   DEFAULT_BINDING_CODE_EXAMPLE_KEYS,

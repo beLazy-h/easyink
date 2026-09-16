@@ -1,5 +1,5 @@
-import type { DocumentSchema } from '@easyink/schema'
-import { createEditorSurfacePlan } from '@easyink/core'
+import type { DocumentSchema } from '@hcxz/schema'
+import { createEditorSurfacePlan } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import { resolveMinimapLayout } from './minimap-layout'
 

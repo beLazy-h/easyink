@@ -1,4 +1,4 @@
-import type { DocumentSchema, TableNode } from '@easyink/schema'
+import type { DocumentSchema, TableNode } from '@hcxz/schema'
 import type { ViewerRuntime } from './runtime'
 import type { ViewerExportContext, ViewerPageMetrics, ViewerPrintContext, ViewerPrintOptions, ViewerPrintPolicy } from './types'
 import { afterEach, describe, expect, it, vi } from 'vitest'

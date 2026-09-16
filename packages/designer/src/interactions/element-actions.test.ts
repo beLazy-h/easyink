@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import { describe, expect, it, vi } from 'vitest'
 import { DesignerStore } from '../store/designer-store'
 import { deleteMaterialNodes, toggleMaterialHidden } from './element-actions'

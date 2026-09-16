@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconClose } from '@easyink/icons'
+import { IconClose } from '@hcxz/icons'
 import { computed, onBeforeUnmount, useAttrs, watch } from 'vue'
 import EiButton from './EiButton.vue'
 import EiIcon from './EiIcon.vue'

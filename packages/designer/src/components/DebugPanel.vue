@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { DocumentSchemaInput } from '@easyink/schema'
+import type { DocumentSchemaInput } from '@hcxz/schema'
 import type { Component } from 'vue'
 import type { DiagnosticSeverity } from '../store/diagnostics'
-import { IconChevronRight, IconCircleAlert, IconCircleDot, IconCopy, IconDelete, IconDown, IconExport, IconImport } from '@easyink/icons'
-import { isObject } from '@easyink/shared'
-import { EiIcon } from '@easyink/ui'
+import { IconChevronRight, IconCircleAlert, IconCircleDot, IconCopy, IconDelete, IconDown, IconExport, IconImport } from '@hcxz/icons'
+import { isObject } from '@hcxz/shared'
+import { EiIcon } from '@hcxz/ui'
 import { computed, ref } from 'vue'
 import { useDesignerStore } from '../composables'
 

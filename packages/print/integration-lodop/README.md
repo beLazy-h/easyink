@@ -1,4 +1,4 @@
-# @easyink/print-integration-lodop
+# @hcxz/print-integration-lodop
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fprint-integration-lodop?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fprint-integration-lodop) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fprint-integration-lodop?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fprint-integration-lodop)
 

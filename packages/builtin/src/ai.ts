@@ -1,4 +1,4 @@
-import type { AIMaterialDescriptor } from '@easyink/shared'
+import type { AIMaterialDescriptor } from '@hcxz/shared'
 import { createBuiltinDesignerMaterialBundle } from './designer'
 
 const builtinDesignerMaterials = createBuiltinDesignerMaterialBundle('all').materials

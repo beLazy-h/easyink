@@ -24,7 +24,7 @@
  * than mocking, which would re-introduce the divergence the audit warned
  * against.
  */
-import type { MaterialDesignerExtension } from '@easyink/core'
+import type { MaterialDesignerExtension } from '@hcxz/core'
 import { describe, expect, it, vi } from 'vitest'
 import { DesignerStore } from '../store/designer-store'
 import { useCanvasInteractionController } from './canvas-interaction-controller'

@@ -1,8 +1,8 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ImageProps } from './schema'
-import { trustedViewerHtml } from '@easyink/core'
-import { getNodeProps } from '@easyink/schema'
-import { escapeAttr } from '@easyink/shared'
+import { trustedViewerHtml } from '@hcxz/core'
+import { getNodeProps } from '@hcxz/schema'
+import { escapeAttr } from '@hcxz/shared'
 
 export function renderImage(node: MaterialNode, unit = 'mm') {
   const props = getNodeProps<ImageProps>(node)

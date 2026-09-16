@@ -1,4 +1,4 @@
-import type { TypeAligner } from '@easyink/assistant-type-aligner'
+import type { TypeAligner } from '@hcxz/assistant-type-aligner'
 import type { ToolDefinition } from '../types'
 import { z } from 'zod'
 

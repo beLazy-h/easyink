@@ -1,5 +1,5 @@
-import type { UnitType } from '@easyink/shared'
-import { UNIT_CONVERSIONS, UNIT_FACTOR } from '@easyink/shared'
+import type { UnitType } from '@hcxz/shared'
+import { UNIT_CONVERSIONS, UNIT_FACTOR } from '@hcxz/shared'
 
 /**
  * UnitManager handles conversions between document units and screen pixels.

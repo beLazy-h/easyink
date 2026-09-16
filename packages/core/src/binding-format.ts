@@ -1,6 +1,6 @@
-import type { BindingRef } from '@easyink/schema'
-import type { BindingDisplayFormat, BindingFormatPresetType, BindingPresetFormat } from '@easyink/shared'
-import { parseDateInput } from '@easyink/shared'
+import type { BindingRef } from '@hcxz/schema'
+import type { BindingDisplayFormat, BindingFormatPresetType, BindingPresetFormat } from '@hcxz/shared'
+import { parseDateInput } from '@hcxz/shared'
 
 export interface BindingFormatContext {
   binding: BindingRef

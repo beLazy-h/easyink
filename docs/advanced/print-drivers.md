@@ -9,9 +9,9 @@ description: EasyInk 自定义打印驱动开发：接入企业内部打印网�
 先看一个 PDF 提交型驱动：
 
 ```ts
-import type { PrintDriver } from '@easyink/viewer'
-import { renderPagesToPdfBlob } from '@easyink/export-plugin-dom-pdf'
-import { resolveViewerPdfPages, resolveViewerPrintSize } from '@easyink/print-core'
+import type { PrintDriver } from '@hcxz/viewer'
+import { renderPagesToPdfBlob } from '@hcxz/export-plugin-dom-pdf'
+import { resolveViewerPdfPages, resolveViewerPrintSize } from '@hcxz/print-core'
 
 export function createRemotePdfPrintDriver(): PrintDriver {
   return {
@@ -86,7 +86,7 @@ async print(context) {
 
 ## 复用 print-core {#print-core}
 
-自己写驱动时，优先复用 `@easyink/print-core`：
+自己写驱动时，优先复用 `@hcxz/print-core`：
 
 ```ts
 import {
@@ -95,7 +95,7 @@ import {
   resolvePrintOffset,
   resolveViewerPdfPages,
   resolveViewerPrintSize,
-} from '@easyink/print-core'
+} from '@hcxz/print-core'
 
 const pages = getViewerPages(context.container)
 const pdfPages = resolveViewerPdfPages(context)
@@ -132,7 +132,7 @@ await printerSdk.print({ pages, widthMm, heightMm })
 打印问题里最常见的是单位混用。建议在驱动入口就统一成毫米：
 
 ```ts
-import { resolveViewerPrintSize, toMillimeters } from '@easyink/print-core'
+import { resolveViewerPrintSize, toMillimeters } from '@hcxz/print-core'
 
 const { widthMm, heightMm } = resolveViewerPrintSize(context)
 

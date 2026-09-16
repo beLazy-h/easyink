@@ -1,12 +1,12 @@
-import type { GeometryService, LocalCoordinateOptions, PageGeometrySnapshot, Point, Rect } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { GeometryService, LocalCoordinateOptions, PageGeometrySnapshot, Point, Rect } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
 import {
   createEditorSurfacePlan,
   projectDocumentPointToEditorSurface,
   projectEditorSurfacePointToDocument,
   UnitManager,
-} from '@easyink/core'
+} from '@hcxz/core'
 
 export interface GeometryServiceOptions {
   getPageEl?: () => HTMLElement | null

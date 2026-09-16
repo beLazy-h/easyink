@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { BindingFormatEditorDefinition, MaterialDataContract } from '@easyink/core'
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { BindingRef, DataContractBinding, DataContractFieldMapping, MaterialNode } from '@easyink/schema'
-import type { BindingDisplayFormat } from '@easyink/shared'
+import type { BindingFormatEditorDefinition, MaterialDataContract } from '@hcxz/core'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { BindingRef, DataContractBinding, DataContractFieldMapping, MaterialNode } from '@hcxz/schema'
+import type { BindingDisplayFormat } from '@hcxz/shared'
 import type { DatasourceFieldDragData } from '../composables/use-designer-drag-drop'
-import { IconGripVertical } from '@easyink/icons'
+import { IconGripVertical } from '@hcxz/icons'
 import { computed, inject, onBeforeUnmount, ref, watchEffect } from 'vue'
 import { DESIGNER_DRAG_DROP_KEY } from '../composables/use-designer-drag-drop'
 import {

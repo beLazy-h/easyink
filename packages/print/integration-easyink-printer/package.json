@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/print-integration-easyink-printer",
+  "name": "@hcxz/print-integration-easyink-printer",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Official EasyInk Printer client and managed document printer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,9 +22,9 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/export-plugin-dom-pdf": "workspace:*",
-    "@easyink/print-core": "workspace:*",
-    "@easyink/viewer": "workspace:*",
+    "@hcxz/export-plugin-dom-pdf": "workspace:*",
+    "@hcxz/print-core": "workspace:*",
+    "@hcxz/viewer": "workspace:*",
     "@vueuse/core": "catalog:framework",
     "vue": "catalog:framework"
   }

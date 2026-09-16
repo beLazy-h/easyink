@@ -1,5 +1,5 @@
-import type { DocumentSchema } from '@easyink/schema'
-import type { PageMode } from '@easyink/shared'
+import type { DocumentSchema } from '@hcxz/schema'
+import type { PageMode } from '@hcxz/shared'
 import type { LayoutDiagnostic, LayoutDocument, LayoutFragment, OutputPagePlan } from './layout-plan'
 import type { FragmentPaginator } from './material-viewer'
 import { resolvePageModel } from './page-model'

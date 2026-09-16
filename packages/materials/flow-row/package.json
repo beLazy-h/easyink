@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/material-flow-row",
+  "name": "@hcxz/material-flow-row",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "EasyInk flow-row material",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -25,10 +25,10 @@
     "vue": "catalog:framework"
   },
   "dependencies": {
-    "@easyink/core": "workspace:*",
-    "@easyink/icons": "workspace:*",
-    "@easyink/prop-schemas": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*"
+    "@hcxz/core": "workspace:*",
+    "@hcxz/icons": "workspace:*",
+    "@hcxz/prop-schemas": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*"
   }
 }

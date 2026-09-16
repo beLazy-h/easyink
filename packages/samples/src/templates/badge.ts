@@ -1,6 +1,6 @@
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { DocumentSchema } from '@easyink/schema'
-import { SCHEMA_VERSION } from '@easyink/shared'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { DocumentSchema } from '@hcxz/schema'
+import { SCHEMA_VERSION } from '@hcxz/shared'
 
 // ---------------------------------------------------------------------------
 // Badge data source

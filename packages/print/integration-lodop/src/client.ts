@@ -1,5 +1,5 @@
 import type { LodopScriptConfig } from './script'
-import { EasyInkPrintError } from '@easyink/print-core'
+import { EasyInkPrintError } from '@hcxz/print-core'
 import { loadLodopScript } from './script'
 import { serializeViewerPage } from './serialize'
 

@@ -1,5 +1,5 @@
 import type { DocumentSchema, MaterialNode, PageSchema, TableCellSchema, TableColumnSchema, TableNode, TableRowSchema, TableSchema } from './types'
-import { isObject } from '@easyink/shared'
+import { isObject } from '@hcxz/shared'
 import { isTableNode } from './types'
 
 /**

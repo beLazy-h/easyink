@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { Component } from 'vue'
 import {
   AddElementGroupCommand,
@@ -12,7 +12,7 @@ import {
   UpdateGuidesCommand,
   UpdateMaterialMetaCommand,
   UpdateMaterialPropsCommand,
-} from '@easyink/core'
+} from '@hcxz/core'
 import {
   IconAlignCenter,
   IconAlignLeft,
@@ -52,10 +52,10 @@ import {
   IconVisibility,
   IconZoomIn,
   IconZoomOut,
-} from '@easyink/icons'
-import { createDefaultSchema } from '@easyink/schema'
-import { generateId } from '@easyink/shared'
-import { EiNumberInput, EiPopover, EiSwitch } from '@easyink/ui'
+} from '@hcxz/icons'
+import { createDefaultSchema } from '@hcxz/schema'
+import { generateId } from '@hcxz/shared'
+import { EiNumberInput, EiPopover, EiSwitch } from '@hcxz/ui'
 import { computed, inject, onMounted, onUnmounted, ref } from 'vue'
 import { useDesignerStore } from '../composables'
 import { CONTRIBUTION_REGISTRY_KEY } from '../contributions/injection'

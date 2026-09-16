@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { MaterialDefinition } from '../types'
 
 interface MaterialLookup {

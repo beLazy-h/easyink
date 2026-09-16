@@ -1,6 +1,6 @@
-import type { EditingSessionRef } from '@easyink/core'
-import type { TableNode } from '@easyink/schema'
-import type { MaterialToolbarGroup } from '@easyink/shared'
+import type { EditingSessionRef } from '@hcxz/core'
+import type { TableNode } from '@hcxz/schema'
+import type { MaterialToolbarGroup } from '@hcxz/shared'
 import type { TableCellPayload, TableEditingDelegate } from './types'
 import {
   IconAlignBottom,
@@ -18,13 +18,13 @@ import {
   IconTextAlignCenter,
   IconTextAlignLeft,
   IconTextAlignRight,
-} from '@easyink/icons/svg-strings'
+} from '@hcxz/icons/svg-strings'
 import {
   materialToolbarButtonStyle,
   materialToolbarGroupStyle,
   materialToolbarIconStyle,
   materialToolbarShellStyle,
-} from '@easyink/shared'
+} from '@hcxz/shared'
 
 export interface TableToolbar {
   update: (selection: TableCellPayload | null) => void

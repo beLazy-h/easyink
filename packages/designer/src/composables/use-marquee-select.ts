@@ -1,6 +1,6 @@
 import type { Ref } from 'vue'
 import type { DesignerStore } from '../store/designer-store'
-import { getRotatedAABB, isInteractable, rectsIntersect } from '@easyink/core'
+import { getRotatedAABB, isInteractable, rectsIntersect } from '@hcxz/core'
 import { createGeometryService } from '../editing/geometry-service'
 import { applySelectionIntent } from '../interactions/selection-intent'
 

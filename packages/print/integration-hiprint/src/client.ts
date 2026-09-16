@@ -1,4 +1,4 @@
-import { EasyInkPrintError } from '@easyink/print-core'
+import { EasyInkPrintError } from '@hcxz/print-core'
 import { hiprint as rawHiPrint } from 'vue-plugin-hiprint'
 
 export const DEFAULT_HIPRINT_URL = 'http://localhost:17521'

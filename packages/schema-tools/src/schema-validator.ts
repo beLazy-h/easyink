@@ -1,6 +1,6 @@
-import type { BindingRef, DocumentSchema, MaterialNode } from '@easyink/schema'
-import { getBindingRefs } from '@easyink/schema'
-import { BLOCKED_PATH_KEYS, deepClone, FIELD_PATH_SEPARATOR, generateId } from '@easyink/shared'
+import type { BindingRef, DocumentSchema, MaterialNode } from '@hcxz/schema'
+import { getBindingRefs } from '@hcxz/schema'
+import { BLOCKED_PATH_KEYS, deepClone, FIELD_PATH_SEPARATOR, generateId } from '@hcxz/shared'
 
 /**
  * Validation error.

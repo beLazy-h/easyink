@@ -1,4 +1,4 @@
-import type { TableColumnSchema, TableRowSchema, TableTopologySchema } from '@easyink/schema'
+import type { TableColumnSchema, TableRowSchema, TableTopologySchema } from '@hcxz/schema'
 import type { CellRect } from './types'
 
 /**

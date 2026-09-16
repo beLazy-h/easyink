@@ -1,6 +1,6 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
 import type { SvgHeartProps } from './schema'
-import { getNodeProps } from '@easyink/schema'
+import { getNodeProps } from '@hcxz/schema'
 import { buildSvgHeartMarkup } from './rendering'
 import { SVG_HEART_DEFAULTS } from './schema'
 

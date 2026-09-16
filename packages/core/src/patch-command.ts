@@ -1,7 +1,7 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { Patch } from 'mutative'
 import type { Command } from './command'
-import { generateId } from '@easyink/shared'
+import { generateId } from '@hcxz/shared'
 
 // ─── JSON Patch Application ────────────────────────────────────────
 

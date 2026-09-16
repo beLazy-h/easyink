@@ -1,4 +1,4 @@
-import type { BehaviorContext, BehaviorEvent, BehaviorRegistration } from '@easyink/core'
+import type { BehaviorContext, BehaviorEvent, BehaviorRegistration } from '@hcxz/core'
 import type { DiagnosticsChannel } from '../store/diagnostics'
 
 /**

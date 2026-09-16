@@ -1,4 +1,4 @@
-import { EasyInkPrintError } from '@easyink/print-core'
+import { EasyInkPrintError } from '@hcxz/print-core'
 
 export const DEFAULT_CLODOP_SCRIPT_URLS = [
   'http://localhost:8000/CLodopfuncs.js',

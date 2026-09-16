@@ -1,4 +1,4 @@
-import type { TableTopologySchema } from '@easyink/schema'
+import type { TableTopologySchema } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { renderTableHtml } from './render'
 import { TABLE_BASE_DEFAULTS } from './types'

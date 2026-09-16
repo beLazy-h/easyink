@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const ratingDesignerPropSchemas: PropSchema[] = [
   { key: 'value', label: 'materials.rating.property.value', type: 'number', group: 'content', min: 0, max: 100, step: 1 },

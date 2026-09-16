@@ -1,10 +1,10 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
 import {
   isInteractable,
   MoveMaterialCommand,
   UnitManager,
-} from '@easyink/core'
+} from '@hcxz/core'
 import { onMounted, onUnmounted } from 'vue'
 import { createClipboardActions } from '../interactions/clipboard-actions'
 import { selectMany } from '../interactions/selection-api'

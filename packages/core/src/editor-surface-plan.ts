@@ -1,4 +1,4 @@
-import type { DocumentSchema } from '@easyink/schema'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { Point, Rect } from './geometry'
 import { resolvePageModel } from './page-model'
 

@@ -1,8 +1,8 @@
-import type { EChartsOption } from '@easyink/material-chart-kernel/full'
-import type { MaterialNode } from '@easyink/schema'
+import type { EChartsOption } from '@hcxz/material-chart-kernel/full'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ChartCustomProps } from './schema'
-import { echarts } from '@easyink/material-chart-kernel/full'
-import { deepClone } from '@easyink/shared'
+import { echarts } from '@hcxz/material-chart-kernel/full'
+import { deepClone } from '@hcxz/shared'
 import { CHART_CUSTOM_DEFAULTS } from './schema'
 
 const DEFAULT_OPTION: EChartsOption = {

@@ -1,4 +1,4 @@
-import type { TableTopologySchema } from '@easyink/schema'
+import type { TableTopologySchema } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { computeAutoRowHeights, estimateTextLines, measureTableLayout } from './measure'
 import { TABLE_BASE_DEFAULTS, TABLE_TYPOGRAPHY_DEFAULTS } from './types'

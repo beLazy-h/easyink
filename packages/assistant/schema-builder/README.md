@@ -1,4 +1,4 @@
-# @easyink/assistant-schema-builder
+# @hcxz/assistant-schema-builder
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-schema-builder?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-schema-builder) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-schema-builder?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-schema-builder)
 

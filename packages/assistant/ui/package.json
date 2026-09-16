@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/assistant-ui",
+  "name": "@hcxz/assistant-ui",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Vue task workbench UI for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -28,12 +28,12 @@
     "vue": "catalog:framework"
   },
   "dependencies": {
-    "@easyink/assistant-capabilities": "workspace:*",
-    "@easyink/assistant-llm": "workspace:*",
-    "@easyink/assistant-plugins": "workspace:*",
-    "@easyink/assistant-store": "workspace:*",
-    "@easyink/icons": "workspace:*",
-    "@easyink/ui": "workspace:*"
+    "@hcxz/assistant-capabilities": "workspace:*",
+    "@hcxz/assistant-llm": "workspace:*",
+    "@hcxz/assistant-plugins": "workspace:*",
+    "@hcxz/assistant-store": "workspace:*",
+    "@hcxz/icons": "workspace:*",
+    "@hcxz/ui": "workspace:*"
   },
   "devDependencies": {
     "vue": "catalog:framework"

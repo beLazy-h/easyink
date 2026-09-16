@@ -1,5 +1,5 @@
-import type { AssistantResult, AssistantSourceInput } from '@easyink/assistant-capabilities'
-import type { AssistantEventRecord } from '@easyink/assistant-store'
+import type { AssistantResult, AssistantSourceInput } from '@hcxz/assistant-capabilities'
+import type { AssistantEventRecord } from '@hcxz/assistant-store'
 import type { AssistantTranslate } from './i18n'
 import { translateAssistant } from './i18n'
 

@@ -1,7 +1,7 @@
-import type { PageSchema, TextWatermarkPageLayerConfig } from '@easyink/schema'
-import type { LayoutStrategyKind, PaperPreset } from '@easyink/shared'
+import type { PageSchema, TextWatermarkPageLayerConfig } from '@hcxz/schema'
+import type { LayoutStrategyKind, PaperPreset } from '@hcxz/shared'
 import type { PagePropertyContext, PagePropertyDescriptor } from './types'
-import { DEFAULT_TEXT_WATERMARK_PAGE_LAYER } from '@easyink/schema'
+import { DEFAULT_TEXT_WATERMARK_PAGE_LAYER } from '@hcxz/schema'
 
 const UNIT_OPTIONS: NonNullable<PagePropertyDescriptor['enum']> = [
   { label: 'designer.option.unitMillimeter', value: 'mm' },

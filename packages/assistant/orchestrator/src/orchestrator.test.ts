@@ -1,5 +1,5 @@
-import type { AssistantMaterialManifest } from '@easyink/assistant-capabilities'
-import { MemoryAssistantStore } from '@easyink/assistant-store'
+import type { AssistantMaterialManifest } from '@hcxz/assistant-capabilities'
+import { MemoryAssistantStore } from '@hcxz/assistant-store'
 import { describe, expect, it, vi } from 'vitest'
 import { AssistantOrchestrator, createAssistantApp, createAssistantWorkflowGraph } from './index'
 import { buildSchemaSystemPrompt } from './prompts'

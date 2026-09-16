@@ -1,4 +1,4 @@
-# @easyink/assistant-plugin-receipt-designer
+# @hcxz/assistant-plugin-receipt-designer
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-plugin-receipt-designer?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-plugin-receipt-designer) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-plugin-receipt-designer?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-plugin-receipt-designer)
 

@@ -1,5 +1,5 @@
-import type { DocumentSchema, PageSchema } from '@easyink/schema'
-import type { PaperPreset } from '@easyink/shared'
+import type { DocumentSchema, PageSchema } from '@hcxz/schema'
+import type { PaperPreset } from '@hcxz/shared'
 import type { DesignerMaterialBundle } from './materials/registry'
 
 export interface DesignerMaterialConfig {

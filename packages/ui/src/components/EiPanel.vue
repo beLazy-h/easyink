@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconClose, IconDown, IconUp } from '@easyink/icons'
+import { IconClose, IconDown, IconUp } from '@hcxz/icons'
 import { ref } from 'vue'
 
 defineProps<{

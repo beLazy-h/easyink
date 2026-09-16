@@ -1,8 +1,8 @@
 /**
  * @vitest-environment happy-dom
  */
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { RenderCondition } from '@easyink/schema'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { RenderCondition } from '@hcxz/schema'
 import { afterEach, describe, expect, it } from 'vitest'
 import { createApp, h, nextTick } from 'vue'
 import ConditionDialog from './ConditionDialog.vue'

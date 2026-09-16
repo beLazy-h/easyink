@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 
 export function findNode(elements: MaterialNode[], id: string): MaterialNode | undefined {
   return findNodeLocation(elements, id)?.node

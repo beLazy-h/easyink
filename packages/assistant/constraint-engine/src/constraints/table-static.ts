@@ -1,5 +1,5 @@
-import type { MaterialConstraint } from '@easyink/assistant-material-knowledge'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialConstraint } from '@hcxz/assistant-material-knowledge'
+import type { MaterialNode } from '@hcxz/schema'
 
 export const tableStaticConstraints: MaterialConstraint[] = [
   {

@@ -1,5 +1,5 @@
-import type { DocumentSchema, TemplateVersion } from '@easyink/schema'
-import { generateId } from '@easyink/shared'
+import type { DocumentSchema, TemplateVersion } from '@hcxz/schema'
+import { generateId } from '@hcxz/shared'
 
 const STORAGE_KEY = 'easyink_template_history'
 

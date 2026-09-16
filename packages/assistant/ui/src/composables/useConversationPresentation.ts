@@ -1,5 +1,5 @@
-import type { AssistantResult } from '@easyink/assistant-capabilities'
-import type { AssistantEventRecord } from '@easyink/assistant-store'
+import type { AssistantResult } from '@hcxz/assistant-capabilities'
+import type { AssistantEventRecord } from '@hcxz/assistant-store'
 import type { Ref } from 'vue'
 import type { AssistantTranslate } from '../i18n'
 import { computed } from 'vue'

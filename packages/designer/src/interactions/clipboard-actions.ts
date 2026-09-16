@@ -1,12 +1,12 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
 import {
   AddMaterialCommand,
   isInteractable,
   RemoveMaterialCommand,
   UnitManager,
-} from '@easyink/core'
-import { deepClone, generateId } from '@easyink/shared'
+} from '@hcxz/core'
+import { deepClone, generateId } from '@hcxz/shared'
 import { clearSelection, selectMany } from './selection-api'
 
 export interface ClipboardActions {

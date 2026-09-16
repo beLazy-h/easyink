@@ -18,7 +18,7 @@ Add material keys in the material package:
 - `src/locale.ts`
 - Pass the export as `localeMessages` on the Designer material entry, or include it in the material bundle registration.
 
-`@easyink/locales` owns Designer common strings only: shared panels, page settings, data source UI, binding format UI, generic diagnostics, and generic history labels.
+`@hcxz/locales` owns Designer common strings only: shared panels, page settings, data source UI, binding format UI, generic diagnostics, and generic history labels.
 
 Material code can translate with:
 
@@ -36,7 +36,7 @@ Property schemas can store label keys directly because `PropertiesPanel.vue` res
 - Page-aware or fragment-pagination diagnostics that surface to users are stable, translated where they are Designer-facing, and use Viewer diagnostics for runtime-only failures.
 - `PropSchema.group` uses an existing group mapped by `GROUP_LABELS` in `PropertiesPanel.vue`, or the visible custom group text is intentional.
 - History panel can display the command label. Prefer stable `materials.<material>.history.*` keys for material commands.
-- Custom host-owned materials register their locale messages through `registerMaterialBundle()` instead of coupling them to `@easyink/locales`.
+- Custom host-owned materials register their locale messages through `registerMaterialBundle()` instead of coupling them to `@hcxz/locales`.
 
 ## AI Reminder
 

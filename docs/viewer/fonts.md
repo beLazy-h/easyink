@@ -13,7 +13,7 @@ Viewer 的字体链路和 Designer 共用同一套 `FontProvider` 约定。你�
 先定义一个 `FontProvider`：
 
 ```ts
-import type { FontProvider } from '@easyink/viewer'
+import type { FontProvider } from '@hcxz/viewer'
 
 const fontProvider: FontProvider = {
   async listFonts() {
@@ -42,7 +42,7 @@ const fontProvider: FontProvider = {
 然后把它交给 Viewer：
 
 ```ts
-import { createViewer } from '@easyink/viewer'
+import { createViewer } from '@hcxz/viewer'
 
 const viewer = createViewer({
   iframe: iframeElement,

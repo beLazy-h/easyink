@@ -1,6 +1,6 @@
-import type { ChartCategoryValuePoint, LineChartStyleOptions } from '@easyink/material-chart-kernel'
+import type { ChartCategoryValuePoint, LineChartStyleOptions } from '@hcxz/material-chart-kernel'
 import type { ChartLineProps } from './schema'
-import { createLineEChartsOption, DEFAULT_CHART_PREVIEW_DATA, normalizeCategoryValueData } from '@easyink/material-chart-kernel'
+import { createLineEChartsOption, DEFAULT_CHART_PREVIEW_DATA, normalizeCategoryValueData } from '@hcxz/material-chart-kernel'
 import { CHART_LINE_DEFAULTS } from './schema'
 
 export function createChartLinePreviewOption(props: Partial<ChartLineProps>, dataInput?: unknown) {

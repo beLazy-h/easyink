@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 import { CHART_CUSTOM_DEFAULT_OPTION_CODE } from './schema'
 
 export const chartCustomDesignerPropSchemas: PropSchema[] = [

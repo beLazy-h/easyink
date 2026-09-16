@@ -1,4 +1,4 @@
-import type { TableTypography } from '@easyink/schema'
+import type { TableTypography } from '@hcxz/schema'
 
 /**
  * Shared table base props -- the property fields common to all table types.

@@ -1,5 +1,5 @@
-import type { DocumentSchema, PagePrintConfig, PageSchema } from '@easyink/schema'
-import type { PageModelKind } from '@easyink/shared'
+import type { DocumentSchema, PagePrintConfig, PageSchema } from '@hcxz/schema'
+import type { PageModelKind } from '@hcxz/shared'
 
 export interface ResolvedPageModel {
   kind: PageModelKind

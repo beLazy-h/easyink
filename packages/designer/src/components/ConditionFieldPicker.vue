@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
-import type { ConditionFieldRef } from '@easyink/schema'
-import { IconSearch } from '@easyink/icons'
-import { EiIcon, EiInput, EiPopover } from '@easyink/ui'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
+import type { ConditionFieldRef } from '@hcxz/schema'
+import { IconSearch } from '@hcxz/icons'
+import { EiIcon, EiInput, EiPopover } from '@hcxz/ui'
 import { computed, reactive, ref, watch } from 'vue'
 import DataSourceTree from './datasource/DataSourceTree.vue'
 import { resolveDataFieldPath } from './datasource/field-path'

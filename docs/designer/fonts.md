@@ -9,7 +9,7 @@ Designer 的字体链路已经帮你做了大部分脏活。宿主真正要做�
 ## `FontProvider` 配置 {#font-provider}
 
 ```ts
-import type { FontProvider } from '@easyink/designer'
+import type { FontProvider } from '@hcxz/designer'
 
 const fontProvider: FontProvider = {
   async listFonts() {

@@ -1,4 +1,4 @@
-import type { BehaviorEvent, MaterialDesignerExtension } from '@easyink/core'
+import type { BehaviorEvent, MaterialDesignerExtension } from '@hcxz/core'
 import type { DesignerStore } from '../store/designer-store'
 import { shallowRef } from 'vue'
 import { applySelectionIntent } from '../interactions/selection-intent'

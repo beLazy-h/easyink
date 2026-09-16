@@ -1,20 +1,20 @@
 ---
-description: '@easyink/designer 提供完整的 Vue 设计工作台组件，支持画布编辑、物料拖放、数据绑定、撤销重做、自动保存和 Contribution 扩展。'
+description: '@hcxz/designer 提供完整的 Vue 设计工作台组件，支持画布编辑、物料拖放、数据绑定、撤销重做、自动保存和 Contribution 扩展。'
 ---
 
 # Designer {#designer}
 
-`@easyink/designer` 提供的是一个完整的 Vue 组件，而不是一组零散拼装件。你把它嵌进页面，传入模板、数据源和宿主能力，它就能给你一个可以工作的编辑工作台。
+`@hcxz/designer` 提供的是一个完整的 Vue 组件，而不是一组零散拼装件。你把它嵌进页面，传入模板、数据源和宿主能力，它就能给你一个可以工作的编辑工作台。
 
 ## 最小用法 {#basic-usage}
 
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import { builtinDesignerMaterialBundle } from '@easyink/builtin/all'
-import { EasyInkDesigner, createLocalStoragePreferenceProvider } from '@easyink/designer'
-import { zhCN } from '@easyink/designer/locale'
-import '@easyink/designer/index.css'
+import { builtinDesignerMaterialBundle } from '@hcxz/builtin/all'
+import { EasyInkDesigner, createLocalStoragePreferenceProvider } from '@hcxz/designer'
+import { zhCN } from '@hcxz/designer/locale'
+import '@hcxz/designer/index.css'
 
 const schema = ref({})
 const preferenceProvider = createLocalStoragePreferenceProvider()
@@ -63,8 +63,8 @@ const runtimeConfig = {
 先看一个常见配置：
 
 ```ts
-import type { DesignerRuntimeConfig } from '@easyink/designer'
-import { builtinDesignerMaterialBundle } from '@easyink/builtin/basic'
+import type { DesignerRuntimeConfig } from '@hcxz/designer'
+import { builtinDesignerMaterialBundle } from '@hcxz/builtin/basic'
 
 const runtimeConfig: DesignerRuntimeConfig = {
   materials: {
@@ -97,10 +97,10 @@ const runtimeConfig: DesignerRuntimeConfig = {
 
 ## 内置物料范围 {#builtin-material-set}
 
-内置物料由 `@easyink/builtin` 提供。Designer 不会自动内置它；推荐从公开子路径选择一个集合，再把它作为普通 `DesignerMaterialBundle` 传给 `runtimeConfig.materials.bundles`。根入口 `@easyink/builtin` 保留 all 集合兼容导出，也提供 all/basic/none 的显式别名，但业务接入通常直接用下面的子路径更清晰。
+内置物料由 `@hcxz/builtin` 提供。Designer 不会自动内置它；推荐从公开子路径选择一个集合，再把它作为普通 `DesignerMaterialBundle` 传给 `runtimeConfig.materials.bundles`。根入口 `@hcxz/builtin` 保留 all 集合兼容导出，也提供 all/basic/none 的显式别名，但业务接入通常直接用下面的子路径更清晰。
 
 ```ts
-import { builtinDesignerMaterialBundle } from '@easyink/builtin/all'
+import { builtinDesignerMaterialBundle } from '@hcxz/builtin/all'
 
 const runtimeConfig = {
   materials: {
@@ -113,13 +113,13 @@ const runtimeConfig = {
 
 | 子路径 | 注册内容 | 适合场景 |
 | --- | --- | --- |
-| `@easyink/builtin/all` | 全部内置物料 | 需要完整设计能力 |
-| `@easyink/builtin/basic` | 内置基础集合：排除图表和签名，保留文本、图片、线条、矩形、数据表格、SVG 等常用物料 | 需要常用编辑能力，但不想引入图表和签名 |
-| `@easyink/builtin/none` | 空集合 | 你要完全使用自己的物料包，同时保留统一接入形态 |
+| `@hcxz/builtin/all` | 全部内置物料 | 需要完整设计能力 |
+| `@hcxz/builtin/basic` | 内置基础集合：排除图表和签名，保留文本、图片、线条、矩形、数据表格、SVG 等常用物料 | 需要常用编辑能力，但不想引入图表和签名 |
+| `@hcxz/builtin/none` | 空集合 | 你要完全使用自己的物料包，同时保留统一接入形态 |
 
 这里有两个概念容易混在一起：
 
-- `@easyink/builtin/basic` 控制的是“注册哪些内置物料能力”。
+- `@hcxz/builtin/basic` 控制的是“注册哪些内置物料能力”。
 - 物料栏里的“基础”“数据”“图表”等分组，来自物料 bundle 里的 `catalogs`。
 
 也就是说，`basic` 不是物料面板分类 API。它只是一个内置物料范围枚举；真正决定物料出现在哪个分类、分类标题怎么翻译、以及分类顺序的，是 `catalogs`。
@@ -277,7 +277,7 @@ const dataSources = [
 如果你的模板要用业务字体，先给 `fontProvider`。
 
 ```ts
-import type { FontProvider } from '@easyink/designer'
+import type { FontProvider } from '@hcxz/designer'
 
 const fontProvider: FontProvider = {
   async listFonts() {
@@ -313,7 +313,7 @@ Designer 会自己负责加载字体和注入 `@font-face`。宿主不用再手�
 最常见的场景是注册自定义物料，或者在 store 初始化后接入自己的扩展逻辑。这个回调会在内置物料注册、`fontProvider` 设置之后执行。
 
 ```ts
-import type { DesignerStore } from '@easyink/designer'
+import type { DesignerStore } from '@hcxz/designer'
 
 function setupStore(store: DesignerStore) {
   console.log(store.schema.unit)
@@ -455,7 +455,7 @@ const propSchemas = [
 如果你写的是 Designer 内部子组件或贡献面板，可以直接通过 `useDesignerStore()` 取到 store。
 
 ```ts
-import { useDesignerStore } from '@easyink/designer'
+import { useDesignerStore } from '@hcxz/designer'
 
 const store = useDesignerStore()
 ```
@@ -481,7 +481,7 @@ Designer 还提供一个顶栏插槽：
 最后一个容易漏掉的点，是样式入口：
 
 ```ts
-import '@easyink/designer/index.css'
+import '@hcxz/designer/index.css'
 ```
 
 如果你看到组件能挂载，但界面布局明显不对，先检查这里。

@@ -77,8 +77,8 @@ await viewer.print({
 模板使用官方内置物料时，在 `setupViewer` 里注册：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createEasyInkPrinter } from '@easyink/print-integration-easyink-printer'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createEasyInkPrinter } from '@hcxz/print-integration-easyink-printer'
 
 const printer = createEasyInkPrinter({
   serviceUrl: 'http://localhost:18080',
@@ -98,9 +98,9 @@ await printer.print({ schema, data })
 HiPrint 和 LODOP 的高层打印器也使用同一个入口：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createHiPrintPrinter } from '@easyink/print-integration-hiprint'
-import { createLodopPrinter } from '@easyink/print-integration-lodop'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createHiPrintPrinter } from '@hcxz/print-integration-hiprint'
+import { createLodopPrinter } from '@hcxz/print-integration-lodop'
 
 function setupViewer(viewer) {
   registerBuiltinViewerMaterials((type, binding, extension) => {
@@ -121,7 +121,7 @@ const lodopPrinter = createLodopPrinter({
 })
 ```
 
-打印包不会自动引入 `@easyink/builtin`。如果你的模板只使用自定义物料，就把自定义注册逻辑放进同一个 `setupViewer` 里。
+打印包不会自动引入 `@hcxz/builtin`。如果你的模板只使用自定义物料，就把自定义注册逻辑放进同一个 `setupViewer` 里。
 
 ## 打印任务回调 {#print-callbacks}
 
@@ -227,7 +227,7 @@ const blob = await viewer.exportDocument({
 写驱动时，你通常会想知道 Viewer 最终准备怎么打印。
 
 ```ts
-import { resolvePrintPolicy } from '@easyink/viewer'
+import { resolvePrintPolicy } from '@hcxz/viewer'
 
 const policy = resolvePrintPolicy({
   schema: documentSchema,
@@ -254,10 +254,10 @@ Viewer 本身只定义导出器接口，不内置 PDF 或图片编码。要快�
 先注册 PDF 和 PNG 插件：
 
 ```ts
-import { createExportRuntime } from '@easyink/export-runtime'
-import { createDomImageExportPlugin } from '@easyink/export-plugin-dom-image'
-import { createDomPdfExportPlugin } from '@easyink/export-plugin-dom-pdf'
-import { toMillimeters } from '@easyink/print-core'
+import { createExportRuntime } from '@hcxz/export-runtime'
+import { createDomImageExportPlugin } from '@hcxz/export-plugin-dom-image'
+import { createDomPdfExportPlugin } from '@hcxz/export-plugin-dom-pdf'
+import { toMillimeters } from '@hcxz/print-core'
 
 const exportRuntime = createExportRuntime()
 
@@ -339,7 +339,7 @@ exportRuntime.registerPlugin(createDomImageExportPlugin({
 如果你想一次拿到多页图片，可以直接使用图片插件的纯函数：
 
 ```ts
-import { renderPagesToImageBlobs } from '@easyink/export-plugin-dom-image'
+import { renderPagesToImageBlobs } from '@hcxz/export-plugin-dom-image'
 
 const imageBlobs = await renderPagesToImageBlobs({
   pages: resolveDomPages(context),

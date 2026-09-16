@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { LayoutDiagnostic } from './layout-plan'
 import { rectsIntersect } from './geometry'
 import { readNodeFlowConstraints } from './layout-plan'

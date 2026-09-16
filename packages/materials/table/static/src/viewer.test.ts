@@ -1,5 +1,5 @@
-import type { TableNode } from '@easyink/schema'
-import { readTrustedViewerHtml } from '@easyink/core'
+import type { TableNode } from '@hcxz/schema'
+import { readTrustedViewerHtml } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import { createTableStaticNode } from './schema'
 import { renderTableStatic } from './viewer'

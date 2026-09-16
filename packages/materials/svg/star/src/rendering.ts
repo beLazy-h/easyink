@@ -1,7 +1,7 @@
-import type { Point, Rect } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { Point, Rect } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { SvgStarControlSelection, SvgStarProps } from './schema'
-import { escapeHtml } from '@easyink/shared'
+import { escapeHtml } from '@hcxz/shared'
 
 const VIEWBOX_SIZE = 100
 const STAR_HANDLE_SIZE = 6

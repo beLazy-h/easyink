@@ -1,5 +1,5 @@
 import type { SvgStarProps } from './schema'
-import { readTrustedViewerHtml } from '@easyink/core'
+import { readTrustedViewerHtml } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import { createSvgStarExtension } from './designer'
 import { svgStarDesignerPropSchemas } from './prop-schemas'

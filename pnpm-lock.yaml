@@ -341,16 +341,16 @@ importers:
         specifier: catalog:framework
         version: 2.0.1-rc.22
     devDependencies:
-      '@easyink/samples':
+      '@hcxz/samples':
         specifier: workspace:*
         version: link:../../packages/samples
 
   internal-packages/viewer-runtime:
     dependencies:
-      '@easyink/builtin':
+      '@hcxz/builtin':
         specifier: workspace:*
         version: link:../../packages/builtin
-      '@easyink/viewer':
+      '@hcxz/viewer':
         specifier: workspace:*
         version: link:../../packages/viewer
       core-js:
@@ -369,10 +369,10 @@ importers:
 
   packages/assistant/adapters:
     dependencies:
-      '@easyink/datasource':
+      '@hcxz/datasource':
         specifier: workspace:*
         version: link:../../datasource
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       curlconverter:
@@ -384,19 +384,19 @@ importers:
 
   packages/assistant/capabilities:
     dependencies:
-      '@easyink/assistant-plugins':
+      '@hcxz/assistant-plugins':
         specifier: workspace:*
         version: link:../plugins
-      '@easyink/datasource':
+      '@hcxz/datasource':
         specifier: workspace:*
         version: link:../../datasource
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/schema-tools':
+      '@hcxz/schema-tools':
         specifier: workspace:*
         version: link:../../schema-tools
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       zod:
@@ -405,37 +405,37 @@ importers:
 
   packages/assistant/constraint-engine:
     dependencies:
-      '@easyink/assistant-material-knowledge':
+      '@hcxz/assistant-material-knowledge':
         specifier: workspace:*
         version: link:../material-knowledge
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/assistant/designer-bridge:
     dependencies:
-      '@easyink/assistant-capabilities':
+      '@hcxz/assistant-capabilities':
         specifier: workspace:*
         version: link:../capabilities
-      '@easyink/assistant-plugins':
+      '@hcxz/assistant-plugins':
         specifier: workspace:*
         version: link:../plugins
-      '@easyink/assistant-store':
+      '@hcxz/assistant-store':
         specifier: workspace:*
         version: link:../store
-      '@easyink/assistant-ui':
+      '@hcxz/assistant-ui':
         specifier: workspace:*
         version: link:../ui
-      '@easyink/designer':
+      '@hcxz/designer':
         specifier: workspace:*
         version: link:../../designer
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../../icons
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
       vue:
@@ -456,10 +456,10 @@ importers:
 
   packages/assistant/material-knowledge:
     dependencies:
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       zod:
@@ -468,43 +468,43 @@ importers:
 
   packages/assistant/orchestrator:
     dependencies:
-      '@easyink/assistant-adapters':
+      '@hcxz/assistant-adapters':
         specifier: workspace:*
         version: link:../adapters
-      '@easyink/assistant-capabilities':
+      '@hcxz/assistant-capabilities':
         specifier: workspace:*
         version: link:../capabilities
-      '@easyink/assistant-constraint-engine':
+      '@hcxz/assistant-constraint-engine':
         specifier: workspace:*
         version: link:../constraint-engine
-      '@easyink/assistant-llm':
+      '@hcxz/assistant-llm':
         specifier: workspace:*
         version: link:../llm
-      '@easyink/assistant-material-knowledge':
+      '@hcxz/assistant-material-knowledge':
         specifier: workspace:*
         version: link:../material-knowledge
-      '@easyink/assistant-plugins':
+      '@hcxz/assistant-plugins':
         specifier: workspace:*
         version: link:../plugins
-      '@easyink/assistant-scenario-templates':
+      '@hcxz/assistant-scenario-templates':
         specifier: workspace:*
         version: link:../scenario-templates
-      '@easyink/assistant-schema-builder':
+      '@hcxz/assistant-schema-builder':
         specifier: workspace:*
         version: link:../schema-builder
-      '@easyink/assistant-store':
+      '@hcxz/assistant-store':
         specifier: workspace:*
         version: link:../store
-      '@easyink/assistant-tool-registry':
+      '@hcxz/assistant-tool-registry':
         specifier: workspace:*
         version: link:../tool-registry
-      '@easyink/assistant-type-aligner':
+      '@hcxz/assistant-type-aligner':
         specifier: workspace:*
         version: link:../type-aligner
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/schema-tools':
+      '@hcxz/schema-tools':
         specifier: workspace:*
         version: link:../../schema-tools
       '@hono/node-server':
@@ -531,19 +531,19 @@ importers:
 
   packages/assistant/plugin-placeholder-images:
     dependencies:
-      '@easyink/assistant-plugins':
+      '@hcxz/assistant-plugins':
         specifier: workspace:*
         version: link:../plugins
 
   packages/assistant/plugin-prototype-designer:
     dependencies:
-      '@easyink/assistant-plugins':
+      '@hcxz/assistant-plugins':
         specifier: workspace:*
         version: link:../plugins
 
   packages/assistant/plugin-receipt-designer:
     dependencies:
-      '@easyink/assistant-plugins':
+      '@hcxz/assistant-plugins':
         specifier: workspace:*
         version: link:../plugins
 
@@ -555,34 +555,34 @@ importers:
 
   packages/assistant/scenario-templates:
     dependencies:
-      '@easyink/assistant-material-knowledge':
+      '@hcxz/assistant-material-knowledge':
         specifier: workspace:*
         version: link:../material-knowledge
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/assistant/schema-builder:
     dependencies:
-      '@easyink/assistant-constraint-engine':
+      '@hcxz/assistant-constraint-engine':
         specifier: workspace:*
         version: link:../constraint-engine
-      '@easyink/assistant-material-knowledge':
+      '@hcxz/assistant-material-knowledge':
         specifier: workspace:*
         version: link:../material-knowledge
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/assistant/store:
     dependencies:
-      '@easyink/assistant-capabilities':
+      '@hcxz/assistant-capabilities':
         specifier: workspace:*
         version: link:../capabilities
       dexie:
@@ -594,25 +594,25 @@ importers:
 
   packages/assistant/tool-registry:
     dependencies:
-      '@easyink/assistant-constraint-engine':
+      '@hcxz/assistant-constraint-engine':
         specifier: workspace:*
         version: link:../constraint-engine
-      '@easyink/assistant-material-knowledge':
+      '@hcxz/assistant-material-knowledge':
         specifier: workspace:*
         version: link:../material-knowledge
-      '@easyink/assistant-scenario-templates':
+      '@hcxz/assistant-scenario-templates':
         specifier: workspace:*
         version: link:../scenario-templates
-      '@easyink/assistant-schema-builder':
+      '@hcxz/assistant-schema-builder':
         specifier: workspace:*
         version: link:../schema-builder
-      '@easyink/assistant-type-aligner':
+      '@hcxz/assistant-type-aligner':
         specifier: workspace:*
         version: link:../type-aligner
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       zod:
@@ -625,34 +625,34 @@ importers:
 
   packages/assistant/type-aligner:
     dependencies:
-      '@easyink/assistant-material-knowledge':
+      '@hcxz/assistant-material-knowledge':
         specifier: workspace:*
         version: link:../material-knowledge
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/assistant/ui:
     dependencies:
-      '@easyink/assistant-capabilities':
+      '@hcxz/assistant-capabilities':
         specifier: workspace:*
         version: link:../capabilities
-      '@easyink/assistant-llm':
+      '@hcxz/assistant-llm':
         specifier: workspace:*
         version: link:../llm
-      '@easyink/assistant-plugins':
+      '@hcxz/assistant-plugins':
         specifier: workspace:*
         version: link:../plugins
-      '@easyink/assistant-store':
+      '@hcxz/assistant-store':
         specifier: workspace:*
         version: link:../store
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../../icons
-      '@easyink/ui':
+      '@hcxz/ui':
         specifier: workspace:*
         version: link:../../ui
     devDependencies:
@@ -662,94 +662,94 @@ importers:
 
   packages/builtin:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../core
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../icons
-      '@easyink/material-barcode':
+      '@hcxz/material-barcode':
         specifier: workspace:*
         version: link:../materials/barcode
-      '@easyink/material-chart-bar':
+      '@hcxz/material-chart-bar':
         specifier: workspace:*
         version: link:../materials/chart/bar
-      '@easyink/material-chart-custom':
+      '@hcxz/material-chart-custom':
         specifier: workspace:*
         version: link:../materials/chart/custom
-      '@easyink/material-chart-gauge':
+      '@hcxz/material-chart-gauge':
         specifier: workspace:*
         version: link:../materials/chart/gauge
-      '@easyink/material-chart-line':
+      '@hcxz/material-chart-line':
         specifier: workspace:*
         version: link:../materials/chart/line
-      '@easyink/material-chart-pie':
+      '@hcxz/material-chart-pie':
         specifier: workspace:*
         version: link:../materials/chart/pie
-      '@easyink/material-chart-radar':
+      '@hcxz/material-chart-radar':
         specifier: workspace:*
         version: link:../materials/chart/radar
-      '@easyink/material-chart-scatter':
+      '@hcxz/material-chart-scatter':
         specifier: workspace:*
         version: link:../materials/chart/scatter
-      '@easyink/material-ellipse':
+      '@hcxz/material-ellipse':
         specifier: workspace:*
         version: link:../materials/ellipse
-      '@easyink/material-flow-row':
+      '@hcxz/material-flow-row':
         specifier: workspace:*
         version: link:../materials/flow-row
-      '@easyink/material-image':
+      '@hcxz/material-image':
         specifier: workspace:*
         version: link:../materials/image
-      '@easyink/material-line':
+      '@hcxz/material-line':
         specifier: workspace:*
         version: link:../materials/line
-      '@easyink/material-page-number':
+      '@hcxz/material-page-number':
         specifier: workspace:*
         version: link:../materials/page-number
-      '@easyink/material-progress':
+      '@hcxz/material-progress':
         specifier: workspace:*
         version: link:../materials/progress
-      '@easyink/material-qrcode':
+      '@hcxz/material-qrcode':
         specifier: workspace:*
         version: link:../materials/qrcode
-      '@easyink/material-rating':
+      '@hcxz/material-rating':
         specifier: workspace:*
         version: link:../materials/rating
-      '@easyink/material-rect':
+      '@hcxz/material-rect':
         specifier: workspace:*
         version: link:../materials/rect
-      '@easyink/material-ring-progress':
+      '@hcxz/material-ring-progress':
         specifier: workspace:*
         version: link:../materials/ring-progress
-      '@easyink/material-signature':
+      '@hcxz/material-signature':
         specifier: workspace:*
         version: link:../materials/signature
-      '@easyink/material-svg-custom':
+      '@hcxz/material-svg-custom':
         specifier: workspace:*
         version: link:../materials/svg/custom
-      '@easyink/material-svg-heart':
+      '@hcxz/material-svg-heart':
         specifier: workspace:*
         version: link:../materials/svg/heart
-      '@easyink/material-svg-star':
+      '@hcxz/material-svg-star':
         specifier: workspace:*
         version: link:../materials/svg/star
-      '@easyink/material-table-data':
+      '@hcxz/material-table-data':
         specifier: workspace:*
         version: link:../materials/table/data
-      '@easyink/material-table-kernel':
+      '@hcxz/material-table-kernel':
         specifier: workspace:*
         version: link:../materials/table/kernel
-      '@easyink/material-table-static':
+      '@hcxz/material-table-static':
         specifier: workspace:*
         version: link:../materials/table/static
-      '@easyink/material-text':
+      '@hcxz/material-text':
         specifier: workspace:*
         version: link:../materials/text
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
       vue:
@@ -758,10 +758,10 @@ importers:
 
   packages/core:
     dependencies:
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
       mutative:
@@ -770,34 +770,34 @@ importers:
 
   packages/datasource:
     dependencies:
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
 
   packages/designer:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../core
-      '@easyink/datasource':
+      '@hcxz/datasource':
         specifier: workspace:*
         version: link:../datasource
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../icons
-      '@easyink/locales':
+      '@hcxz/locales':
         specifier: workspace:*
         version: link:../locales
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
-      '@easyink/ui':
+      '@hcxz/ui':
         specifier: workspace:*
         version: link:../ui
       mutative:
@@ -809,16 +809,16 @@ importers:
 
   packages/export/dom-capture:
     dependencies:
-      '@easyink/export-runtime':
+      '@hcxz/export-runtime':
         specifier: workspace:*
         version: link:../runtime
 
   packages/export/plugin/dom-image:
     dependencies:
-      '@easyink/export-dom-capture':
+      '@hcxz/export-dom-capture':
         specifier: workspace:*
         version: link:../../dom-capture
-      '@easyink/export-runtime':
+      '@hcxz/export-runtime':
         specifier: workspace:*
         version: link:../../runtime
       html2canvas:
@@ -827,13 +827,13 @@ importers:
 
   packages/export/plugin/dom-pdf:
     dependencies:
-      '@easyink/export-dom-capture':
+      '@hcxz/export-dom-capture':
         specifier: workspace:*
         version: link:../../dom-capture
-      '@easyink/export-runtime':
+      '@hcxz/export-runtime':
         specifier: workspace:*
         version: link:../../runtime
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
       html2canvas:
@@ -845,7 +845,7 @@ importers:
 
   packages/export/runtime:
     dependencies:
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
@@ -865,16 +865,16 @@ importers:
 
   packages/materials/barcode:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       jsbarcode:
@@ -886,46 +886,46 @@ importers:
 
   packages/materials/chart/bar:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-chart-kernel':
+      '@hcxz/material-chart-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/chart/custom:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-chart-kernel':
+      '@hcxz/material-chart-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/chart/gauge:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-chart-kernel':
+      '@hcxz/material-chart-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
@@ -937,94 +937,94 @@ importers:
 
   packages/materials/chart/line:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-chart-kernel':
+      '@hcxz/material-chart-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/chart/pie:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-chart-kernel':
+      '@hcxz/material-chart-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/chart/radar:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-chart-kernel':
+      '@hcxz/material-chart-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/chart/scatter:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-chart-kernel':
+      '@hcxz/material-chart-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/ellipse:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/flow-row:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../../icons
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       vue:
@@ -1033,76 +1033,76 @@ importers:
 
   packages/materials/image:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/line:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/page-number:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/progress:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/qrcode:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       qrcode-generator:
@@ -1111,61 +1111,61 @@ importers:
 
   packages/materials/rating:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/rect:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/ring-progress:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/materials/signature:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../../icons
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
       signature_pad:
@@ -1177,37 +1177,37 @@ importers:
 
   packages/materials/svg/custom:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/svg/heart:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/svg/star:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
       vue:
@@ -1216,37 +1216,37 @@ importers:
 
   packages/materials/table/data:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-table-kernel':
+      '@hcxz/material-table-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/table/kernel:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../../../icons
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
-      '@easyink/ui':
+      '@hcxz/ui':
         specifier: workspace:*
         version: link:../../../ui
       vue:
@@ -1255,55 +1255,55 @@ importers:
 
   packages/materials/table/static:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../../core
-      '@easyink/material-table-kernel':
+      '@hcxz/material-table-kernel':
         specifier: workspace:*
         version: link:../kernel
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../../shared
 
   packages/materials/text:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../../core
-      '@easyink/prop-schemas':
+      '@hcxz/prop-schemas':
         specifier: workspace:*
         version: link:../../prop-schemas
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../../shared
 
   packages/print/core:
     dependencies:
-      '@easyink/export-runtime':
+      '@hcxz/export-runtime':
         specifier: workspace:*
         version: link:../../export/runtime
-      '@easyink/viewer':
+      '@hcxz/viewer':
         specifier: workspace:*
         version: link:../../viewer
 
   packages/print/integration-easyink-printer:
     dependencies:
-      '@easyink/export-plugin-dom-pdf':
+      '@hcxz/export-plugin-dom-pdf':
         specifier: workspace:*
         version: link:../../export/plugin/dom-pdf
-      '@easyink/print-core':
+      '@hcxz/print-core':
         specifier: workspace:*
         version: link:../core
-      '@easyink/viewer':
+      '@hcxz/viewer':
         specifier: workspace:*
         version: link:../../viewer
       '@vueuse/core':
@@ -1315,10 +1315,10 @@ importers:
 
   packages/print/integration-hiprint:
     dependencies:
-      '@easyink/print-core':
+      '@hcxz/print-core':
         specifier: workspace:*
         version: link:../core
-      '@easyink/viewer':
+      '@hcxz/viewer':
         specifier: workspace:*
         version: link:../../viewer
       vue-plugin-hiprint:
@@ -1327,46 +1327,46 @@ importers:
 
   packages/print/integration-lodop:
     dependencies:
-      '@easyink/print-core':
+      '@hcxz/print-core':
         specifier: workspace:*
         version: link:../core
-      '@easyink/viewer':
+      '@hcxz/viewer':
         specifier: workspace:*
         version: link:../../viewer
 
   packages/prop-schemas:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../core
 
   packages/samples:
     dependencies:
-      '@easyink/datasource':
+      '@hcxz/datasource':
         specifier: workspace:*
         version: link:../datasource
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
 
   packages/schema:
     dependencies:
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
 
   packages/schema-tools:
     dependencies:
-      '@easyink/datasource':
+      '@hcxz/datasource':
         specifier: workspace:*
         version: link:../datasource
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
 
@@ -1403,10 +1403,10 @@ importers:
       '@codemirror/view':
         specifier: catalog:framework
         version: 6.41.1
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../icons
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
       '@lezer/highlight':
@@ -1418,67 +1418,67 @@ importers:
 
   packages/viewer:
     dependencies:
-      '@easyink/core':
+      '@hcxz/core':
         specifier: workspace:*
         version: link:../core
-      '@easyink/schema':
+      '@hcxz/schema':
         specifier: workspace:*
         version: link:../schema
-      '@easyink/shared':
+      '@hcxz/shared':
         specifier: workspace:*
         version: link:../shared
 
   playground:
     dependencies:
-      '@easyink/assistant-designer-bridge':
+      '@hcxz/assistant-designer-bridge':
         specifier: workspace:*
         version: link:../packages/assistant/designer-bridge
-      '@easyink/assistant-plugin-placeholder-images':
+      '@hcxz/assistant-plugin-placeholder-images':
         specifier: workspace:*
         version: link:../packages/assistant/plugin-placeholder-images
-      '@easyink/assistant-plugin-prototype-designer':
+      '@hcxz/assistant-plugin-prototype-designer':
         specifier: workspace:*
         version: link:../packages/assistant/plugin-prototype-designer
-      '@easyink/assistant-plugin-receipt-designer':
+      '@hcxz/assistant-plugin-receipt-designer':
         specifier: workspace:*
         version: link:../packages/assistant/plugin-receipt-designer
-      '@easyink/builtin':
+      '@hcxz/builtin':
         specifier: workspace:*
         version: link:../packages/builtin
-      '@easyink/designer':
+      '@hcxz/designer':
         specifier: workspace:*
         version: link:../packages/designer
-      '@easyink/export-plugin-dom-image':
+      '@hcxz/export-plugin-dom-image':
         specifier: workspace:*
         version: link:../packages/export/plugin/dom-image
-      '@easyink/export-plugin-dom-pdf':
+      '@hcxz/export-plugin-dom-pdf':
         specifier: workspace:*
         version: link:../packages/export/plugin/dom-pdf
-      '@easyink/export-runtime':
+      '@hcxz/export-runtime':
         specifier: workspace:*
         version: link:../packages/export/runtime
-      '@easyink/icons':
+      '@hcxz/icons':
         specifier: workspace:*
         version: link:../packages/icons
-      '@easyink/print-core':
+      '@hcxz/print-core':
         specifier: workspace:*
         version: link:../packages/print/core
-      '@easyink/print-integration-easyink-printer':
+      '@hcxz/print-integration-easyink-printer':
         specifier: workspace:*
         version: link:../packages/print/integration-easyink-printer
-      '@easyink/print-integration-hiprint':
+      '@hcxz/print-integration-hiprint':
         specifier: workspace:*
         version: link:../packages/print/integration-hiprint
-      '@easyink/print-integration-lodop':
+      '@hcxz/print-integration-lodop':
         specifier: workspace:*
         version: link:../packages/print/integration-lodop
-      '@easyink/render-api-service':
+      '@hcxz/render-api-service':
         specifier: workspace:*
         version: link:../internal-packages/render-api-service
-      '@easyink/samples':
+      '@hcxz/samples':
         specifier: workspace:*
         version: link:../packages/samples
-      '@easyink/viewer':
+      '@hcxz/viewer':
         specifier: workspace:*
         version: link:../packages/viewer
       '@lezer/highlight':

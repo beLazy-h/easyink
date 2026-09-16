@@ -1,8 +1,8 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { TableStaticProps } from './schema'
-import { formatBindingDisplayValue, resolveBindingValue, trustedViewerHtml } from '@easyink/core'
-import { renderPlainTextCell, renderTableHtml } from '@easyink/material-table-kernel'
-import { getNodeProps, isTableNode } from '@easyink/schema'
+import { formatBindingDisplayValue, resolveBindingValue, trustedViewerHtml } from '@hcxz/core'
+import { renderPlainTextCell, renderTableHtml } from '@hcxz/material-table-kernel'
+import { getNodeProps, isTableNode } from '@hcxz/schema'
 
 interface ViewerRenderContext {
   data: Record<string, unknown>

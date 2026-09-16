@@ -1,4 +1,4 @@
-import type { BindingFormatEditorDefinition, MaterialBindingDefinition } from '@easyink/core'
+import type { BindingFormatEditorDefinition, MaterialBindingDefinition } from '@hcxz/core'
 
 export function resolveOrdinaryFormatEditor(
   binding: MaterialBindingDefinition | undefined,

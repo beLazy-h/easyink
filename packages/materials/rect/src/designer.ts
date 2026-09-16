@@ -1,6 +1,6 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
 import type { RectProps } from './schema'
-import { getNodeProps } from '@easyink/schema'
+import { getNodeProps } from '@hcxz/schema'
 
 function buildHtml(props: RectProps, unit: string): string {
   const bw = props.borderWidth || 0

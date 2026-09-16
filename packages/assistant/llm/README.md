@@ -1,4 +1,4 @@
-# @easyink/assistant-llm
+# @hcxz/assistant-llm
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-llm?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-llm) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-llm?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-llm)
 

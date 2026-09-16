@@ -1,4 +1,4 @@
-# @easyink/datasource
+# @hcxz/datasource
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fdatasource?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fdatasource) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fdatasource?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fdatasource)
 

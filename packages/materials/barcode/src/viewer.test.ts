@@ -1,4 +1,4 @@
-import { readTrustedViewerHtml } from '@easyink/core'
+import { readTrustedViewerHtml } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import { BARCODE_FORMATS, createBarcodeNode } from './schema'
 import { renderBarcode } from './viewer'

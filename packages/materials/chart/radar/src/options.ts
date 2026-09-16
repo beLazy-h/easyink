@@ -1,6 +1,6 @@
-import type { ChartCategoryValuePoint, RadarChartStyleOptions } from '@easyink/material-chart-kernel'
+import type { ChartCategoryValuePoint, RadarChartStyleOptions } from '@hcxz/material-chart-kernel'
 import type { ChartRadarProps } from './schema'
-import { createRadarEChartsOption, DEFAULT_CHART_PREVIEW_DATA, normalizeCategoryValueData } from '@easyink/material-chart-kernel'
+import { createRadarEChartsOption, DEFAULT_CHART_PREVIEW_DATA, normalizeCategoryValueData } from '@hcxz/material-chart-kernel'
 import { CHART_RADAR_DEFAULTS } from './schema'
 
 export function createChartRadarPreviewOption(props: Partial<ChartRadarProps>, dataInput?: unknown) {

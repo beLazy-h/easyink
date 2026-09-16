@@ -1,5 +1,5 @@
-import type { BindingRef, MaterialNode, TableTypography } from '@easyink/schema'
-import { convertUnit, generateId } from '@easyink/shared'
+import type { BindingRef, MaterialNode, TableTypography } from '@hcxz/schema'
+import { convertUnit, generateId } from '@hcxz/shared'
 
 export const FLOW_ROW_TYPE = 'flow-row'
 

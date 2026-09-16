@@ -1,7 +1,7 @@
-import type { FontManager } from '@easyink/core'
+import type { FontManager } from '@hcxz/core'
 import type { ViewerDiagnosticEvent } from './types'
 
-export { collectFontFamilies } from '@easyink/core'
+export { collectFontFamilies } from '@hcxz/core'
 
 /**
  * Load all required fonts via FontManager and inject @font-face rules into a target.

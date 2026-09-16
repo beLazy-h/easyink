@@ -1,6 +1,6 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { TextHeightMode, TextProps, TextWrapMode } from './schema'
-import { getNodeProps } from '@easyink/schema'
+import { getNodeProps } from '@hcxz/schema'
 import { TEXT_DEFAULTS } from './schema'
 
 export interface ResolvedTextProps extends Omit<TextProps, 'minHeight' | 'maxHeight'> {

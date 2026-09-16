@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/assistant-adapters",
+  "name": "@hcxz/assistant-adapters",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Lightweight external data adapters for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -23,8 +23,8 @@
     "test": "vitest run src/**/*.test.ts"
   },
   "dependencies": {
-    "@easyink/datasource": "workspace:*",
-    "@easyink/shared": "workspace:*",
+    "@hcxz/datasource": "workspace:*",
+    "@hcxz/shared": "workspace:*",
     "curlconverter": "catalog:framework",
     "zod": "catalog:framework"
   }

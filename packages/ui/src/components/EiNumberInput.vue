@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconDown, IconUp } from '@easyink/icons'
+import { IconDown, IconUp } from '@hcxz/icons'
 import { computed, ref, watch } from 'vue'
 
 const props = withDefaults(defineProps<{

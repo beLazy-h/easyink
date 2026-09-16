@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { AssistantSourceInput } from '@easyink/assistant-capabilities'
+import type { AssistantSourceInput } from '@hcxz/assistant-capabilities'
 import type { AssistantTranslate } from '../i18n'
-import { IconClose, IconDatabase, IconFileText, IconLoader, IconSend, IconWifi } from '@easyink/icons'
+import { IconClose, IconDatabase, IconFileText, IconLoader, IconSend, IconWifi } from '@hcxz/icons'
 import { computed, ref } from 'vue'
 import { translateAssistant } from '../i18n'
 import { inferSourceFromText } from '../projection'

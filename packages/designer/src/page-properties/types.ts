@@ -1,5 +1,5 @@
-import type { PropertyValueInput } from '@easyink/core'
-import type { DocumentSchema, PageSchema } from '@easyink/schema'
+import type { PropertyValueInput } from '@hcxz/core'
+import type { DocumentSchema, PageSchema } from '@hcxz/schema'
 
 /**
  * Descriptor group for page properties.

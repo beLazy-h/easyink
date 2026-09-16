@@ -1,4 +1,4 @@
-import type { DataFieldNode } from '@easyink/datasource'
+import type { DataFieldNode } from '@hcxz/datasource'
 import { describe, expect, it } from 'vitest'
 import { dataFieldTreeKey, resolveDataFieldPath } from './field-path'
 

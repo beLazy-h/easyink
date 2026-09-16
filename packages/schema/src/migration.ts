@@ -1,5 +1,5 @@
 import type { DocumentSchema } from './types'
-import { SCHEMA_VERSION } from '@easyink/shared'
+import { SCHEMA_VERSION } from '@hcxz/shared'
 import { formatSchemaValidationIssue, SchemaMigrationError, validateSchemaIssues } from './validation'
 
 export type MigrationFunction = (schema: Record<string, unknown>) => DocumentSchema

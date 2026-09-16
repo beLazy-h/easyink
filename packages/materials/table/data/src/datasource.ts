@@ -1,4 +1,4 @@
-import type { TableRowRole } from '@easyink/shared'
+import type { TableRowRole } from '@hcxz/shared'
 
 export interface TableDataBindingHint {
   rowRole: TableRowRole

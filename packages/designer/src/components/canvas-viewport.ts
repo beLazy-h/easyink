@@ -1,6 +1,6 @@
-import type { Point, Rect } from '@easyink/core'
-import type { UnitType } from '@easyink/shared'
-import { UnitManager } from '@easyink/core'
+import type { Point, Rect } from '@hcxz/core'
+import type { UnitType } from '@hcxz/shared'
+import { UnitManager } from '@hcxz/core'
 
 export interface CanvasViewportGeometry {
   unit: UnitType

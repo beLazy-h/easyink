@@ -1,7 +1,7 @@
-import type { Rect } from '@easyink/core'
-import type { MaterialNode, PageSchema } from '@easyink/schema'
+import type { Rect } from '@hcxz/core'
+import type { MaterialNode, PageSchema } from '@hcxz/schema'
 import type { SnapLine, SnapSource } from '../types'
-import { getRotatedAABB, snapToGrid } from '@easyink/core'
+import { getRotatedAABB, snapToGrid } from '@hcxz/core'
 
 /**
  * Snap engine: candidate-collection + best-pick model.

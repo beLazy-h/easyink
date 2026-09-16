@@ -1,7 +1,7 @@
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
-import type { BindingRef, DocumentSchema, MaterialNode } from '@easyink/schema'
-import { getBindingRefs } from '@easyink/schema'
-import { deepClone, FIELD_PATH_SEPARATOR } from '@easyink/shared'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
+import type { BindingRef, DocumentSchema, MaterialNode } from '@hcxz/schema'
+import { getBindingRefs } from '@hcxz/schema'
+import { deepClone, FIELD_PATH_SEPARATOR } from '@hcxz/shared'
 
 /**
  * Alignment result.

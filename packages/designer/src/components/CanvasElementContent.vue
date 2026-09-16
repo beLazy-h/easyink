@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { MaterialDesignerRenderContext, MaterialDesignerRenderContextSignal } from '@easyink/core'
+import type { MaterialDesignerRenderContext, MaterialDesignerRenderContextSignal } from '@hcxz/core'
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useDesignerStore } from '../composables'
 import { createNodeSignal } from '../materials/create-node-signal'

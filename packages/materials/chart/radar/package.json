@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/material-chart-radar",
+  "name": "@hcxz/material-chart-radar",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "EasyInk radar chart material",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,10 +22,10 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/core": "workspace:*",
-    "@easyink/material-chart-kernel": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*"
+    "@hcxz/core": "workspace:*",
+    "@hcxz/material-chart-kernel": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*"
   },
   "inlinedDependencies": {
     "echarts": "6.1.0"

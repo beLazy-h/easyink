@@ -1,6 +1,6 @@
 import type { DesignerStore } from '../store/designer-store'
 import type { GestureContext } from './gesture-context'
-import { isInteractable, isSelectable } from '@easyink/core'
+import { isInteractable, isSelectable } from '@hcxz/core'
 import { ref } from 'vue'
 import { useElementDrag } from '../composables/use-element-drag'
 import { createGeometryService } from '../editing/geometry-service'

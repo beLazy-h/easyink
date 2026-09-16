@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/material-table-data",
+  "name": "@hcxz/material-table-data",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "EasyInk table-data material",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,10 +22,10 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/core": "workspace:*",
-    "@easyink/material-table-kernel": "workspace:*",
-    "@easyink/prop-schemas": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*"
+    "@hcxz/core": "workspace:*",
+    "@hcxz/material-table-kernel": "workspace:*",
+    "@hcxz/prop-schemas": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*"
   }
 }

@@ -10,7 +10,7 @@ const packageRoots = [
   resolve(repoRoot, 'packages'),
   resolve(repoRoot, 'internal-packages'),
 ]
-const defaultEntries = ['@easyink/viewer', '@easyink/builtin']
+const defaultEntries = ['@hcxz/viewer', '@hcxz/builtin']
 const runtimeDependencySections = ['dependencies', 'optionalDependencies']
 const peerDependencySections = ['peerDependencies']
 const ignoredDirs = new Set(['.git', '.turbo', 'dist', 'node_modules'])
@@ -99,13 +99,13 @@ Resolve pnpm publicHoistPattern entries needed by preserveSymlinks=true hosts.
 
 Options:
   --format yaml|list|json    Output format. Default: yaml
-  --no-collapse-easyink      Print every @easyink package instead of @easyink/*
+  --no-collapse-easyink      Print every @hcxz package instead of @hcxz/*
   -h, --help                 Show this help
 
 Examples:
   node ./scripts/resolve-hoist-patterns.mjs
-  node ./scripts/resolve-hoist-patterns.mjs @easyink/viewer @easyink/builtin
-  node ./scripts/resolve-hoist-patterns.mjs --format list @easyink/builtin
+  node ./scripts/resolve-hoist-patterns.mjs @hcxz/viewer @hcxz/builtin
+  node ./scripts/resolve-hoist-patterns.mjs --format list @hcxz/builtin
 `)
 }
 
@@ -267,7 +267,7 @@ function createHoistPatterns({ collapseEasyink, entries, hoistPackages }) {
   let hasEasyinkPackage = false
 
   for (const packageName of names) {
-    if (collapseEasyink && packageName.startsWith('@easyink/')) {
+    if (collapseEasyink && packageName.startsWith('@hcxz/')) {
       hasEasyinkPackage = true
       continue
     }
@@ -276,7 +276,7 @@ function createHoistPatterns({ collapseEasyink, entries, hoistPackages }) {
   }
 
   if (hasEasyinkPackage)
-    patterns.unshift('@easyink/*')
+    patterns.unshift('@hcxz/*')
 
   return patterns
 }

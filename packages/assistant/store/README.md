@@ -1,4 +1,4 @@
-# @easyink/assistant-store
+# @hcxz/assistant-store
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-store?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-store) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-store?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-store)
 

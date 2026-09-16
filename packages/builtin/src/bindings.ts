@@ -1,10 +1,10 @@
-import type { MaterialBindingDefinition } from '@easyink/core'
-import { CHART_BAR_DATA_CONTRACT } from '@easyink/material-chart-bar'
-import { CHART_GAUGE_DATA_CONTRACT } from '@easyink/material-chart-gauge'
-import { CHART_LINE_DATA_CONTRACT } from '@easyink/material-chart-line'
-import { CHART_PIE_DATA_CONTRACT } from '@easyink/material-chart-pie'
-import { CHART_RADAR_DATA_CONTRACT } from '@easyink/material-chart-radar'
-import { CHART_SCATTER_DATA_CONTRACT } from '@easyink/material-chart-scatter'
+import type { MaterialBindingDefinition } from '@hcxz/core'
+import { CHART_BAR_DATA_CONTRACT } from '@hcxz/material-chart-bar'
+import { CHART_GAUGE_DATA_CONTRACT } from '@hcxz/material-chart-gauge'
+import { CHART_LINE_DATA_CONTRACT } from '@hcxz/material-chart-line'
+import { CHART_PIE_DATA_CONTRACT } from '@hcxz/material-chart-pie'
+import { CHART_RADAR_DATA_CONTRACT } from '@hcxz/material-chart-radar'
+import { CHART_SCATTER_DATA_CONTRACT } from '@hcxz/material-chart-scatter'
 
 export const noMaterialBinding = { kind: 'none' } satisfies MaterialBindingDefinition
 export const customMaterialBinding = { kind: 'custom' } satisfies MaterialBindingDefinition

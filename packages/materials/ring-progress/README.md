@@ -1,3 +1,3 @@
-# @easyink/material-ring-progress
+# @hcxz/material-ring-progress
 
 Ring progress material for EasyInk.

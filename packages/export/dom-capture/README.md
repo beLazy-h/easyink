@@ -1,4 +1,4 @@
-# @easyink/export-dom-capture
+# @hcxz/export-dom-capture
 
 Shared DOM capture utilities for EasyInk browser export plugins.
 

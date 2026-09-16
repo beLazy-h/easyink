@@ -1,5 +1,5 @@
-import type { TableNode } from '@easyink/schema'
-import { normalizeDocumentSchema } from '@easyink/schema'
+import type { TableNode } from '@hcxz/schema'
+import { normalizeDocumentSchema } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { canResizeTableDataRow, createTableDataExtension } from './designer'
 import { createTableDataNode } from './schema'

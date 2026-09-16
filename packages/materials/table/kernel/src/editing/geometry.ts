@@ -1,7 +1,7 @@
-import type { MaterialGeometry, Selection } from '@easyink/core'
-import type { MaterialNode, TableNode } from '@easyink/schema'
+import type { MaterialGeometry, Selection } from '@hcxz/core'
+import type { MaterialNode, TableNode } from '@hcxz/schema'
 import type { TableCellPayload, TableEditingDelegate } from './types'
-import { isTableNode } from '@easyink/schema'
+import { isTableNode } from '@hcxz/schema'
 import { computeCellRect, computeColumnWidths, computeRowScaleWithVirtualRows, hitTestGridCell } from '../geometry'
 import { resolveMergeOwner } from '../topology'
 

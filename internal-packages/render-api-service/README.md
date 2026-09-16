@@ -1,4 +1,4 @@
-# @easyink/render-api-service
+# @hcxz/render-api-service
 
 Internal h3-based Node HTTP facade for `EasyInk.Render`.
 
@@ -7,8 +7,8 @@ Internal h3-based Node HTTP facade for `EasyInk.Render`.
 ## Start
 
 ```bash
-pnpm -F @easyink/render-api-service build
-pnpm -F @easyink/render-api-service start
+pnpm -F @hcxz/render-api-service build
+pnpm -F @hcxz/render-api-service start
 ```
 
 Configuration can come from shell environment variables or dotenv files in the current working directory. For local development, copy `.env.sample` to `.env.local` and adjust values as needed.
@@ -24,14 +24,14 @@ So the usual local flow is:
 
 ```bash
 ./lib/EasyInk.Render/build-host.sh darwin-arm64
-pnpm -F @easyink/render-api-service build
-pnpm -F @easyink/render-api-service start
+pnpm -F @hcxz/render-api-service build
+pnpm -F @hcxz/render-api-service start
 ```
 
 Development:
 
 ```bash
-pnpm -F @easyink/render-api-service dev
+pnpm -F @hcxz/render-api-service dev
 ```
 
 ## Docker
@@ -71,13 +71,13 @@ retention.
 
 ## Render Smoke Test
 
-The Docker smoke test imports `@easyink/samples`, builds a request from
+The Docker smoke test imports `@hcxz/samples`, builds a request from
 `supermarketReceiptTemplate` and `supermarketDemoData`, compiles the Linux
 Render host in `golang:1.23-bookworm`, then renders the receipt in
 the Playwright Chromium image.
 
 ```bash
-pnpm -F @easyink/render-api-service test:render-smoke
+pnpm -F @hcxz/render-api-service test:render-smoke
 ```
 
 The generated PDF and diagnostics are written to:
@@ -264,7 +264,7 @@ Use this to load a diagnostics id returned by Render, or a URL-encoded diagnosti
 ## TypeScript Usage
 
 ```ts
-import { createRenderApiServer } from '@easyink/render-api-service'
+import { createRenderApiServer } from '@hcxz/render-api-service'
 
 const service = createRenderApiServer()
 

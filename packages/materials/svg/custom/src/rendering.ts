@@ -1,5 +1,5 @@
 import type { SvgCustomProps } from './schema'
-import { escapeAttr, escapeHtml } from '@easyink/shared'
+import { escapeAttr, escapeHtml } from '@hcxz/shared'
 import { sanitizeSvgContent } from './sanitize'
 
 const SVG_NS = 'http://www.w3.org/2000/svg'

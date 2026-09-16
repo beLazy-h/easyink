@@ -67,7 +67,7 @@ Material rules:
 - Do not add new behavior branches keyed only on `page.mode`; read the owning page strategy field: `page.pageModel`, `page.layout`, `page.reflow`, or `page.pagination`.
 - New runtime behavior should go through `runLayoutPipeline()` and `runPagination()`.
 
-`page.layers` is separate from those behavior fields. It is a page-level render-layer array for non-element, non-editable, non-bindable page decorations such as text watermarks. It is resolved by `@easyink/core` into layer render plans and consumed by Designer/Viewer. Material code should not use `page.layers` as a material feature hook or custom extension point.
+`page.layers` is separate from those behavior fields. It is a page-level render-layer array for non-element, non-editable, non-bindable page decorations such as text watermarks. It is resolved by `@hcxz/core` into layer render plans and consumed by Designer/Viewer. Material code should not use `page.layers` as a material feature hook or custom extension point.
 
 ## Node Layout Behavior
 
@@ -182,10 +182,10 @@ Built-in materials:
 - Add package imports and entries in `packages/builtin/src/designer.ts`.
 - Add Viewer registration in `packages/builtin/src/viewer.ts`.
 - Do not add default condition capability registrations. Conditional rendering is a framework default for all materials. Only set `condition: false` to opt out, or set a `hiddenEffects` override to narrow `remove/reserve` support.
-- Keep the public `@easyink/builtin` export surface aligned. `package.json` only exposes the root entry plus `./all`, `./basic`, `./none`, and `./package.json`; `src/designer.ts`, `src/viewer.ts`, and `src/bindings.ts` are internal sources, not public subpaths.
-- Root exports should expose the all-set legacy aliases plus explicit all/basic/none bundle aliases and Viewer registration helpers. `@easyink/builtin/all` exposes every built-in material; `@easyink/builtin/basic` must only import the reduced set it registers; `@easyink/builtin/none` must stay empty.
+- Keep the public `@hcxz/builtin` export surface aligned. `package.json` only exposes the root entry plus `./all`, `./basic`, `./none`, and `./package.json`; `src/designer.ts`, `src/viewer.ts`, and `src/bindings.ts` are internal sources, not public subpaths.
+- Root exports should expose the all-set legacy aliases plus explicit all/basic/none bundle aliases and Viewer registration helpers. `@hcxz/builtin/all` exposes every built-in material; `@hcxz/builtin/basic` must only import the reduced set it registers; `@hcxz/builtin/none` must stay empty.
 - Add `aiDescriptor` to the Designer material registration when generation should know it. Assistant consumes the live Designer material manifest; do not add material-specific prompt rules.
-- Add `@easyink/material-x` dependency to `packages/builtin/package.json`.
+- Add `@hcxz/material-x` dependency to `packages/builtin/package.json`.
 
 ## Catalog and Capabilities
 
@@ -201,7 +201,7 @@ Built-in materials:
 - `createDefaultNode`: default schema factory.
 - `factory`: synchronous Designer extension factory or a lightweight placeholder when `lazyFactory` is present.
 - `lazyFactory`: optional async Designer factory loader for heavyweight renderers. Do not use it for Viewer registration or material metadata.
-- `propSchemas`: the complete material-owned property schema list for the material. Use `@easyink/prop-schemas` only for shared option arrays and layout behavior helpers.
+- `propSchemas`: the complete material-owned property schema list for the material. Use `@hcxz/prop-schemas` only for shared option arrays and layout behavior helpers.
 - `localeMessages`: material-owned Designer locale messages for catalog labels, property labels, material-local actions, placeholders, history labels, and data-contract labels.
 - `sectionFilter`: hide or show property panel sections.
 

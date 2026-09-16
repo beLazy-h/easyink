@@ -8,7 +8,7 @@ description: EasyInk API 索引：快速定位公开能力的包入口，涵盖 
 
 如果你已经知道自己要找什么函数、类型或类，可以直接在这里定位包入口，再回到对应章节看用法。
 
-## @easyink/designer
+## @hcxz/designer
 
 设计器组件和相关工具。
 
@@ -30,7 +30,7 @@ description: EasyInk API 索引：快速定位公开能力的包入口，涵盖 
 
 类型导出：`DocumentSchema`, `DocumentSchemaInput`, `MaterialNode`, `DataSourceDescriptor`, `Contribution`, `ContributionContext`, `Command`, `PanelDescriptor`, `ToolbarActionDescriptor`, `DesignerConfirmRequest`, `DesignerConfirmSeverity`, `DesignerInteractionProvider`, `DesignerMaterialBundle`, `DesignerMaterialRegistration`, `DesignerCatalogGroupRegistration`, `DesignerCatalogRegistration`, `MaterialCatalogGroup`, `MaterialCatalogEntry`, `MaterialCapabilities`, `MaterialExtensionFactory`, `LazyMaterialExtensionFactory`, `MaterialBindingDefinition`, `TemplateAutoSaveOptions`, `PreferenceProvider`, `PersistableWorkbenchState`, `LocaleMessages`, `FontDescriptor`, `FontProvider`
 
-## @easyink/core
+## @hcxz/core
 
 共享核心能力。
 
@@ -45,7 +45,7 @@ description: EasyInk API 索引：快速定位公开能力的包入口，涵盖 
 
 物料扩展类型导出：`MaterialDesignerExtension`, `MaterialExtensionFactory`, `LazyMaterialExtensionFactory`, `MaterialBindingDefinition`, `MaterialViewerExtension`, `ViewerRenderContext`, `ViewerMeasureContext`, `PropSchema`
 
-## @easyink/viewer
+## @hcxz/viewer
 
 独立的预览/打印/导出引擎。
 
@@ -68,19 +68,19 @@ description: EasyInk API 索引：快速定位公开能力的包入口，涵盖 
 
 类型导出：`ViewerHost`, `ViewerOptions`, `ViewerOpenInput`, `ViewerRenderResult`, `ViewerDiagnosticEvent`, `PrintDriver`, `ViewerPrintOptions`, `ViewerPrintPolicy`, `ViewerPrintContext`, `ViewerExporter`, `ViewerExportContext`, `ViewerExportOptions`, `ViewerTaskCallbacks`, `ViewerTaskPhaseEvent`, `ViewerTaskProgressEvent`, `MaterialViewerExtension`, `ViewerRenderContext`, `ViewerMeasureContext`, `FontDescriptor`, `FontProvider`
 
-## @easyink/builtin
+## @hcxz/builtin
 
-官方内置物料集合。推荐从子路径选择集合：`@easyink/builtin/all`、`@easyink/builtin/basic`、`@easyink/builtin/none`；根入口 `@easyink/builtin` 兼容默认导出全部内置物料，并额外提供 all/basic/none 的显式别名。
+官方内置物料集合。推荐从子路径选择集合：`@hcxz/builtin/all`、`@hcxz/builtin/basic`、`@hcxz/builtin/none`；根入口 `@hcxz/builtin` 兼容默认导出全部内置物料，并额外提供 all/basic/none 的显式别名。
 
 公开入口只有：
 
-- `@easyink/builtin`
-- `@easyink/builtin/all`
-- `@easyink/builtin/basic`
-- `@easyink/builtin/none`
-- `@easyink/builtin/package.json`
+- `@hcxz/builtin`
+- `@hcxz/builtin/all`
+- `@hcxz/builtin/basic`
+- `@hcxz/builtin/none`
+- `@hcxz/builtin/package.json`
 
-`@easyink/builtin/designer`、`@easyink/builtin/viewer`、`@easyink/builtin/bindings` 不是公开入口。
+`@hcxz/builtin/designer`、`@hcxz/builtin/viewer`、`@hcxz/builtin/bindings` 不是公开入口。
 
 | 导出 | 类型 | 说明 |
 |------|------|------|
@@ -95,7 +95,7 @@ description: EasyInk API 索引：快速定位公开能力的包入口，涵盖 
 
 类型导出：`BuiltinMaterialSet`, `BuiltinDesignerMaterialBundle`, `BuiltinDesignerMaterialRegistration`, `BuiltinDesignerCatalogGroupRegistration`, `BuiltinDesignerCatalogRegistration`, `BuiltinViewerMaterialBundle`, `BuiltinViewerMaterialRegistration`, `BuiltinViewerRegistrar`, `BuiltinLocaleMessages`
 
-## @easyink/schema
+## @hcxz/schema
 
 文档 Schema 类型定义和工具。
 
@@ -117,7 +117,7 @@ description: EasyInk API 索引：快速定位公开能力的包入口，涵盖 
 
 类型导出：`DocumentSchema`, `DocumentSchemaInput`, `DocumentMeta`, `PageSchema`, `PageModelConfig`, `DocumentLayoutConfig`, `PaginationConfig`, `ReflowConfig`, `MaterialNode`, `TableNode`, `TableSchema`, `BindingRef`, `AnimationSchema`, `SchemaValidationIssue`, `SchemaDeserializeError`
 
-## @easyink/export-runtime
+## @hcxz/export-runtime
 
 导出运行时框架。
 
@@ -128,7 +128,7 @@ description: EasyInk API 索引：快速定位公开能力的包入口，涵盖 
 
 类型导出：`ExportFormatPlugin`, `ExportRuntimeContext`, `ExportDiagnostic`, `ExportProgress`
 
-## @easyink/export-dom-capture
+## @hcxz/export-dom-capture
 
 DOM 捕获共享工具，供浏览器端导出插件复用。
 
@@ -143,7 +143,7 @@ DOM 捕获共享工具，供浏览器端导出插件复用。
 
 类型导出：`CanvasCaptureOptions`, `ForeignObjectCaptureOptions`, `CropForeignObjectOffsetOptions`
 
-## @easyink/export-plugin-dom-pdf
+## @hcxz/export-plugin-dom-pdf
 
 DOM-to-PDF 导出插件。
 
@@ -155,7 +155,7 @@ DOM-to-PDF 导出插件。
 
 类型导出：`DomPdfExportInput`, `DomPdfExportPluginOptions`, `RenderPagesToPdfOptions`, `JsPDF`
 
-## @easyink/export-plugin-dom-image
+## @hcxz/export-plugin-dom-image
 
 DOM-to-image 导出插件。
 
@@ -169,7 +169,7 @@ DOM-to-image 导出插件。
 
 类型导出：`DomImageExportInput`, `DomImageExportPluginOptions`, `ImageMimeType`, `ImagePageSize`, `RenderPageToImageOptions`, `RenderPagesToImageBlobOptions`, `RenderPagesToImageOptions`
 
-## @easyink/datasource
+## @hcxz/datasource
 
 数据源管理。
 
@@ -189,7 +189,7 @@ DOM-to-image 导出插件。
 
 类型导出：`DataSourceDescriptor`, `DataFieldNode`, `DataFieldDisplayFormatConfig`, `DataFieldCustomFormatTemplate`, `DataFieldLookup`, `DataUnionBinding`, `DataSourceProviderFactory`, `ResolvedDataSourceEntry`, `DataSourceChangeCallback`
 
-## @easyink/print-core
+## @hcxz/print-core
 
 打印驱动共享工具。
 
@@ -209,7 +209,7 @@ DOM-to-image 导出插件。
 
 类型导出：`PrintDriverRequestContext`, `PrintDriverBaseOptions`, `ManagedPrintViewerSetup`, `ManagedPrintViewerOptions`, `ManagedPrintViewer`, `ManagedPrintInput`, `PrinterDeviceLike`, `PrintJobLike`, `ViewerPdfPageSize`, `ViewerPdfPageInput`
 
-## @easyink/print-integration-easyink-printer
+## @hcxz/print-integration-easyink-printer
 
 EasyInk.Printer 官方前端集成。
 
@@ -227,7 +227,7 @@ EasyInk.Printer 官方前端集成。
 
 类型导出：`EasyInkPrinterClientOptions`, `EasyInkPrinterConnectionState`, `EasyInkPrinterDevice`, `EasyInkPrinterJob`, `EasyInkPrinterOffset`, `EasyInkPrinterPaperSize`, `EasyInkPrinterUserData`, `EasyInkPaperSize`, `EasyInkPrinterDefaults`, `EasyInkPrinterOptions`, `EasyInkPrinter`, `EasyInkPrinterPrintInput`, `EasyInkPrinterPrintPdfInput`, `EasyInkPrinterPrintHtmlInput`, `EasyInkPrintStrategy`, `EasyInkPrinterDriverOptions`
 
-## @easyink/print-integration-hiprint
+## @hcxz/print-integration-hiprint
 
 electron-hiprint 官方前端集成。
 
@@ -243,7 +243,7 @@ electron-hiprint 官方前端集成。
 
 类型导出：`HiPrintClientOptions`, `HiPrintRuntimeClientOptions`, `HiPrintClientLike`, `HiPrintDevice`, `HiPrintPrinterOptions`, `HiPrintPrinter`, `HiPrintPrintRequest`, `PrintHtmlOptions`, `PrintPagesOptions`, `HiPrintProgress`
 
-## @easyink/print-integration-lodop
+## @hcxz/print-integration-lodop
 
 LODOP/C-Lodop 官方前端集成。
 

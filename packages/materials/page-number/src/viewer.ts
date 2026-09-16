@@ -1,9 +1,9 @@
-import type { ViewerRenderContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { ViewerRenderContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { PageNumberProps } from './schema'
-import { trustedViewerHtml } from '@easyink/core'
-import { getNodeProps } from '@easyink/schema'
-import { escapeHtml } from '@easyink/shared'
+import { trustedViewerHtml } from '@hcxz/core'
+import { getNodeProps } from '@hcxz/schema'
+import { escapeHtml } from '@hcxz/shared'
 import { formatPageNumberDisplay } from './rendering'
 
 export function renderPageNumber(node: MaterialNode, context: ViewerRenderContext) {

@@ -1,4 +1,4 @@
-import type { AssistantEventRecord } from '@easyink/assistant-store'
+import type { AssistantEventRecord } from '@hcxz/assistant-store'
 import { describe, expect, it } from 'vitest'
 import { inferSourceFromText, projectChecklist, projectNarration } from './projection'
 

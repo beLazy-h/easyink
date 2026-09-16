@@ -1,5 +1,5 @@
 import type { TextProps } from './schema'
-import { escapeAttr } from '@easyink/shared'
+import { escapeAttr } from '@hcxz/shared'
 import { resolveTextProps } from './layout'
 
 export function resolveTextWritingMode(props: Partial<Pick<TextProps, 'writingMode'>>): TextProps['writingMode'] {

@@ -1,5 +1,5 @@
 import type { SignaturePoint, SignaturePointGroup, SignatureProps } from './schema'
-import { escapeAttr } from '@easyink/shared'
+import { escapeAttr } from '@hcxz/shared'
 
 function escapeText(value: string): string {
   return value

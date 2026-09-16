@@ -17,10 +17,10 @@ description: 5 分钟跑通 EasyInk 最小示例：嵌入 Designer、生成 Sche
 先安装两个最常用的包：
 
 ```bash
-pnpm add @easyink/designer @easyink/viewer @easyink/builtin
+pnpm add @hcxz/designer @hcxz/viewer @hcxz/builtin
 ```
 
-上面这些包已经覆盖了大多数业务的第一阶段接入。`@easyink/builtin` 提供官方内置物料，你可以按子路径选择接入范围。关于其它包怎么选，后面再看 [包概览](/guide/packages) 就行。
+上面这些包已经覆盖了大多数业务的第一阶段接入。`@hcxz/builtin` 提供官方内置物料，你可以按子路径选择接入范围。关于其它包怎么选，后面再看 [包概览](/guide/packages) 就行。
 
 ## Designer 入门
 
@@ -31,10 +31,10 @@ pnpm add @easyink/designer @easyink/viewer @easyink/builtin
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import { builtinDesignerMaterialBundle } from '@easyink/builtin/all'
-import { EasyInkDesigner, createLocalStoragePreferenceProvider } from '@easyink/designer'
-import { zhCN } from '@easyink/designer/locale'
-import '@easyink/designer/index.css'
+import { builtinDesignerMaterialBundle } from '@hcxz/builtin/all'
+import { EasyInkDesigner, createLocalStoragePreferenceProvider } from '@hcxz/designer'
+import { zhCN } from '@hcxz/designer/locale'
+import '@hcxz/designer/index.css'
 
 const schema = ref({
   unit: 'mm',
@@ -79,7 +79,7 @@ const runtimeConfig = {
 EasyInk 用 `DataSourceDescriptor` 描述一棵字段树。Designer 只消费这个字段树本身，不会替你请求业务数据。
 
 ```ts
-import type { DataSourceDescriptor } from '@easyink/designer'
+import type { DataSourceDescriptor } from '@hcxz/designer'
 
 const dataSources: DataSourceDescriptor[] = [
   {
@@ -150,8 +150,8 @@ Viewer 是命令式运行时。你创建实例，调用 `open({ schema, data })`
 ```vue
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createViewer } from '@easyink/viewer'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createViewer } from '@hcxz/viewer'
 
 const props = defineProps<{
   schema: Record<string, unknown>

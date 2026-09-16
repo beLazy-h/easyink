@@ -23,7 +23,7 @@ samples/    html/easyink 请求示例
 tools/      发布包和 manifest 辅助脚本
 ```
 
-Render 专用的 pnpm 内部包位于仓库根级 `internal-packages/viewer-runtime`，和 `packages/` 平级。该包会把 `@easyink/viewer` 打包成 host 可 embed 的 HTML runtime。
+Render 专用的 pnpm 内部包位于仓库根级 `internal-packages/viewer-runtime`，和 `packages/` 平级。该包会把 `@hcxz/viewer` 打包成 host 可 embed 的 HTML runtime。
 
 生成的 runtime bundle 会放到 `host/internal/easyink/runtime/easyink-viewer/`，该目录是构建产物，不提交到 Git。运行 Go 测试、Docker image build 或 host 发布包构建前，先执行 `pnpm render:runtime`；`pnpm render:manifest`、`pnpm render:host:docker`、`build-host.sh` 和 CI 会自动完成这一步。
 

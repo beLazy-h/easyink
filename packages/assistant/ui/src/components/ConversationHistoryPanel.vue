@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { AssistantConversationRecord } from '@easyink/assistant-store'
+import type { AssistantConversationRecord } from '@hcxz/assistant-store'
 import type { AssistantTranslate } from '../i18n'
-import { IconCheck, IconDelete } from '@easyink/icons'
+import { IconCheck, IconDelete } from '@hcxz/icons'
 import { computed, ref } from 'vue'
 import { translateAssistant } from '../i18n'
 import { conversationStatusLabel, formatConversationTime } from '../utils/conversation'

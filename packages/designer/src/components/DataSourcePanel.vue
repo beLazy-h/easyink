@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
-import { IconClose, IconListCollapse, IconListExpand, IconSearch } from '@easyink/icons'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
+import { IconClose, IconListCollapse, IconListExpand, IconSearch } from '@hcxz/icons'
 import { computed, reactive, ref, watch } from 'vue'
 import { useDesignerStore } from '../composables'
 import DataSourceTree from './datasource/DataSourceTree.vue'

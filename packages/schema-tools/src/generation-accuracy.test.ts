@@ -1,5 +1,5 @@
-import type { DocumentSchema } from '@easyink/schema'
-import type { AIGenerationPlan } from '@easyink/shared'
+import type { DocumentSchema } from '@hcxz/schema'
+import type { AIGenerationPlan } from '@hcxz/shared'
 import { describe, expect, it } from 'vitest'
 import { repairGeneratedSchema, validateGeneratedSchemaAccuracy } from './generation-accuracy'
 

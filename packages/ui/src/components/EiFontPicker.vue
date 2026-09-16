@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconCheck, IconExport, IconLoader } from '@easyink/icons'
+import { IconCheck, IconExport, IconLoader } from '@hcxz/icons'
 import { computed } from 'vue'
 import EiSelect from './EiSelect.vue'
 

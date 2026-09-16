@@ -1,4 +1,4 @@
-import type { MaterialDataContract } from '@easyink/core'
+import type { MaterialDataContract } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import {
   applyMaterialDataFieldMapping,

@@ -87,7 +87,7 @@ Designer 不依赖任何 assistant 包。assistant-designer-bridge 单向注入 
 
 ```ts
 // packages/materials/text/src/ai.ts
-import type { AIMaterialDescriptor } from '@easyink/shared'
+import type { AIMaterialDescriptor } from '@hcxz/shared'
 
 export const textAIMaterialDescriptor = {
   type: 'text',
@@ -302,10 +302,10 @@ Orchestrator 使用 `buildAssistantPluginContext(selection, { target })` 将启�
 官方插件以独立包发布，宿主按需注册：
 
 ```ts
-import { createAssistantContribution } from '@easyink/assistant-designer-bridge'
-import { placeholderImagesPlugin } from '@easyink/assistant-plugin-placeholder-images'
-import { prototypeDesignerPlugin } from '@easyink/assistant-plugin-prototype-designer'
-import { receiptDesignerPlugin } from '@easyink/assistant-plugin-receipt-designer'
+import { createAssistantContribution } from '@hcxz/assistant-designer-bridge'
+import { placeholderImagesPlugin } from '@hcxz/assistant-plugin-placeholder-images'
+import { prototypeDesignerPlugin } from '@hcxz/assistant-plugin-prototype-designer'
+import { receiptDesignerPlugin } from '@hcxz/assistant-plugin-receipt-designer'
 
 createAssistantContribution({
   plugins: [
@@ -320,9 +320,9 @@ createAssistantContribution({
 
 | 包 | 插件 | 能力 |
 |----|------|------|
-| `@easyink/assistant-plugin-placeholder-images` | 占位图助手 | 原型/H5/海报缺少图片素材时，提示 Schema Agent 使用 `https://picsum.photos/{width}/{height}` |
-| `@easyink/assistant-plugin-prototype-designer` | 专业原型设计师 | 强化屏幕原型、H5、产品 UI 的页面单位、层级、占位内容和视觉完整度 |
-| `@easyink/assistant-plugin-receipt-designer` | 专业小票设计师 | 强化热敏小票的连续纸、窄纸宽、金额对齐、信息密度和打印可读性 |
+| `@hcxz/assistant-plugin-placeholder-images` | 占位图助手 | 原型/H5/海报缺少图片素材时，提示 Schema Agent 使用 `https://picsum.photos/{width}/{height}` |
+| `@hcxz/assistant-plugin-prototype-designer` | 专业原型设计师 | 强化屏幕原型、H5、产品 UI 的页面单位、层级、占位内容和视觉完整度 |
+| `@hcxz/assistant-plugin-receipt-designer` | 专业小票设计师 | 强化热敏小票的连续纸、窄纸宽、金额对齐、信息密度和打印可读性 |
 
 接入方式和运行示例见 [docs/designer/assistant.md](../../docs/designer/assistant.md)。
 
@@ -535,7 +535,7 @@ Agent 工具注册表：
 
 ## 25.10 与周边架构的关系
 
-- `@easyink/schema-tools`：继续保留，被 orchestrator 和 capabilities 消费
+- `@hcxz/schema-tools`：继续保留，被 orchestrator 和 capabilities 消费
 - Contribution 机制：继续使用，是 assistant 接入 Designer 的唯一通道
 - Assistant 插件系统：仅增强 Assistant 任务上下文，不替代 Designer Contribution、物料注册或导出插件体系
 

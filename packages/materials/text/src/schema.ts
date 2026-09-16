@@ -1,6 +1,6 @@
-import type { MaterialConditionDefinition } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
-import { convertUnit, generateId } from '@easyink/shared'
+import type { MaterialConditionDefinition } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
+import { convertUnit, generateId } from '@hcxz/shared'
 
 export const TEXT_CONDITION: MaterialConditionDefinition = { scope: 'node', hiddenEffects: ['remove', 'reserve'] }
 

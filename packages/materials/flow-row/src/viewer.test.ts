@@ -1,5 +1,5 @@
 import type { FlowRowProps } from './schema'
-import { readTrustedViewerHtml } from '@easyink/core'
+import { readTrustedViewerHtml } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import { isFlowRowRuntimeRepeating, renderFlowRowsHtml } from './rendering'
 import { createFlowRowNode, FLOW_ROW_DEFAULTS } from './schema'

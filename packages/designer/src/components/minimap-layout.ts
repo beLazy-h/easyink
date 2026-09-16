@@ -1,6 +1,6 @@
-import type { EditorSurfacePlan, Rect } from '@easyink/core'
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
-import { getEditorSurfacePageLeft, projectDocumentPointToEditorSurface } from '@easyink/core'
+import type { EditorSurfacePlan, Rect } from '@hcxz/core'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
+import { getEditorSurfacePageLeft, projectDocumentPointToEditorSurface } from '@hcxz/core'
 
 export interface MinimapPageFrame extends Rect {
   key: string

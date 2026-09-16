@@ -9,8 +9,8 @@ Contribution 用来把宿主能力挂到 Designer 上，而不修改 Designer �
 先看一个最小按钮：
 
 ```ts
-import type { Contribution } from '@easyink/designer'
-import { IconSparkles } from '@easyink/icons'
+import type { Contribution } from '@hcxz/designer'
+import { IconSparkles } from '@hcxz/icons'
 
 export const helloContribution: Contribution = {
   id: 'demo.hello',
@@ -97,7 +97,7 @@ interface ContributionContext {
 
 如果只记一条分层原则：面板和按钮负责入口，真正可复用的动作收敛成命令。
 
-`ctx.store` 还提供 contribution 文案注册能力。外部 contribution 的 UI 文案应放在 contribution 包里注册，不要追加到 `@easyink/locales`：
+`ctx.store` 还提供 contribution 文案注册能力。外部 contribution 的 UI 文案应放在 contribution 包里注册，不要追加到 `@hcxz/locales`：
 
 ```ts
 const unregister = ctx.store.registerLocaleMessages({
@@ -234,8 +234,8 @@ const svg = await ctx.pickFileText({
 Contribution 可以注册自己的语义文案：
 
 ```ts
-import type { Contribution } from '@easyink/designer'
-import { IconSparkles } from '@easyink/icons'
+import type { Contribution } from '@hcxz/designer'
+import { IconSparkles } from '@hcxz/icons'
 
 const messages = {
   messages: {
@@ -303,7 +303,7 @@ export const reviewContribution: Contribution = {
 />
 ```
 
-这套机制的边界是：`@easyink/locales` 只维护 Designer 内置文案；contribution 包维护自己的文案，并在激活时注册。
+这套机制的边界是：`@hcxz/locales` 只维护 Designer 内置文案；contribution 包维护自己的文案，并在激活时注册。
 
 ## 转发诊断 {#diagnostics}
 
@@ -351,8 +351,8 @@ activate(ctx) {
 这版结构接近仓库里的 AI contribution：
 
 ```ts
-import type { Contribution } from '@easyink/designer'
-import { IconSparkles } from '@easyink/icons'
+import type { Contribution } from '@hcxz/designer'
+import { IconSparkles } from '@hcxz/icons'
 import { defineAsyncComponent, ref } from 'vue'
 
 const ReviewPanel = defineAsyncComponent(() => import('./ReviewPanel.vue'))
@@ -423,12 +423,12 @@ ctx.registerCommand({ id: 'review.togglePanel', handler: () => {} })
 
 ## AI Assistant Contribution 实现参考 {#assistant-contribution}
 
-仓库中的 AI 助手是 Contribution 机制的典型应用。它通过 `@easyink/assistant-designer-bridge` 包实现，展示了如何将一个完整的业务系统接入 Designer。
+仓库中的 AI 助手是 Contribution 机制的典型应用。它通过 `@hcxz/assistant-designer-bridge` 包实现，展示了如何将一个完整的业务系统接入 Designer。
 
 ### 注册结构 {#assistant-structure}
 
 ```ts
-import type { Contribution } from '@easyink/designer'
+import type { Contribution } from '@hcxz/designer'
 import { createAssistantMaterialManifest } from './material-manifest'
 
 export function createAssistantContribution(): Contribution {
@@ -454,7 +454,7 @@ export function createAssistantContribution(): Contribution {
       // 3. 注册面板（响应式 props）
       ctx.registerPanel({
         id: 'assistant.panel',
-        component: defineAsyncComponent(() => import('@easyink/assistant-ui')),
+        component: defineAsyncComponent(() => import('@hcxz/assistant-ui')),
         props: {
           get open() { return open.value },
           get currentSchema() { return ctx.store.schema },
@@ -478,4 +478,4 @@ export function createAssistantContribution(): Contribution {
 
 **异步面板加载：** `defineAsyncComponent` 确保 AI 面板的代码不会进入 Designer 的初始 bundle。只有用户点击按钮后才加载。
 
-**文案注册：** Assistant 的中英文文案由 `@easyink/assistant-designer-bridge` 自己维护，并在 contribution 激活时通过 `ctx.store.registerLocaleMessages()` 注册。Designer 内置语言包不需要认识 Assistant。
+**文案注册：** Assistant 的中英文文案由 `@hcxz/assistant-designer-bridge` 自己维护，并在 contribution 激活时通过 `ctx.store.registerLocaleMessages()` 注册。Designer 内置语言包不需要认识 Assistant。

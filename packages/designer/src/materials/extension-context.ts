@@ -1,5 +1,5 @@
-import type { PropertyPanelOverlay } from '@easyink/core'
-import type { BindingRef } from '@easyink/schema'
+import type { PropertyPanelOverlay } from '@hcxz/core'
+import type { BindingRef } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
 import type { MaterialExtensionContext } from '../types'
 import { createTransactionService } from '../editing/transaction-service'

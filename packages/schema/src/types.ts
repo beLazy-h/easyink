@@ -14,7 +14,7 @@ import type {
   ReflowStrategyKind,
   TableRowRole,
   UnitType,
-} from '@easyink/shared'
+} from '@hcxz/shared'
 
 export type PagePrintOrientation = 'auto' | 'portrait' | 'landscape'
 

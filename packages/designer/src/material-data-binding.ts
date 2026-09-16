@@ -5,8 +5,8 @@ export {
   findMaterialDataFieldMapping,
   normalizeMaterialDataBinding,
   swapMaterialDataFieldMappings,
-} from '@easyink/core'
+} from '@hcxz/core'
 export type {
   MaterialDataBindingField,
   MaterialDataMappingAcceptance,
-} from '@easyink/core'
+} from '@hcxz/core'

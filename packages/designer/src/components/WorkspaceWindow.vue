@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { WorkspaceWindowState } from '../types'
-import { IconClose, IconMaximize, IconMinimize } from '@easyink/icons'
+import { IconClose, IconMaximize, IconMinimize } from '@hcxz/icons'
 import { inject } from 'vue'
 import { useDesignerStore } from '../composables/use-designer-store'
 import { useWindowDrag } from '../composables/use-window-drag'

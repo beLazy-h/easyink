@@ -9,7 +9,7 @@ Schema 是 EasyInk 的模板模型。Designer、Viewer、打印和导出最终�
 先看一个最小输入：
 
 ```ts
-import { normalizeDocumentSchema, validateSchemaIssues } from '@easyink/schema'
+import { normalizeDocumentSchema, validateSchemaIssues } from '@hcxz/schema'
 
 const schema = normalizeDocumentSchema({
   page: { width: 80 },
@@ -122,7 +122,7 @@ import {
   isValidSchema,
   serializeSchema,
   validateSchemaIssues,
-} from '@easyink/schema'
+} from '@hcxz/schema'
 
 const json = serializeSchema(schema)
 const restored = deserializeSchema(json)
@@ -144,7 +144,7 @@ if (!isValidSchema(restored)) {
 外部输入不要在业务层手写字段映射。先交给 codec：
 
 ```ts
-import { decodeBenchmarkInput } from '@easyink/schema'
+import { decodeBenchmarkInput } from '@hcxz/schema'
 
 const schema = decodeBenchmarkInput(input)
 ```
@@ -334,7 +334,7 @@ import {
   isTableNode,
   normalizeDocumentSchema,
   validateSchemaIssues,
-} from '@easyink/schema'
+} from '@hcxz/schema'
 ```
 
 它们大致分三类：

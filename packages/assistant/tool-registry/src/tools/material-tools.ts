@@ -1,4 +1,4 @@
-import type { MaterialKnowledgeRegistry } from '@easyink/assistant-material-knowledge'
+import type { MaterialKnowledgeRegistry } from '@hcxz/assistant-material-knowledge'
 import type { ToolDefinition } from '../types'
 import { z } from 'zod'
 

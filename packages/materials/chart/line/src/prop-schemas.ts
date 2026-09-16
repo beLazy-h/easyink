@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const chartLineDesignerPropSchemas: PropSchema[] = [
   { key: 'lineColor', label: 'materials.chartLine.property.lineColor', type: 'color', group: 'appearance' },

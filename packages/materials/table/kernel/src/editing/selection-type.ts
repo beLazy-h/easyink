@@ -1,7 +1,7 @@
-import type { Selection, SelectionType } from '@easyink/core'
-import type { MaterialNode, TableNode } from '@easyink/schema'
+import type { Selection, SelectionType } from '@hcxz/core'
+import type { MaterialNode, TableNode } from '@hcxz/schema'
 import type { TableCellPayload, TableEditingDelegate } from './types'
-import { isTableNode } from '@easyink/schema'
+import { isTableNode } from '@hcxz/schema'
 import { createCellSubPropertySchema } from './cell-property'
 import { computeCellRectWithPlaceholders } from './geometry'
 

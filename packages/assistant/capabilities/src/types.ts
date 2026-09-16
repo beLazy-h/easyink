@@ -1,6 +1,6 @@
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { DocumentSchema } from '@easyink/schema'
-import { AssistantPluginSelectionSchema } from '@easyink/assistant-plugins'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { DocumentSchema } from '@hcxz/schema'
+import { AssistantPluginSelectionSchema } from '@hcxz/assistant-plugins'
 import { z } from 'zod'
 
 export const AssistantWorkflowStepSchema = z.enum([

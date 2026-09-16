@@ -1,6 +1,6 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ProgressProps } from './schema'
-import { escapeAttr, escapeHtml } from '@easyink/shared'
+import { escapeAttr, escapeHtml } from '@hcxz/shared'
 import { PROGRESS_DEFAULTS } from './schema'
 
 interface ProgressRenderOptions {

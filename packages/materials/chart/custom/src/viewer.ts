@@ -1,10 +1,10 @@
-import type { ViewerRenderContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { ViewerRenderContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ChartCustomProps } from './schema'
-import { trustedViewerHtml } from '@easyink/core'
-import { renderFullEChartsSvg } from '@easyink/material-chart-kernel/full'
-import { getBindingRefs, getNodeProps } from '@easyink/schema'
-import { UNIT_FACTOR } from '@easyink/shared'
+import { trustedViewerHtml } from '@hcxz/core'
+import { renderFullEChartsSvg } from '@hcxz/material-chart-kernel/full'
+import { getBindingRefs, getNodeProps } from '@hcxz/schema'
+import { UNIT_FACTOR } from '@hcxz/shared'
 import { resolveChartCustomOption, resolveChartCustomProps } from './options'
 
 export function renderChartCustom(node: MaterialNode, context?: ViewerRenderContext) {

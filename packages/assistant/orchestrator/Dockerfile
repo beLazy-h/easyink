@@ -10,8 +10,8 @@ COPY pnpm-lock.yaml pnpm-workspace.yaml package.json tsconfig.json turbo.json ./
 COPY packages/ packages/
 
 RUN pnpm install --frozen-lockfile
-RUN pnpm turbo build --filter=@easyink/assistant-orchestrator
-RUN pnpm deploy --legacy --filter=@easyink/assistant-orchestrator /deploy
+RUN pnpm turbo build --filter=@hcxz/assistant-orchestrator
+RUN pnpm deploy --legacy --filter=@hcxz/assistant-orchestrator /deploy
 
 FROM node:24-bookworm-slim AS runtime
 

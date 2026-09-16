@@ -1,6 +1,6 @@
-import type { DocumentSchema, DocumentSchemaInput, ViewerDiagnosticEvent } from '@easyink/viewer'
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createViewer, normalizeDocumentSchema } from '@easyink/viewer'
+import type { DocumentSchema, DocumentSchemaInput, ViewerDiagnosticEvent } from '@hcxz/viewer'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createViewer, normalizeDocumentSchema } from '@hcxz/viewer'
 import './polyfills'
 import './style.css'
 

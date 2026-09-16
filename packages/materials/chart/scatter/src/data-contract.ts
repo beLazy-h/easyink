@@ -1,7 +1,7 @@
-import type { ChartScatterPoint } from '@easyink/material-chart-kernel'
-import type { MaterialNode } from '@easyink/schema'
+import type { ChartScatterPoint } from '@hcxz/material-chart-kernel'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ChartScatterProps } from './schema'
-import { resolveMaterialDataContract } from '@easyink/core'
+import { resolveMaterialDataContract } from '@hcxz/core'
 
 export const CHART_SCATTER_DATA_CONTRACT = {
   version: 3,

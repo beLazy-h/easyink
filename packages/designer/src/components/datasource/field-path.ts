@@ -1,4 +1,4 @@
-import type { DataFieldNode } from '@easyink/datasource'
+import type { DataFieldNode } from '@hcxz/datasource'
 
 export function resolveDataFieldPath(field: DataFieldNode, parentPath = ''): string {
   return field.path || [parentPath, field.key || field.name].filter(Boolean).join('/')

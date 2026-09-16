@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { DesignerAssetPickRequest, DesignerResolvedAsset } from '../types'
-import { IconCircleAlert, IconClose, IconImage, IconLoader } from '@easyink/icons'
-import { EiIcon } from '@easyink/ui'
+import { IconCircleAlert, IconClose, IconImage, IconLoader } from '@hcxz/icons'
+import { EiIcon } from '@hcxz/ui'
 import { computed, nextTick, ref, watch } from 'vue'
 import { useDesignerStore } from '../composables'
 

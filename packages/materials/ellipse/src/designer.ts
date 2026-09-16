@@ -1,6 +1,6 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
 import type { EllipseProps } from './schema'
-import { getNodeProps } from '@easyink/schema'
+import { getNodeProps } from '@hcxz/schema'
 import { buildEllipseSvg } from './svg'
 
 export function createEllipseExtension(context: MaterialExtensionContext): MaterialDesignerExtension {

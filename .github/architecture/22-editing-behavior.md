@@ -10,7 +10,7 @@ EasyInk 里有两套同名但不同语义的 selection 模型，必须在阅读�
 
 | 维度 | `SelectionModel`（画布层） | `EditingSession.selection` / `Selection<T>`（物料内部） |
 |---|---|---|
-| 位置 | `@easyink/core/selection.ts` | 22.3 协议 + `@easyink/designer/editing/selection-store.ts` |
+| 位置 | `@hcxz/core/selection.ts` | 22.3 协议 + `@hcxz/designer/editing/selection-store.ts` |
 | 单位 | 画布上的**整个元素**（id 集合） | 物料**内部**的子结构（cell / anchor / legend …） |
 | 多选 | 原生 `Set<string>`，框选/Ctrl 点击/全选都改它 | 单值 `Selection \| null`，范围用 `payload + anchor` 表达 |
 | 是否进入历史 | 否，纯 UI 状态 | 否，session 关闭即丢弃 |
@@ -366,10 +366,10 @@ interface BehaviorRegistration {
 }
 ```
 
-物料在 extension 里声明 `behaviors: BehaviorRegistration[]`。框架级中间件（如 `selectionMiddleware`、`undoBoundaryMiddleware`、`keyboardCursorMiddleware`、`pasteRouterMiddleware`）从 `@easyink/core/behaviors` 导出，物料按需引用：
+物料在 extension 里声明 `behaviors: BehaviorRegistration[]`。框架级中间件（如 `selectionMiddleware`、`undoBoundaryMiddleware`、`keyboardCursorMiddleware`、`pasteRouterMiddleware`）从 `@hcxz/core/behaviors` 导出，物料按需引用：
 
 ```typescript
-import { selectionMiddleware, undoBoundaryMiddleware } from '@easyink/core/behaviors'
+import { selectionMiddleware, undoBoundaryMiddleware } from '@hcxz/core/behaviors'
 
 const tableExt: MaterialDesignerExtension = {
   // ...
@@ -411,7 +411,7 @@ const tableExt: MaterialDesignerExtension = {
 
 ### 22.5.5 与其它扩展协议的关系
 
-`MaterialDesignerExtension` 上还有两个与"编辑期"相关、但**不**走 behavior 中间件总线的扩展点；它们的设计动机与本章一致——把物料特化逻辑收敛到物料包内、保持 `@easyink/core` 与 PropertiesPanel 的中立：
+`MaterialDesignerExtension` 上还有两个与"编辑期"相关、但**不**走 behavior 中间件总线的扩展点；它们的设计动机与本章一致——把物料特化逻辑收敛到物料包内、保持 `@hcxz/core` 与 PropertiesPanel 的中立：
 
 - **`resize?: MaterialResizeAdapter`**（详见 [11.6.1](./11-element-system.md#1161-resize-协议)）：覆盖 element resize handle 期间的物料私有数据同步（如表格行高），并通过 `MaterialResizeSideEffect` 与 `ResizeMaterialCommand` 一起进入 history。
 - **`PropSchema.read / commit`**（详见 [11.4.1](./11-element-system.md#1141-propschemaread--commit-钩子)）：覆盖属性面板的取值与提交。`commit` 接收的 `PropCommitContext` 提供 `flushPendingEdits / activeEditingSession / exitEditingSession`，所以例如"隐藏表头时退出当前 cell 编辑会话"这类副作用由物料自己声明，不再让 PropertiesPanel 硬编码 `if (isTableNode) ...`。

@@ -2,7 +2,7 @@
  * PropSchema declarations for cell-level properties in the property panel overlay.
  * Used by table-data and table-static materials when pushing a cell-selected overlay.
  *
- * Type-compatible with PropSchemaLike from @easyink/core without importing it
+ * Type-compatible with PropSchemaLike from @hcxz/core without importing it
  * (table-kernel deliberately avoids depending on core).
  */
 const FONT_WEIGHT_OPTIONS = [

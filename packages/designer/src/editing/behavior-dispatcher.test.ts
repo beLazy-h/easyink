@@ -1,5 +1,5 @@
-import type { BehaviorContext, BehaviorEvent, BehaviorRegistration, EditingSessionRef, GeometryService, MaterialGeometry, SelectionStore, SurfacesAPI, TransactionAPI } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { BehaviorContext, BehaviorEvent, BehaviorRegistration, EditingSessionRef, GeometryService, MaterialGeometry, SelectionStore, SurfacesAPI, TransactionAPI } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import { describe, expect, it, vi } from 'vitest'
 import { dispatchBehaviorEvent } from './behavior-dispatcher'
 

@@ -1,5 +1,5 @@
-import type { PropSchema } from '@easyink/core'
-import { STROKE_STYLE_OPTIONS } from '@easyink/prop-schemas'
+import type { PropSchema } from '@hcxz/core'
+import { STROKE_STYLE_OPTIONS } from '@hcxz/prop-schemas'
 
 export const qrcodeDesignerPropSchemas: PropSchema[] = [
   { key: 'value', label: 'materials.qrcode.property.value', type: 'string', group: 'content' },

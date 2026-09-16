@@ -1,4 +1,4 @@
-import type { DocumentSchema } from '@easyink/schema'
+import type { DocumentSchema } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { CommandManager } from './command'
 import { AddPageSheetCommand, RemovePageSheetCommand } from './commands/document'

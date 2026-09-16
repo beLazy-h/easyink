@@ -1,4 +1,4 @@
-import { SCHEMA_VERSION } from '@easyink/shared'
+import { SCHEMA_VERSION } from '@hcxz/shared'
 import { describe, expect, it } from 'vitest'
 import { deserializeSchema, isValidSchema, SchemaDeserializeError, validateSchema, validateSchemaIssues } from './validation'
 

@@ -117,7 +117,7 @@ Viewer 在渲染前执行：
 
 ### 6.6.0 Material Data Contract 解析
 
-`DataContractBinding` 不走普通 `resolvedProps` 投影。它由消费该目标数据模型的物料调用 `@easyink/core` 的 `resolveMaterialDataContract(contract, binding, data)` 解析，再把目标 records 转成物料运行时数据。
+`DataContractBinding` 不走普通 `resolvedProps` 投影。它由消费该目标数据模型的物料调用 `@hcxz/core` 的 `resolveMaterialDataContract(contract, binding, data)` 解析，再把目标 records 转成物料运行时数据。
 
 当前 chart-bar 的路径是：
 

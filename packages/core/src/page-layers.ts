@@ -1,5 +1,5 @@
-import type { PageLayerConfig, PageLayerPlacement, PageSchema, TextWatermarkPageLayerConfig } from '@easyink/schema'
-import { DEFAULT_TEXT_WATERMARK_PAGE_LAYER, PAGE_LAYER_MAX_Z_INDEX, PAGE_LAYER_MIN_Z_INDEX } from '@easyink/schema'
+import type { PageLayerConfig, PageLayerPlacement, PageSchema, TextWatermarkPageLayerConfig } from '@hcxz/schema'
+import { DEFAULT_TEXT_WATERMARK_PAGE_LAYER, PAGE_LAYER_MAX_Z_INDEX, PAGE_LAYER_MIN_Z_INDEX } from '@hcxz/schema'
 
 export interface ResolvedPageLayerBase {
   id: string

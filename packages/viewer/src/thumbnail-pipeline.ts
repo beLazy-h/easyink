@@ -1,5 +1,5 @@
 import type { ThumbnailResult, ViewerPageResult } from './types'
-import { escapeHtml } from '@easyink/shared'
+import { escapeHtml } from '@hcxz/shared'
 
 export function createThumbnails(pages: ViewerPageResult[], unit: string): ThumbnailResult[] {
   return pages.map(page => ({

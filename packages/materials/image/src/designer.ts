@@ -1,8 +1,8 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ImageProps } from './schema'
-import { getBindingRefs, getNodeProps } from '@easyink/schema'
-import { escapeAttr } from '@easyink/shared'
+import { getBindingRefs, getNodeProps } from '@hcxz/schema'
+import { escapeAttr } from '@hcxz/shared'
 
 function buildHtml(node: MaterialNode, context: MaterialExtensionContext): string {
   const p = getNodeProps<ImageProps>(node)

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { MaterialCatalogEntry, MaterialCatalogGroup } from '../types'
-import { AddMaterialCommand } from '@easyink/core'
+import { AddMaterialCommand } from '@hcxz/core'
 import { computed, inject } from 'vue'
 import { useDesignerStore } from '../composables'
 import { DESIGNER_DRAG_DROP_KEY } from '../composables/use-designer-drag-drop'

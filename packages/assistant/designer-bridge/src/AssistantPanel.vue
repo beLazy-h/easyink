@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { AssistantMaterialManifest, AssistantPatchOperation, AssistantResult } from '@easyink/assistant-capabilities'
-import type { AssistantPlugin } from '@easyink/assistant-plugins'
-import type { AssistantConversationStatus, AssistantStore } from '@easyink/assistant-store'
-import type { AssistantApiClient, AssistantLLMConfigService } from '@easyink/assistant-ui'
-import { AssistantWorkbench } from '@easyink/assistant-ui'
-import '@easyink/assistant-ui/index.css'
+import type { AssistantMaterialManifest, AssistantPatchOperation, AssistantResult } from '@hcxz/assistant-capabilities'
+import type { AssistantPlugin } from '@hcxz/assistant-plugins'
+import type { AssistantConversationStatus, AssistantStore } from '@hcxz/assistant-store'
+import type { AssistantApiClient, AssistantLLMConfigService } from '@hcxz/assistant-ui'
+import { AssistantWorkbench } from '@hcxz/assistant-ui'
+import '@hcxz/assistant-ui/index.css'
 
 type AssistantTranslate = (key: string) => string
 

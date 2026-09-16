@@ -1,4 +1,4 @@
-import type { DesignerStore } from '@easyink/designer'
+import type { DesignerStore } from '@hcxz/designer'
 import { describe, expect, it } from 'vitest'
 import { createAssistantMaterialManifest } from './material-manifest'
 

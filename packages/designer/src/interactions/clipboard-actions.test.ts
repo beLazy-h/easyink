@@ -1,4 +1,4 @@
-import type { MaterialNode, PageSchema } from '@easyink/schema'
+import type { MaterialNode, PageSchema } from '@hcxz/schema'
 import { describe, expect, it, vi } from 'vitest'
 import { DesignerStore } from '../store/designer-store'
 import { createClipboardActions } from './clipboard-actions'

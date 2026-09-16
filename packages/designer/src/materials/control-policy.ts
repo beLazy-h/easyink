@@ -5,8 +5,8 @@ import type {
   MaterialControlStateKind,
   MaterialGeometryControlKey,
   MaterialResizeHandle,
-} from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+} from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
 import type { PropSchema } from '../types'
 

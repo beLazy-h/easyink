@@ -1,5 +1,5 @@
 import type { DesignerStore } from '../store/designer-store'
-import { isInteractable, normalizeRotation, RotateMaterialCommand } from '@easyink/core'
+import { isInteractable, normalizeRotation, RotateMaterialCommand } from '@hcxz/core'
 import { createGeometryService } from '../editing/geometry-service'
 import { isElementRotatable } from '../materials/capabilities'
 

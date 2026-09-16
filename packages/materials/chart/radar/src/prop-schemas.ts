@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const chartRadarDesignerPropSchemas: PropSchema[] = [
   { key: 'areaColor', label: 'materials.chartRadar.property.areaColor', type: 'color', group: 'appearance' },

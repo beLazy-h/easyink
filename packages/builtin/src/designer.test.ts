@@ -1,4 +1,4 @@
-import { IconFilePen, IconSignature } from '@easyink/icons'
+import { IconFilePen, IconSignature } from '@hcxz/icons'
 import { describe, expect, it } from 'vitest'
 import { builtinDesignerMaterialSets, createBuiltinDesignerMaterialBundle } from './designer'
 

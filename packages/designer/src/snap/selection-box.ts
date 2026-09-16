@@ -1,6 +1,6 @@
-import type { Rect } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
-import { getBoundingRect, getRotatedAABB } from '@easyink/core'
+import type { Rect } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
+import { getBoundingRect, getRotatedAABB } from '@hcxz/core'
 
 /**
  * Compute the bounding box of the given nodes using schema element size.

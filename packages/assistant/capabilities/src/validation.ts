@@ -1,8 +1,8 @@
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { DocumentSchema, ExpectedDataSource, ExpectedField } from '@easyink/schema'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { DocumentSchema, ExpectedDataSource, ExpectedField } from '@hcxz/schema'
 import type { AssistantMaterialManifest, AssistantValidationIssue, AssistantValidationReport } from './types'
-import { getBindingRefs, isDataContractBinding, traverseNodes, validateSchemaIssues } from '@easyink/schema'
-import { DataSourceAligner, normalizeAllFieldPaths, SchemaValidator } from '@easyink/schema-tools'
+import { getBindingRefs, isDataContractBinding, traverseNodes, validateSchemaIssues } from '@hcxz/schema'
+import { DataSourceAligner, normalizeAllFieldPaths, SchemaValidator } from '@hcxz/schema-tools'
 
 export interface ValidateAssistantSchemaOptions {
   materialManifest?: AssistantMaterialManifest

@@ -1,4 +1,4 @@
-import type { TrustedViewerHtml } from '@easyink/core'
+import type { TrustedViewerHtml } from '@hcxz/core'
 import type { ViewerDiagnosticEvent } from './types'
 
 export type DiagnosticScope = NonNullable<ViewerDiagnosticEvent['scope']>

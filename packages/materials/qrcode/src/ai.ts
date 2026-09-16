@@ -1,4 +1,4 @@
-import type { AIMaterialDescriptor } from '@easyink/shared'
+import type { AIMaterialDescriptor } from '@hcxz/shared'
 
 export const qrcodeAIMaterialDescriptor = {
   type: 'qrcode',

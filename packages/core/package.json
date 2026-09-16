@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/core",
+  "name": "@hcxz/core",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Core logic for EasyInk: commands, selection, geometry, units, fonts",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,8 +22,8 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*",
     "mutative": "catalog:framework"
   }
 }

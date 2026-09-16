@@ -1,5 +1,5 @@
-import type { ConditionCompareOperator, ConditionFieldRef, ConditionGroup, ConditionOperator, ConditionQuantifier, ConditionRow, ConditionValue, ConditionValueType, RenderCondition } from '@easyink/schema'
-import { deepClone } from '@easyink/shared'
+import type { ConditionCompareOperator, ConditionFieldRef, ConditionGroup, ConditionOperator, ConditionQuantifier, ConditionRow, ConditionValue, ConditionValueType, RenderCondition } from '@hcxz/schema'
+import { deepClone } from '@hcxz/shared'
 
 export const COMPARE_OPERATORS: ConditionCompareOperator[] = [
   'eq',

@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/assistant-plugin-prototype-designer",
+  "name": "@hcxz/assistant-plugin-prototype-designer",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Official prototype designer persona plugin for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -23,6 +23,6 @@
     "test": "vitest run src/**/*.test.ts"
   },
   "dependencies": {
-    "@easyink/assistant-plugins": "workspace:*"
+    "@hcxz/assistant-plugins": "workspace:*"
   }
 }

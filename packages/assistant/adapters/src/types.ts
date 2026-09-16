@@ -1,4 +1,4 @@
-import type { DataSourceDescriptor } from '@easyink/datasource'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
 import { z } from 'zod'
 
 export const AdapterInputSchema = z.discriminatedUnion('kind', [

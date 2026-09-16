@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { DesignerAssetPickRequest, DesignerConfirmRequest, DesignerInteractionProvider } from '../types'
-import { EiDialog } from '@easyink/ui'
+import { EiDialog } from '@hcxz/ui'
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { useDesignerStore } from '../composables'
 import { pickAssetWithFileInput, uploadAssetAsDataUrl } from '../interactions/asset-file-picker'

@@ -1,4 +1,4 @@
-import type { DocumentSchema } from '@easyink/schema'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
 import type { TemplateAutoSaveOptions } from '../types'
 import { nextTick, onBeforeUnmount, watch } from 'vue'

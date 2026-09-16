@@ -1,4 +1,4 @@
-import type { AssistantMaterialManifest } from '@easyink/assistant-capabilities'
+import type { AssistantMaterialManifest } from '@hcxz/assistant-capabilities'
 
 export interface PromptContext {
   unit: 'mm' | 'px' | 'pt'

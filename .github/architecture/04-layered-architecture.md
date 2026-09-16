@@ -6,33 +6,33 @@ EasyInk 分层的关键点是：设计器和 Viewer 是两个明确协作的上�
 ┌─────────────────────────────────────────────────────────────┐
 │                    Consumer Application                    │
 ├─────────────────────────────────────────────────────────────┤
-│        @easyink/designer / @easyink/viewer / Assistant      │
+│        @hcxz/designer / @hcxz/viewer / Assistant      │
 ├─────────────────────────────────────────────────────────────┤
-│  @easyink/designer                                         │
+│  @hcxz/designer                                         │
 │  ┌───────────────────────────────────────────────────────┐  │
 │  │ WorkbenchChrome   WindowSystem  CanvasWorkspace       │  │
 │  │ SelectionOverlay  Binding UX    StatusBar             │  │
 │  │ RegionNavigator   Topbar Slot   DesignerStore         │  │
 │  └───────────────────────────────────────────────────────┘  │
 ├─────────────────────────────────────────────────────────────┤
-│  @easyink/locales + @easyink/prop-schemas                  │
+│  @hcxz/locales + @hcxz/prop-schemas                  │
 │  ┌───────────────────────────────────────────────────────┐  │
 │  │ Built-in Locale Messages   Built-in Base PropSchemas │  │
 │  └───────────────────────────────────────────────────────┘  │
 ├─────────────────────────────────────────────────────────────┤
-│  @easyink/viewer                                           │
+│  @hcxz/viewer                                           │
 │  ┌───────────────────────────────────────────────────────┐  │
 │  │ ViewerRuntime   Layout/Pagination   ThumbnailPipeline │  │
 │  │ DataLoader      FontLoader    Print/Export Surface    │  │
 │  └───────────────────────────────────────────────────────┘  │
 ├─────────────────────────────────────────────────────────────┤
-│  @easyink/builtin                                          │
+│  @hcxz/builtin                                          │
 │  ┌───────────────────────────────────────────────────────┐  │
 │  │ Builtin Designer Bundle  Viewer Registrars           │  │
 │  │ AI Material Descriptors   Shared Material Catalog    │  │
 │  └───────────────────────────────────────────────────────┘  │
 ├───────────────────────────────┬─────────────────────────────┤
-│ @easyink/datasource           │ @easyink/core              │
+│ @hcxz/datasource           │ @hcxz/core              │
 │ ┌───────────────────────────┐ │ ┌─────────────────────────┐ │
 │ │ FieldTree                 │ │ │ CommandManager          │ │
 │ │ BindingMeta               │ │ │ Selection / Guides      │ │
@@ -40,7 +40,7 @@ EasyInk 分层的关键点是：设计器和 Viewer 是两个明确协作的上�
 │ │ DataAdapter               │ │ │ Layout / Pagination     │ │
 │ └───────────────────────────┘ │ └─────────────────────────┘ │
 ├─────────────────────────────────────────────────────────────┤
-│  @easyink/schema + @easyink/material-* + @easyink/shared   │
+│  @hcxz/schema + @hcxz/material-* + @hcxz/shared   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -68,7 +68,7 @@ EasyInk 分层的关键点是：设计器和 Viewer 是两个明确协作的上�
 
 ### builtin 层
 
-- `@easyink/builtin` 负责内置物料装配
+- `@hcxz/builtin` 负责内置物料装配
 - 它消费 `material-*` 包，并分别向 `designer`、`viewer` 和 Assistant 物料知识链路提供默认物料清单
 - 宿主应用不直接依赖它；公开入口仍然是 `designer`、`viewer` 和 Assistant 集成包
 
@@ -76,7 +76,7 @@ EasyInk 分层的关键点是：设计器和 Viewer 是两个明确协作的上�
 
 - 负责工作台壳层、画布编辑、窗口系统、状态栏、概览图、历史记录
 - 默认装配 builtin 物料，再通过插槽、`setupStore` 和 store 暴露宿主扩展面，不把 Viewer、模板选择和导出入口塞进包内
-- 语言包和内置基础属性 Schema 不直接落在 designer 源码中，分别由 `@easyink/locales` 与 `@easyink/prop-schemas` 提供；designer 只消费这些资源并维持 `@easyink/designer/locale` facade
+- 语言包和内置基础属性 Schema 不直接落在 designer 源码中，分别由 `@hcxz/locales` 与 `@hcxz/prop-schemas` 提供；designer 只消费这些资源并维持 `@hcxz/designer/locale` facade
 
 ## 4.2 三种状态模型
 
@@ -103,7 +103,7 @@ EasyInk 明确区分三种状态：
 
 ## 4.3 设计器子层
 
-`@easyink/designer` 内部进一步拆分为：
+`@hcxz/designer` 内部进一步拆分为：
 
 - `WorkbenchChrome`：两层顶部栏，包含物料直达入口、物料分组入口、全局动作和可配置工具组带
 - `CanvasWorkspace`：设计画布、标尺、辅助线、选区和拖拽层
@@ -136,7 +136,7 @@ EasyInk 明确区分三种状态：
 ### Viewer
 
 ```typescript
-import { createViewer } from '@easyink/viewer'
+import { createViewer } from '@hcxz/viewer'
 
 const viewer = createViewer({ mode: 'fixed' })
 

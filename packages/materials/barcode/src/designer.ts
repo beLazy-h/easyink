@@ -1,8 +1,8 @@
-import type { MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { BarcodeProps } from './schema'
-import { getBindingRefs } from '@easyink/schema'
-import { escapeHtml } from '@easyink/shared'
+import { getBindingRefs } from '@hcxz/schema'
+import { escapeHtml } from '@hcxz/shared'
 import { generateBarcodeSvg } from './render'
 import { BARCODE_FORMATS, resolveBarcodeProps } from './schema'
 

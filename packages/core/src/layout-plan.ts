@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ViewerMeasureResult } from './material-viewer'
 
 export interface LayoutDiagnostic {

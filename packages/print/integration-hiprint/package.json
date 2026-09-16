@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/print-integration-hiprint",
+  "name": "@hcxz/print-integration-hiprint",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Official HiPrint client and managed document printer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,8 +22,8 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/print-core": "workspace:*",
-    "@easyink/viewer": "workspace:*",
+    "@hcxz/print-core": "workspace:*",
+    "@hcxz/viewer": "workspace:*",
     "vue-plugin-hiprint": "catalog:testing"
   }
 }

@@ -1,1 +1,1 @@
-export * from '@easyink/locales'
+export * from '@hcxz/locales'

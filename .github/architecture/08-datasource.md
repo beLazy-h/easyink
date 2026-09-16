@@ -80,7 +80,7 @@ interface DataUnionBinding {
 数据源系统支持通过 `DataSourceProviderFactory` 接口在运行时动态注册外部数据源：
 
 ```typescript
-// @easyink/datasource
+// @hcxz/datasource
 
 interface DataSourceProviderFactory {
   readonly id: string           // 数据源唯一标识
@@ -116,7 +116,7 @@ class DataSourceRegistry {
 数据源系统支持命名空间隔离，通过 `namespace` 字段区分不同来源的数据源：
 
 ```typescript
-// @easyink/datasource
+// @hcxz/datasource
 
 // AI 驱动数据源隐式使用 '__ai__' 命名空间
 export const AI_NAMESPACE = '__ai__'
@@ -417,10 +417,10 @@ const bwipFields: DataFieldNode[] = [
 
 ## 8.11 绑定解析函数
 
-绑定解析是通用能力，位于 `@easyink/core` 包，供 Viewer 和物料包使用：
+绑定解析是通用能力，位于 `@hcxz/core` 包，供 Viewer 和物料包使用：
 
 ```typescript
-// @easyink/core
+// @hcxz/core
 
 function resolveBindingValue(
   binding: BindingRef,
@@ -439,7 +439,7 @@ Viewer 不做异步数据加载，宿主负责在调用 `viewer.open({ schema, d
 
 ### Material Data Contract 解析函数
 
-结构化物料使用另一组绑定解析能力，仍位于 `@easyink/core`：
+结构化物料使用另一组绑定解析能力，仍位于 `@hcxz/core`：
 
 ```typescript
 function resolveMaterialDataContract(
@@ -514,7 +514,7 @@ const data = {
 
 ### `resolveBindingValue` 接口
 
-`resolveBindingValue`（位于 `@easyink/core`）统一按绝对路径从数据根解析，不再接受 `scope` 参数：
+`resolveBindingValue`（位于 `@hcxz/core`）统一按绝对路径从数据根解析，不再接受 `scope` 参数：
 
 ```typescript
 function resolveBindingValue(
@@ -529,7 +529,7 @@ function resolveBindingValue(
 
 ### 集合路径推导工具函数
 
-`@easyink/core` 包提供两个运行时工具函数：
+`@hcxz/core` 包提供两个运行时工具函数：
 
 ```typescript
 /** 从一组绝对路径中提取公共集合前缀。
@@ -655,7 +655,7 @@ const cell: TableCellSchema = {
 Viewer 的 `resolveAllBindings` 阶段检测到 table-static 节点时：
 
 1. 遍历所有行的所有 cell，查找 `staticBinding` 字段
-2. 对每个有 `staticBinding` 的 cell，调用 `resolveBindingValue(staticBinding, data)`（来自 `@easyink/core`，绝对路径）
+2. 对每个有 `staticBinding` 的 cell，调用 `resolveBindingValue(staticBinding, data)`（来自 `@hcxz/core`，绝对路径）
 3. 结果存入 `ResolvedCellBindings`，key 格式 `${nodeId}:${rowIndex}:${colIndex}`
 
 ### Designer 交互
@@ -673,9 +673,9 @@ Viewer 的 `resolveAllBindings` 阶段检测到 table-static 节点时：
 
 核心原则：
 
-- `@easyink/datasource` 是 Designer 专属包，Viewer 不依赖它
-- Viewer 只消费 `schema + data`，通过 `@easyink/core` 的绑定解析函数从数据中取值
-- 绑定解析函数（`resolveBindingValue`、`extractCollectionPath`、`resolveFieldFromRecord`）位于 `@easyink/core`，Designer 和 Viewer 均可使用
+- `@hcxz/datasource` 是 Designer 专属包，Viewer 不依赖它
+- Viewer 只消费 `schema + data`，通过 `@hcxz/core` 的绑定解析函数从数据中取值
+- 绑定解析函数（`resolveBindingValue`、`extractCollectionPath`、`resolveFieldFromRecord`）位于 `@hcxz/core`，Designer 和 Viewer 均可使用
 - 字段级显示格式模板只服务 Designer 的格式编辑体验；Viewer 只执行已经固化到 `BindingRef.format` 的格式规则
 
 这样保证：

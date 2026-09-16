@@ -1,5 +1,5 @@
-import type { InternalHooks, MaterialBindingDefinition, PagePlan, PaginationResult, ViewerMeasureResult } from '@easyink/core'
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
+import type { InternalHooks, MaterialBindingDefinition, PagePlan, PaginationResult, ViewerMeasureResult } from '@hcxz/core'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
 import type {
   MaterialViewerExtension,
   PrintDriver,
@@ -15,9 +15,9 @@ import type {
   ViewerRenderResult,
 } from './types'
 import type { ViewerHost } from './viewer-host'
-import { createInternalHooks, FontManager, readNodeRepeatScope, runLayoutPipeline, runPagination } from '@easyink/core'
-import { normalizeDocumentSchema, traverseNodes, validateSchema } from '@easyink/schema'
-import { deepClone, UNIT_FACTOR } from '@easyink/shared'
+import { createInternalHooks, FontManager, readNodeRepeatScope, runLayoutPipeline, runPagination } from '@hcxz/core'
+import { normalizeDocumentSchema, traverseNodes, validateSchema } from '@hcxz/schema'
+import { deepClone, UNIT_FACTOR } from '@hcxz/shared'
 import { applyBindingsToProps, projectBindings } from './binding-projector'
 import { resolveConditionalSchema } from './conditional-schema'
 import { collectFontFamilies, loadAndInjectFonts } from './font-loader'

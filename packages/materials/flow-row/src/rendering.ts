@@ -1,8 +1,8 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { FlowColumnDef, FlowRowProps } from './schema'
-import { extractCollectionPath, formatBindingDisplayValue, resolveBindingValue, resolveFieldFromRecord } from '@easyink/core'
-import { getBindingRefs, getNodeProps } from '@easyink/schema'
-import { escapeAttr, escapeHtml } from '@easyink/shared'
+import { extractCollectionPath, formatBindingDisplayValue, resolveBindingValue, resolveFieldFromRecord } from '@hcxz/core'
+import { getBindingRefs, getNodeProps } from '@hcxz/schema'
+import { escapeAttr, escapeHtml } from '@hcxz/shared'
 import { FLOW_ROW_DEFAULTS, FLOW_ROW_TYPOGRAPHY_DEFAULTS } from './schema'
 
 export interface FlowColumnLayoutRect {

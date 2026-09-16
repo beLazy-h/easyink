@@ -1,5 +1,5 @@
-import type { LodopDevice, LodopPrintRequest, LodopRuntime } from '@easyink/print-integration-lodop'
-import { createLodopClient, createLodopPrinter, DEFAULT_CLODOP_SCRIPT_URLS, loadLodopScript } from '@easyink/print-integration-lodop'
+import type { LodopDevice, LodopPrintRequest, LodopRuntime } from '@hcxz/print-integration-lodop'
+import { createLodopClient, createLodopPrinter, DEFAULT_CLODOP_SCRIPT_URLS, loadLodopScript } from '@hcxz/print-integration-lodop'
 import { computed, reactive, ref, watch } from 'vue'
 import { setupPlaygroundViewerMaterials } from '../viewer-materials'
 

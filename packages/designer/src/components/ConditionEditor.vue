@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { MaterialConditionDefinition } from '@easyink/core'
-import type { MaterialNode, RenderCondition } from '@easyink/schema'
-import { IconDelete, IconEdit } from '@easyink/icons'
-import { EiButton, EiIcon } from '@easyink/ui'
+import type { MaterialConditionDefinition } from '@hcxz/core'
+import type { MaterialNode, RenderCondition } from '@hcxz/schema'
+import { IconDelete, IconEdit } from '@hcxz/icons'
+import { EiButton, EiIcon } from '@hcxz/ui'
 import { computed, ref } from 'vue'
 import { useDesignerStore } from '../composables'
 import ConditionDialog from './ConditionDialog.vue'

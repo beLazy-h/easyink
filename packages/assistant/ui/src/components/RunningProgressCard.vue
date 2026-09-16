@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AssistantTranslate } from '../i18n'
 import type { ChecklistItem } from '../projection'
-import { IconLoader, IconSparkles } from '@easyink/icons'
+import { IconLoader, IconSparkles } from '@hcxz/icons'
 import { translateAssistant } from '../i18n'
 import ChecklistCard from './ChecklistCard.vue'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AssistantResult } from '@easyink/assistant-capabilities'
+import type { AssistantResult } from '@hcxz/assistant-capabilities'
 import type { AssistantDerivedStatus } from '../composables/useConversationPresentation'
 import type { AssistantTranslate } from '../i18n'
 import type { ChecklistItem, ClarificationQuestion } from '../projection'

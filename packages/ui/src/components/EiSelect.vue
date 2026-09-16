@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CSSProperties } from 'vue'
-import { IconCheck, IconClose, IconDown } from '@easyink/icons'
+import { IconCheck, IconClose, IconDown } from '@hcxz/icons'
 import { computed, nextTick, onBeforeUnmount, ref, useId, watch } from 'vue'
 
 type SelectValue = string | number

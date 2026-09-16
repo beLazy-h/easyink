@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { EditorSurfacePlan } from '@easyink/core'
+import type { EditorSurfacePlan } from '@hcxz/core'
 import type { RulerCoordinateContext, RulerDirection } from './ruler-coordinate'
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useDesignerStore } from '../composables'

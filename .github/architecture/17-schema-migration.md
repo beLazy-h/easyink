@@ -70,7 +70,7 @@ class MigrationRegistry {
 - `schema.version` 高于当前库版本本身不再视为拒绝条件，只要顶层结构仍可读，就进入 best-effort 打开。
 - best-effort 模式下应尽量保留未知字段与未知节点，并通过诊断告知“当前库版本低于模板版本，结果仅为尽力回放”。
 
-> **设计决策**：`fromMajor` 使用 `number` 类型精确匹配 major 版本号，不引入 semver 库，保持 @easyink/core 零外部依赖。
+> **设计决策**：`fromMajor` 使用 `number` 类型精确匹配 major 版本号，不引入 semver 库，保持 @hcxz/core 零外部依赖。
 
 ## 17.3 迁移示例
 

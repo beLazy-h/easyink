@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { clamp } from '@easyink/shared'
+import { clamp } from '@hcxz/shared'
 import { computed, nextTick, onUnmounted, ref, watch } from 'vue'
 import { hexToHsva, hsvaToHex, hsvToRgb, isValidHex } from './color-utils'
 

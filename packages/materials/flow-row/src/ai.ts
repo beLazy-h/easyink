@@ -1,4 +1,4 @@
-import type { AIMaterialDescriptor } from '@easyink/shared'
+import type { AIMaterialDescriptor } from '@hcxz/shared'
 import { FLOW_ROW_TYPE } from './schema'
 
 export const flowRowAIMaterialDescriptor = {

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { RuntimeLLMProvider, RuntimeLLMProviderOption } from '@easyink/assistant-llm'
+import type { RuntimeLLMProvider, RuntimeLLMProviderOption } from '@hcxz/assistant-llm'
 import type { AssistantTranslate } from '../i18n'
-import { IconDelete, IconSave } from '@easyink/icons'
-import { EiSelect } from '@easyink/ui'
+import { IconDelete, IconSave } from '@hcxz/icons'
+import { EiSelect } from '@hcxz/ui'
 import { computed } from 'vue'
 import { translateAssistant } from '../i18n'
 

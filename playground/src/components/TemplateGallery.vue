@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { SampleTemplateEntry } from '@easyink/samples'
+import type { SampleTemplateEntry } from '@hcxz/samples'
 import type { StoredTemplate } from '../storage/template-store'
-import { sampleTemplates } from '@easyink/samples'
+import { sampleTemplates } from '@hcxz/samples'
 import { computed, onMounted, ref } from 'vue'
 import { Button } from '@/components/ui/button'
 import {

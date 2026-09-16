@@ -1,4 +1,4 @@
-import type { BindingMode, FieldType } from '@easyink/assistant-material-knowledge'
+import type { BindingMode, FieldType } from '@hcxz/assistant-material-knowledge'
 
 export interface DataTypeSignature {
   name: string

@@ -1,1 +1,1 @@
-declare module '@easyink/assistant-ui/index.css'
+declare module '@hcxz/assistant-ui/index.css'

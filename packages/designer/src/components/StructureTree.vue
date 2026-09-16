@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { MaterialNode } from '@easyink/schema'
-import type { TreeNode } from '@easyink/ui'
-import { IconCondition, IconDelete, IconHidden, IconLock, IconPreview } from '@easyink/icons'
-import { EiIcon, EiTree } from '@easyink/ui'
+import type { MaterialNode } from '@hcxz/schema'
+import type { TreeNode } from '@hcxz/ui'
+import { IconCondition, IconDelete, IconHidden, IconLock, IconPreview } from '@hcxz/icons'
+import { EiIcon, EiTree } from '@hcxz/ui'
 import { computed } from 'vue'
 import { useDesignerStore } from '../composables'
 import { deleteMaterialNodes, toggleMaterialHidden, updateMaterialMeta } from '../interactions/element-actions'

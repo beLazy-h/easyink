@@ -1,4 +1,4 @@
-# @easyink/material-qrcode
+# @hcxz/material-qrcode
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fmaterial-qrcode?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-qrcode) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fmaterial-qrcode?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-qrcode)
 

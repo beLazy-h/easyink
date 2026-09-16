@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ConditionRow, ConditionValue } from '@easyink/schema'
-import { IconDelete, IconPlus } from '@easyink/icons'
-import { castConditionLiteralValue } from '@easyink/schema'
-import { EiButton, EiIcon, EiInput, EiNumberInput, EiSelect } from '@easyink/ui'
+import type { ConditionRow, ConditionValue } from '@hcxz/schema'
+import { IconDelete, IconPlus } from '@hcxz/icons'
+import { castConditionLiteralValue } from '@hcxz/schema'
+import { EiButton, EiIcon, EiInput, EiNumberInput, EiSelect } from '@hcxz/ui'
 import { computed } from 'vue'
 import { defaultLiteralForType, isBetweenOperator, isInOperator, literal } from '../conditions/editor-model'
 

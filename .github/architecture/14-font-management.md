@@ -106,7 +106,7 @@ class FontManager {
 - 元素 `node.props.fontFamily`
 - 通过 schema traversal 访问到的子节点和表格单元格 hosted elements
 
-不要在 Viewer 或 Designer 侧各自手写递归逻辑；未来如果 Schema 承载结构扩展，应优先扩展 `@easyink/schema` 的 traversal。
+不要在 Viewer 或 Designer 侧各自手写递归逻辑；未来如果 Schema 承载结构扩展，应优先扩展 `@hcxz/schema` 的 traversal。
 
 ## 14.4 Designer 字体策略
 
@@ -165,8 +165,8 @@ if (preload.failures.length > 0) {
 
 ```vue
 <script setup lang="ts">
-import { EasyInkDesigner } from '@easyink/designer'
-import type { FontProvider } from '@easyink/designer'
+import { EasyInkDesigner } from '@hcxz/designer'
+import type { FontProvider } from '@hcxz/designer'
 
 const fontProvider: FontProvider = {
   async listFonts() {

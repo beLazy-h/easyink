@@ -1,4 +1,4 @@
-import type { ExportDiagnostic } from '@easyink/export-runtime'
+import type { ExportDiagnostic } from '@hcxz/export-runtime'
 
 const DEFAULT_ASSET_LOAD_TIMEOUT_MS = 10000
 

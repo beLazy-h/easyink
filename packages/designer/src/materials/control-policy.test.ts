@@ -1,5 +1,5 @@
-import type { MaterialControlPolicy, MaterialDesignerExtension } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialControlPolicy, MaterialDesignerExtension } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DesignerStore } from '../store/designer-store'
 import type { MaterialDefinition, PropSchema } from '../types'
 import { describe, expect, it } from 'vitest'

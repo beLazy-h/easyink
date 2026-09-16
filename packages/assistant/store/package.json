@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/assistant-store",
+  "name": "@hcxz/assistant-store",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Task, run, version, draft, and event stores for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "test": "vitest run src/**/*.test.ts"
   },
   "dependencies": {
-    "@easyink/assistant-capabilities": "workspace:*",
+    "@hcxz/assistant-capabilities": "workspace:*",
     "dexie": "catalog:framework",
     "zod": "catalog:framework"
   }

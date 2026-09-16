@@ -1,7 +1,7 @@
-import type { ChartGaugeValuePoint } from '@easyink/material-chart-kernel'
-import type { MaterialNode } from '@easyink/schema'
+import type { ChartGaugeValuePoint } from '@hcxz/material-chart-kernel'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ChartGaugeProps } from './schema'
-import { resolveMaterialDataContract } from '@easyink/core'
+import { resolveMaterialDataContract } from '@hcxz/core'
 
 export const CHART_GAUGE_DATA_CONTRACT = {
   version: 3,

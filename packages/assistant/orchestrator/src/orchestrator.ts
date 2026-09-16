@@ -1,4 +1,4 @@
-import type { ParsedExternalData } from '@easyink/assistant-adapters'
+import type { ParsedExternalData } from '@hcxz/assistant-adapters'
 import type {
   AssistantResult,
   AssistantSourceInput,
@@ -6,12 +6,12 @@ import type {
   AssistantValidationIssue,
   AssistantValidationReport,
   AssistantWorkflowStep,
-} from '@easyink/assistant-capabilities'
-import type { LLMClient } from '@easyink/assistant-llm'
-import type { AssistantStore, AssistantTaskRecord } from '@easyink/assistant-store'
-import type { DocumentSchema } from '@easyink/schema'
+} from '@hcxz/assistant-capabilities'
+import type { LLMClient } from '@hcxz/assistant-llm'
+import type { AssistantStore, AssistantTaskRecord } from '@hcxz/assistant-store'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { Logger } from 'pino'
-import { resolveExternalData } from '@easyink/assistant-adapters'
+import { resolveExternalData } from '@hcxz/assistant-adapters'
 import {
   alignAssistantDataSource,
   collectDeterministicErrors,
@@ -19,10 +19,10 @@ import {
   diffAssistantSchema,
   repairAssistantSchema,
   validateAssistantSchema,
-} from '@easyink/assistant-capabilities'
-import { createId, MemoryAssistantStore } from '@easyink/assistant-store'
-import { isValidSchema } from '@easyink/schema'
-import { buildDataSourceDescriptor } from '@easyink/schema-tools'
+} from '@hcxz/assistant-capabilities'
+import { createId, MemoryAssistantStore } from '@hcxz/assistant-store'
+import { isValidSchema } from '@hcxz/schema'
+import { buildDataSourceDescriptor } from '@hcxz/schema-tools'
 import pino from 'pino'
 import {
   runAssistantAgents,

@@ -1,8 +1,8 @@
-import type { PrintDriverBaseOptions } from '@easyink/print-core'
-import type { PrintDriver, ViewerPrintContext } from '@easyink/viewer'
+import type { PrintDriverBaseOptions } from '@hcxz/print-core'
+import type { PrintDriver, ViewerPrintContext } from '@hcxz/viewer'
 import type { EasyInkPrinterClient, EasyInkPrinterPrintHtmlOptions, EasyInkPrinterPrintPdfOptions, EasyInkPrinterPrintRenderOptions } from './client'
-import { renderPagesToPdfBlob } from '@easyink/export-plugin-dom-pdf'
-import { exportDiagnosticToViewerEvent, resolvePrintDriverValue, resolvePrintLandscape, resolvePrintOffset, resolveViewerPdfPages, resolveViewerPrintSize } from '@easyink/print-core'
+import { renderPagesToPdfBlob } from '@hcxz/export-plugin-dom-pdf'
+import { exportDiagnosticToViewerEvent, resolvePrintDriverValue, resolvePrintLandscape, resolvePrintOffset, resolveViewerPdfPages, resolveViewerPrintSize } from '@hcxz/print-core'
 
 export type EasyInkPrinterDriverSubmitMode = 'pdf' | 'renderSource' | 'html'
 

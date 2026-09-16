@@ -40,8 +40,8 @@ EasyInk provides a package-based print design ecosystem for building templates, 
 
 | Package | Purpose | Version | Downloads |
 | --- | --- | --- | --- |
-| [@easyink/designer](packages/designer) | Template designer and editing experience | [![npm][designer-npm-version-src]][designer-npm-version-href] | [![npm downloads][designer-npm-downloads-src]][designer-npm-version-href] |
-| [@easyink/viewer](packages/viewer) | Viewer and print preview runtime | [![npm][viewer-npm-version-src]][viewer-npm-version-href] | [![npm downloads][viewer-npm-downloads-src]][viewer-npm-version-href] |
+| [@hcxz/designer](packages/designer) | Template designer and editing experience | [![npm][designer-npm-version-src]][designer-npm-version-href] | [![npm downloads][designer-npm-downloads-src]][designer-npm-version-href] |
+| [@hcxz/viewer](packages/viewer) | Viewer and print preview runtime | [![npm][viewer-npm-version-src]][viewer-npm-version-href] | [![npm downloads][viewer-npm-downloads-src]][viewer-npm-version-href] |
 
 ## Documentation
 
@@ -65,9 +65,9 @@ pnpm play
 
 [MIT](./LICENSE)
 
-[designer-npm-version-src]: https://img.shields.io/npm/v/@easyink/designer?style=flat&colorA=080f12&colorB=1fa669
-[designer-npm-downloads-src]: https://img.shields.io/npm/dm/@easyink/designer?style=flat&colorA=080f12&colorB=1fa669
-[designer-npm-version-href]: https://npmjs.com/package/@easyink/designer
-[viewer-npm-version-src]: https://img.shields.io/npm/v/@easyink/viewer?style=flat&colorA=080f12&colorB=1fa669
-[viewer-npm-downloads-src]: https://img.shields.io/npm/dm/@easyink/viewer?style=flat&colorA=080f12&colorB=1fa669
-[viewer-npm-version-href]: https://npmjs.com/package/@easyink/viewer
+[designer-npm-version-src]: https://img.shields.io/npm/v/@hcxz/designer?style=flat&colorA=080f12&colorB=1fa669
+[designer-npm-downloads-src]: https://img.shields.io/npm/dm/@hcxz/designer?style=flat&colorA=080f12&colorB=1fa669
+[designer-npm-version-href]: https://npmjs.com/package/@hcxz/designer
+[viewer-npm-version-src]: https://img.shields.io/npm/v/@hcxz/viewer?style=flat&colorA=080f12&colorB=1fa669
+[viewer-npm-downloads-src]: https://img.shields.io/npm/dm/@hcxz/viewer?style=flat&colorA=080f12&colorB=1fa669
+[viewer-npm-version-href]: https://npmjs.com/package/@hcxz/viewer

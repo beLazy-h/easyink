@@ -9,8 +9,8 @@ HiPrint 集成适合已经有 `electron-hiprint` 运行时的桌面项目。
 先看高层打印器：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createHiPrintClient, createHiPrintPrinter } from '@easyink/print-integration-hiprint'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createHiPrintClient, createHiPrintPrinter } from '@hcxz/print-integration-hiprint'
 
 const client = createHiPrintClient({
   serviceUrl: 'http://localhost:17521',
@@ -110,7 +110,7 @@ const client = createHiPrintClient({
 
 ```ts
 import { hiprint } from 'vue-plugin-hiprint'
-import { createHiPrintRuntimeClient } from '@easyink/print-integration-hiprint'
+import { createHiPrintRuntimeClient } from '@hcxz/print-integration-hiprint'
 
 const client = createHiPrintRuntimeClient({
   hiprint,

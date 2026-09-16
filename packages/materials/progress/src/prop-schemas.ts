@@ -1,8 +1,8 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 import {
   FONT_STYLE_OPTIONS,
   FONT_WEIGHT_OPTIONS,
-} from '@easyink/prop-schemas'
+} from '@hcxz/prop-schemas'
 
 const TEXT_POSITION_OPTIONS: NonNullable<PropSchema['enum']> = [
   { label: 'materials.progress.option.textPositionTop', value: 'top' },

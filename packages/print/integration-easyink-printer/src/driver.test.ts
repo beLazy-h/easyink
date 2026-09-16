@@ -1,4 +1,4 @@
-import type { ViewerPrintContext } from '@easyink/viewer'
+import type { ViewerPrintContext } from '@hcxz/viewer'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { createEasyInkPrinterDriver } from './driver'
 
@@ -6,7 +6,7 @@ const { renderPagesToPdfBlob } = vi.hoisted(() => ({
   renderPagesToPdfBlob: vi.fn(async () => new Blob(['pdf'])),
 }))
 
-vi.mock('@easyink/export-plugin-dom-pdf', () => ({
+vi.mock('@hcxz/export-plugin-dom-pdf', () => ({
   renderPagesToPdfBlob,
 }))
 

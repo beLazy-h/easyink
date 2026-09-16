@@ -1,4 +1,4 @@
-# @easyink/material-svg-heart
+# @hcxz/material-svg-heart
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fmaterial-svg-heart?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-svg-heart) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fmaterial-svg-heart?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-svg-heart)
 

@@ -1,4 +1,4 @@
-import type { DocumentSchema, PageSchema } from '@easyink/schema'
+import type { DocumentSchema, PageSchema } from '@hcxz/schema'
 import type { PagePropertyContext, PagePropertyDescriptor, PagePropertyGroup, PagePropertyPatch } from './types'
 
 /**

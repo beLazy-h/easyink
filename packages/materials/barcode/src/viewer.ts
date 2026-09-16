@@ -1,6 +1,6 @@
-import type { MaterialNode } from '@easyink/schema'
-import { trustedViewerHtml } from '@easyink/core'
-import { escapeHtml } from '@easyink/shared'
+import type { MaterialNode } from '@hcxz/schema'
+import { trustedViewerHtml } from '@hcxz/core'
+import { escapeHtml } from '@hcxz/shared'
 import { generateBarcodeEmptySvg, generateBarcodeSvg } from './render'
 import { resolveBarcodeProps } from './schema'
 

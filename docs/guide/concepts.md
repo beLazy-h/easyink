@@ -15,7 +15,7 @@ Schema 就是模板本身。页面尺寸、元素、绑定、分页配置，最�
 先看一个最小例子：
 
 ```ts
-import { normalizeDocumentSchema } from '@easyink/schema'
+import { normalizeDocumentSchema } from '@hcxz/schema'
 
 const schema = normalizeDocumentSchema({
   page: { width: 80, height: 120 },

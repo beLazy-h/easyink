@@ -1,6 +1,6 @@
-import type { MaterialResizeAdapter, MaterialResizeSideEffect } from '@easyink/core'
-import type { MaterialNode, TableNode } from '@easyink/schema'
-import { isTableNode } from '@easyink/schema'
+import type { MaterialResizeAdapter, MaterialResizeSideEffect } from '@hcxz/core'
+import type { MaterialNode, TableNode } from '@hcxz/schema'
+import { isTableNode } from '@hcxz/schema'
 
 /**
  * Snapshot captured at resize start: original row heights and per-row hidden mask.

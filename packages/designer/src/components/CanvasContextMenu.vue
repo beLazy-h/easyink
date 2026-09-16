@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { Component } from 'vue'
-import { AddElementGroupCommand, isInteractable, RemoveElementGroupCommand, UpdateMaterialMetaCommand } from '@easyink/core'
+import { AddElementGroupCommand, isInteractable, RemoveElementGroupCommand, UpdateMaterialMetaCommand } from '@hcxz/core'
 import {
   IconCopy,
   IconCopyPlus,
@@ -18,8 +18,8 @@ import {
   IconSelectAll,
   IconUngroup,
   IconUnlock,
-} from '@easyink/icons'
-import { generateId } from '@easyink/shared'
+} from '@hcxz/icons'
+import { generateId } from '@hcxz/shared'
 import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
 import { useDesignerStore } from '../composables'
 import { createClipboardActions } from '../interactions/clipboard-actions'

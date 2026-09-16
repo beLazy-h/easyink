@@ -1,5 +1,5 @@
-import type { AssistantMaterialBindingDefinition, AssistantMaterialManifest, AssistantMaterialProp } from '@easyink/assistant-capabilities'
-import type { DesignerStore, PropSchema } from '@easyink/designer'
+import type { AssistantMaterialBindingDefinition, AssistantMaterialManifest, AssistantMaterialProp } from '@hcxz/assistant-capabilities'
+import type { DesignerStore, PropSchema } from '@hcxz/designer'
 
 export function createAssistantMaterialManifest(store: DesignerStore): AssistantMaterialManifest {
   return {

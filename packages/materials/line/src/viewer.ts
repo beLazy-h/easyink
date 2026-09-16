@@ -1,8 +1,8 @@
-import type { MaterialViewerExtension, ViewerRenderContext, ViewerRenderSize } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialViewerExtension, ViewerRenderContext, ViewerRenderSize } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { LineProps } from './schema'
-import { trustedViewerHtml } from '@easyink/core'
-import { getNodeProps } from '@easyink/schema'
+import { trustedViewerHtml } from '@hcxz/core'
+import { getNodeProps } from '@hcxz/schema'
 
 import { getLineThickness } from './schema'
 

@@ -1,5 +1,5 @@
-import type { MaterialConditionCapability } from '@easyink/core'
-import type { AIMaterialDescriptor } from '@easyink/shared'
+import type { MaterialConditionCapability } from '@hcxz/core'
+import type { AIMaterialDescriptor } from '@hcxz/shared'
 import type { DesignerStore } from '../store/designer-store'
 import type { LazyMaterialExtensionFactory, LocaleMessageRegistration, MaterialCapabilities, MaterialCatalogEntry, MaterialCatalogGroup, MaterialDefinition, MaterialExtensionFactory, PanelSectionId, PropSchema } from '../types'
 

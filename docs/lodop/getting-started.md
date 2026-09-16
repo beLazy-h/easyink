@@ -27,7 +27,7 @@ http://localhost:18000/CLodopfuncs.js
 安装前端集成包：
 
 ```bash
-pnpm add @easyink/print-integration-lodop @easyink/builtin
+pnpm add @hcxz/print-integration-lodop @hcxz/builtin
 ```
 
 这个包不内置 LODOP 控件。它负责加载 `CLodopfuncs.js`、等待 runtime 可用，并把 EasyInk 渲染结果提交给 LODOP。
@@ -37,7 +37,7 @@ pnpm add @easyink/print-integration-lodop @easyink/builtin
 先只加载 script 和刷新打印机：
 
 ```ts
-import { createLodopClient } from '@easyink/print-integration-lodop'
+import { createLodopClient } from '@hcxz/print-integration-lodop'
 
 const client = createLodopClient({
   script: {
@@ -61,8 +61,8 @@ console.log(printers)
 打印器创建后，业务侧只需要传 `schema + data`：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createLodopClient, createLodopPrinter } from '@easyink/print-integration-lodop'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createLodopClient, createLodopPrinter } from '@hcxz/print-integration-lodop'
 
 const client = createLodopClient({
   script: {
@@ -263,11 +263,11 @@ await client.printHtml({
 如果项目已经自己拿到了 LODOP runtime，就让 EasyInk 只接管模板渲染和提交：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
 import {
   createLodopPrinter,
   createLodopRuntimeClient,
-} from '@easyink/print-integration-lodop'
+} from '@hcxz/print-integration-lodop'
 
 const client = createLodopRuntimeClient({
   lodop: () => window.CLODOPA,

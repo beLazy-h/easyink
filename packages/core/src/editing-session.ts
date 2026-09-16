@@ -1,5 +1,5 @@
-import type { BindingRef, MaterialNode } from '@easyink/schema'
-import type { BindingDisplayFormat, UnitType } from '@easyink/shared'
+import type { BindingRef, MaterialNode } from '@hcxz/schema'
+import type { BindingDisplayFormat, UnitType } from '@hcxz/shared'
 import type { Point, Rect } from './geometry'
 import type { DatasourceFieldInfo, PropSchemaLike } from './material-extension'
 

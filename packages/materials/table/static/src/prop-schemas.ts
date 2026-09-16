@@ -1,11 +1,11 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 import {
   FONT_STYLE_OPTIONS,
   FONT_WEIGHT_OPTIONS,
   HORIZONTAL_ALIGN_OPTIONS,
   STROKE_STYLE_OPTIONS,
   VERTICAL_ALIGN_OPTIONS,
-} from '@easyink/prop-schemas'
+} from '@hcxz/prop-schemas'
 
 export const tableStaticDesignerPropSchemas: PropSchema[] = [
   { key: 'borderWidth', label: 'designer.property.borderWidth', type: 'number', group: 'table-border', min: 0, max: 10, step: 1 },

@@ -1,4 +1,4 @@
-import type { Selection, SelectionStore } from '@easyink/core'
+import type { Selection, SelectionStore } from '@hcxz/core'
 import type { DiagnosticsChannel } from '../store/diagnostics'
 import { shallowRef } from 'vue'
 

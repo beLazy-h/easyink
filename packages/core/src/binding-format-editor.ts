@@ -1,4 +1,4 @@
-import type { BindingFormatPresetType } from '@easyink/shared'
+import type { BindingFormatPresetType } from '@hcxz/shared'
 
 export type BindingFormatEditorTab = 'preset' | 'custom' | (string & {})
 

@@ -13,12 +13,12 @@ description: EasyInk 包概览：Designer、Viewer、Schema、Core、Datasource 
 大多数业务项目先装这两个包：
 
 ```bash
-pnpm add @easyink/designer @easyink/viewer @easyink/builtin
+pnpm add @hcxz/designer @hcxz/viewer @hcxz/builtin
 ```
 
-- `@easyink/designer` 提供设计器组件和相关扩展接口。
-- `@easyink/viewer` 提供预览、打印和导出所需的运行时。
-- `@easyink/builtin` 提供官方内置物料集合，由你按公开子路径显式注册；根入口默认等同 all 集合，并提供 all/basic/none 的显式别名。
+- `@hcxz/designer` 提供设计器组件和相关扩展接口。
+- `@hcxz/viewer` 提供预览、打印和导出所需的运行时。
+- `@hcxz/builtin` 提供官方内置物料集合，由你按公开子路径显式注册；根入口默认等同 all 集合，并提供 all/basic/none 的显式别名。
 
 如果你现在处在“先把页面跑起来”的阶段，这两个包已经够用了。
 
@@ -28,10 +28,10 @@ pnpm add @easyink/designer @easyink/viewer @easyink/builtin
 
 | 包 | 你什么时候会碰到它 |
 | --- | --- |
-| `@easyink/schema` | 你想手动构造、归一化、校验模板 |
-| `@easyink/core` | 你在做字体、物料扩展、布局或底层能力复用 |
-| `@easyink/datasource` | 你想在业务层维护数据源字段树 |
-| `@easyink/schema-tools` | 你要做 Schema 校验、对齐或 AI 生成后的修复 |
+| `@hcxz/schema` | 你想手动构造、归一化、校验模板 |
+| `@hcxz/core` | 你在做字体、物料扩展、布局或底层能力复用 |
+| `@hcxz/datasource` | 你想在业务层维护数据源字段树 |
+| `@hcxz/schema-tools` | 你要做 Schema 校验、对齐或 AI 生成后的修复 |
 
 通常是这样的顺序：先用 Designer 和 Viewer，遇到更细的模板问题时，再往这些包下钻。
 
@@ -41,13 +41,13 @@ pnpm add @easyink/designer @easyink/viewer @easyink/builtin
 
 先看基础层：
 
-- `@easyink/print-core`：Viewer 页面提取、尺寸换算和托管打印面等共享工具。
+- `@hcxz/print-core`：Viewer 页面提取、尺寸换算和托管打印面等共享工具。
 
 再看官方集成层：
 
-- `@easyink/print-integration-easyink-printer`：对接 Windows 上的 EasyInk.Printer。
-- `@easyink/print-integration-hiprint`：对接 electron-hiprint。
-- `@easyink/print-integration-lodop`：对接 LODOP/C-Lodop。
+- `@hcxz/print-integration-easyink-printer`：对接 Windows 上的 EasyInk.Printer。
+- `@hcxz/print-integration-hiprint`：对接 electron-hiprint。
+- `@hcxz/print-integration-lodop`：对接 LODOP/C-Lodop。
 
 如果你的目标只是把模板打出去，优先选官方集成包，不用先自己写驱动。
 
@@ -57,9 +57,9 @@ pnpm add @easyink/designer @easyink/viewer @easyink/builtin
 
 | 包 | 作用 |
 | --- | --- |
-| `@easyink/export-runtime` | 导出运行时和插件注册表 |
-| `@easyink/export-plugin-dom-image` | 把 Viewer 页面导出成 PNG/JPEG/WebP 图片的官方插件 |
-| `@easyink/export-plugin-dom-pdf` | 把 Viewer 页面导出成 PDF 的官方插件 |
+| `@hcxz/export-runtime` | 导出运行时和插件注册表 |
+| `@hcxz/export-plugin-dom-image` | 把 Viewer 页面导出成 PNG/JPEG/WebP 图片的官方插件 |
+| `@hcxz/export-plugin-dom-pdf` | 把 Viewer 页面导出成 PDF 的官方插件 |
 
 这层设计的意思很简单：Viewer 负责把页面渲染出来，导出插件负责把这些页面变成文件。
 
@@ -69,10 +69,10 @@ pnpm add @easyink/designer @easyink/viewer @easyink/builtin
 
 | 包 | 作用 |
 | --- | --- |
-| `@easyink/builtin` | 内置物料集合，根入口默认 all，公开支持 `all`、`basic`、`none` 子路径 |
-| `@easyink/locales` | 内置语言包实现，设计器会继续透出它们 |
-| `@easyink/ui` | 设计器内部共用 UI 组件 |
-| `@easyink/icons` | 图标资源 |
+| `@hcxz/builtin` | 内置物料集合，根入口默认 all，公开支持 `all`、`basic`、`none` 子路径 |
+| `@hcxz/locales` | 内置语言包实现，设计器会继续透出它们 |
+| `@hcxz/ui` | 设计器内部共用 UI 组件 |
+| `@hcxz/icons` | 图标资源 |
 
 这些包更多是扩展和维护层会接触到的东西。普通业务接入一般不需要直接操作全部内容。
 
@@ -80,29 +80,29 @@ pnpm add @easyink/designer @easyink/viewer @easyink/builtin
 
 仓库里每种内置物料都拆成独立包，比如：
 
-- `@easyink/material-text`
-- `@easyink/material-image`
-- `@easyink/material-barcode`
-- `@easyink/material-qrcode`
-- `@easyink/material-rect`
-- `@easyink/material-ellipse`
-- `@easyink/material-line`
-- `@easyink/material-page-number`
-- `@easyink/material-table-static`
-- `@easyink/material-table-data`
-- `@easyink/material-flow-row`
-- `@easyink/material-chart-bar`
-- `@easyink/material-chart-line`
-- `@easyink/material-chart-pie`
-- `@easyink/material-chart-radar`
-- `@easyink/material-chart-scatter`
-- `@easyink/material-chart-gauge`
-- `@easyink/material-chart-custom`
-- `@easyink/material-chart-kernel`
+- `@hcxz/material-text`
+- `@hcxz/material-image`
+- `@hcxz/material-barcode`
+- `@hcxz/material-qrcode`
+- `@hcxz/material-rect`
+- `@hcxz/material-ellipse`
+- `@hcxz/material-line`
+- `@hcxz/material-page-number`
+- `@hcxz/material-table-static`
+- `@hcxz/material-table-data`
+- `@hcxz/material-flow-row`
+- `@hcxz/material-chart-bar`
+- `@hcxz/material-chart-line`
+- `@hcxz/material-chart-pie`
+- `@hcxz/material-chart-radar`
+- `@hcxz/material-chart-scatter`
+- `@hcxz/material-chart-gauge`
+- `@hcxz/material-chart-custom`
+- `@hcxz/material-chart-kernel`
 
-你不用一开始就单独安装它们。多数情况下，它们会通过 `@easyink/builtin/all` 或 `@easyink/builtin/basic` 进入 Designer 和 Viewer。
+你不用一开始就单独安装它们。多数情况下，它们会通过 `@hcxz/builtin/all` 或 `@hcxz/builtin/basic` 进入 Designer 和 Viewer。
 
-只有当你在研究自定义物料、对照内置实现写扩展时，才需要逐个看这些包。图表物料使用拆分包：常规图表走轻量 chart kernel，自定义 ECharts 可通过 `@easyink/material-chart-kernel/full` 使用完整 ECharts 入口。
+只有当你在研究自定义物料、对照内置实现写扩展时，才需要逐个看这些包。图表物料使用拆分包：常规图表走轻量 chart kernel，自定义 ECharts 可通过 `@hcxz/material-chart-kernel/full` 使用完整 ECharts 入口。
 
 ## AI 与 Assistant 平台
 
@@ -112,29 +112,29 @@ AI 能力通过 Assistant 平台实现，分为三层：
 
 | 包 | 作用 |
 | --- | --- |
-| `@easyink/assistant-designer-bridge` | 通过 Contribution 机制将 AI 面板接入 Designer |
-| `@easyink/assistant-ui` | AI 任务面板 Vue 组件 |
+| `@hcxz/assistant-designer-bridge` | 通过 Contribution 机制将 AI 面板接入 Designer |
+| `@hcxz/assistant-ui` | AI 任务面板 Vue 组件 |
 
 **Orchestrator 服务层：**
 
 | 包 | 作用 |
 | --- | --- |
-| `@easyink/assistant-orchestrator` | 主服务：LangGraph 管道 + ComposerAgent + HTTP API |
-| `@easyink/assistant-llm` | Provider 无关的 LLM 网关 |
-| `@easyink/assistant-store` | 任务、版本、草稿存储 |
-| `@easyink/assistant-capabilities` | Schema 验证、diff、patch、preview |
-| `@easyink/assistant-adapters` | 外部数据源适配器 |
+| `@hcxz/assistant-orchestrator` | 主服务：LangGraph 管道 + ComposerAgent + HTTP API |
+| `@hcxz/assistant-llm` | Provider 无关的 LLM 网关 |
+| `@hcxz/assistant-store` | 任务、版本、草稿存储 |
+| `@hcxz/assistant-capabilities` | Schema 验证、diff、patch、preview |
+| `@hcxz/assistant-adapters` | 外部数据源适配器 |
 
 **知识与推理层：**
 
 | 包 | 作用 |
 | --- | --- |
-| `@easyink/assistant-material-knowledge` | 物料知识注册表（从 manifest 动态构建） |
-| `@easyink/assistant-constraint-engine` | 可执行约束引擎（验证 + 自动修复） |
-| `@easyink/assistant-schema-builder` | Schema 构建 DSL |
-| `@easyink/assistant-type-aligner` | 类型驱动数据对齐 |
-| `@easyink/assistant-scenario-templates` | 场景模板库与分类器 |
-| `@easyink/assistant-tool-registry` | Agent 工具注册表 |
+| `@hcxz/assistant-material-knowledge` | 物料知识注册表（从 manifest 动态构建） |
+| `@hcxz/assistant-constraint-engine` | 可执行约束引擎（验证 + 自动修复） |
+| `@hcxz/assistant-schema-builder` | Schema 构建 DSL |
+| `@hcxz/assistant-type-aligner` | 类型驱动数据对齐 |
+| `@hcxz/assistant-scenario-templates` | 场景模板库与分类器 |
+| `@hcxz/assistant-tool-registry` | Agent 工具注册表 |
 
 这些包不属于 Designer 运行时必需依赖。只有在接 AI 生成模板工作流时才需要引入。
 
@@ -142,7 +142,7 @@ AI 能力通过 Assistant 平台实现，分为三层：
 
 如果你不想每次都从零判断，可以直接按下面这个规则来：
 
-- 只做编辑和预览：装 `@easyink/designer`、`@easyink/viewer`
+- 只做编辑和预览：装 `@hcxz/designer`、`@hcxz/viewer`
 - 做打印：再加官方打印集成包
 - 做导出：再加导出运行时和对应插件
 - 做高级扩展：再看 `schema`、`core`、物料包和 Assistant 包

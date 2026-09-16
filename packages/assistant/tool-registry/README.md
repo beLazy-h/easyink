@@ -1,4 +1,4 @@
-# @easyink/assistant-tool-registry
+# @hcxz/assistant-tool-registry
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-tool-registry?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-tool-registry) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-tool-registry?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-tool-registry)
 

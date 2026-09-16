@@ -1,4 +1,4 @@
-import type { FontDescriptor, FontProvider } from '@easyink/designer'
+import type { FontDescriptor, FontProvider } from '@hcxz/designer'
 
 interface PlaygroundFileFontDescriptor extends FontDescriptor {
   fileName: string

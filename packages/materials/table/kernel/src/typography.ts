@@ -1,4 +1,4 @@
-import type { CellTypography, TableCellSchema, TableTypography } from '@easyink/schema'
+import type { CellTypography, TableCellSchema, TableTypography } from '@hcxz/schema'
 
 /**
  * Resolve a cell's effective typography by merging cell-level overrides

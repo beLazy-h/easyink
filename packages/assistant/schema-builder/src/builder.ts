@@ -1,5 +1,5 @@
-import type { ConstraintContext, MaterialKnowledgeRegistry } from '@easyink/assistant-material-knowledge'
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
+import type { ConstraintContext, MaterialKnowledgeRegistry } from '@hcxz/assistant-material-knowledge'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
 import type {
   EmitBindingInput,
   EmitDataContractBindingInput,
@@ -9,7 +9,7 @@ import type {
   SchemaBuilderContext,
   TableColumnInput,
 } from './types'
-import { ConstraintEngine } from '@easyink/assistant-constraint-engine'
+import { ConstraintEngine } from '@hcxz/assistant-constraint-engine'
 
 export class SchemaBuilder {
   private readonly context: SchemaBuilderContext

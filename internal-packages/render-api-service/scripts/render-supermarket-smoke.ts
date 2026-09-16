@@ -5,7 +5,7 @@ import process from 'node:process'
 import {
   supermarketDemoData,
   supermarketReceiptTemplate,
-} from '@easyink/samples'
+} from '@hcxz/samples'
 
 interface RenderCliSummary {
   success: boolean

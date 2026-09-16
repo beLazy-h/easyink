@@ -282,7 +282,7 @@ uploadPdfChunk * n -> printUploadedPdfAsync -> getJobStatus
 4 字节大端 metadata 长度 + metadata JSON + PDF bytes
 ```
 
-如果你使用 `@easyink/print-integration-easyink-printer`，这层协议通常不需要手写。
+如果你使用 `@hcxz/print-integration-easyink-printer`，这层协议通常不需要手写。
 
 ## 认证 {#auth}
 

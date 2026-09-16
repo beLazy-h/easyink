@@ -1,4 +1,4 @@
-import type { AssistantPlugin } from '@easyink/assistant-plugins'
+import type { AssistantPlugin } from '@hcxz/assistant-plugins'
 
 export const prototypeDesignerPlugin = {
   manifest: {

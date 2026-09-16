@@ -13,7 +13,7 @@ Designer 里的数据绑定，本质上是在做一件很朴素的事：把模�
 Designer 接收的是 `DataSourceDescriptor[]`。它决定左侧数据源面板长什么样，也决定用户能拖哪些字段。
 
 ```ts
-import type { DataSourceDescriptor } from '@easyink/designer'
+import type { DataSourceDescriptor } from '@hcxz/designer'
 
 const dataSources: DataSourceDescriptor[] = [
   {

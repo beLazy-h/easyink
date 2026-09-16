@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/designer",
+  "name": "@hcxz/designer",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "EasyInk document/report designer workbench",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -28,14 +28,14 @@
     "vue": "catalog:framework"
   },
   "dependencies": {
-    "@easyink/core": "workspace:*",
-    "@easyink/datasource": "workspace:*",
-    "@easyink/icons": "workspace:*",
-    "@easyink/locales": "workspace:*",
-    "@easyink/prop-schemas": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*",
-    "@easyink/ui": "workspace:*",
+    "@hcxz/core": "workspace:*",
+    "@hcxz/datasource": "workspace:*",
+    "@hcxz/icons": "workspace:*",
+    "@hcxz/locales": "workspace:*",
+    "@hcxz/prop-schemas": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*",
+    "@hcxz/ui": "workspace:*",
     "mutative": "catalog:framework"
   }
 }

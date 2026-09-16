@@ -3,18 +3,18 @@
   "commit": false,
   "fixed": [
     [
-      "@easyink/material-*",
-      "@easyink/builtin",
-      "@easyink/designer",
-      "@easyink/viewer"
+      "@hcxz/material-*",
+      "@hcxz/builtin",
+      "@hcxz/designer",
+      "@hcxz/viewer"
     ]
   ],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@easyink/playground",
-    "@easyink/render-viewer-runtime",
-    "@easyink/render-api-service"
+    "@hcxz/playground",
+    "@hcxz/render-viewer-runtime",
+    "@hcxz/render-api-service"
   ]
 }

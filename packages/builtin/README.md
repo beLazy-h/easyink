@@ -1,4 +1,4 @@
-# @easyink/builtin
+# @hcxz/builtin
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fbuiltin?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fbuiltin) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fbuiltin?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fbuiltin)
 
@@ -9,7 +9,7 @@ Internal built-in material registry for EasyInk runtimes
 Choose a material set by subpath:
 
 ```ts
-import { builtinDesignerMaterialBundle, registerBuiltinViewerMaterials } from '@easyink/builtin/all'
+import { builtinDesignerMaterialBundle, registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
 
 const runtimeConfig = {
   materials: {
@@ -22,7 +22,7 @@ registerBuiltinViewerMaterials((type, binding, extension) => {
 })
 ```
 
-Available subpaths: `@easyink/builtin/all`, `@easyink/builtin/basic`, `@easyink/builtin/none`.
+Available subpaths: `@hcxz/builtin/all`, `@hcxz/builtin/basic`, `@hcxz/builtin/none`.
 
 ## Documentation
 

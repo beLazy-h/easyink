@@ -1,4 +1,4 @@
-# @easyink/material-chart-radar
+# @hcxz/material-chart-radar
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fmaterial-chart-radar?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-chart-radar) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fmaterial-chart-radar?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-chart-radar)
 

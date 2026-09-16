@@ -1,6 +1,6 @@
-import type { PaperPreset } from '@easyink/shared'
+import type { PaperPreset } from '@hcxz/shared'
 import type { DesignerPaperConfig } from '../runtime-config'
-import { PAPER_PRESETS } from '@easyink/shared'
+import { PAPER_PRESETS } from '@hcxz/shared'
 import { markRaw } from 'vue'
 
 function getPresetKey(preset: PaperPreset): string {

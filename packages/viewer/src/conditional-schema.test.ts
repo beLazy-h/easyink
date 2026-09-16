@@ -1,5 +1,5 @@
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
-import { trustedViewerHtml } from '@easyink/core'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
+import { trustedViewerHtml } from '@hcxz/core'
 import { describe, expect, it, vi } from 'vitest'
 import { resolveConditionalSchema } from './conditional-schema'
 import { createViewer } from './index'

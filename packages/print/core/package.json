@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/print-core",
+  "name": "@hcxz/print-core",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Shared print utilities for EasyInk print drivers",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/export-runtime": "workspace:*",
-    "@easyink/viewer": "workspace:*"
+    "@hcxz/export-runtime": "workspace:*",
+    "@hcxz/viewer": "workspace:*"
   }
 }

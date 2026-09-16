@@ -403,7 +403,7 @@ easyink-android-render-{version}-javadoc.jar
 ### 8.3 产物约束
 
 - Android SDK 不维护另一套 EasyInk 渲染器，也不 fork `viewer-runtime`。
-- Viewer runtime 与 Web 预览、桌面 Render 共用同一套 `@easyink/viewer` 渲染语义。
+- Viewer runtime 与 Web 预览、桌面 Render 共用同一套 `@hcxz/viewer` 渲染语义。
 - `#easyink-payload`、`.easyink-ready`、`window.easyinkReady` 和 rendered page metrics 是 Android SDK 与 runtime 的稳定集成点。
 - Runtime 版本需要写入 SDK metadata，渲染结果 diagnostics 中暴露 `runtimeVersion`。
 - AAR 内置 runtime 是默认路径；业务不需要自行准备 HTML、JS、CSS。

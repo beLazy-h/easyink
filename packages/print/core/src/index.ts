@@ -1,4 +1,4 @@
-import type { ExportDiagnostic } from '@easyink/export-runtime'
+import type { ExportDiagnostic } from '@hcxz/export-runtime'
 import type {
   DocumentSchema,
   PrintDriver,
@@ -10,8 +10,8 @@ import type {
   ViewerPrintSheetSize,
   ViewerRuntime,
   ViewerTaskCallbacks,
-} from '@easyink/viewer'
-import { createBrowserViewerHost, createIframeViewerHost, createViewer } from '@easyink/viewer'
+} from '@hcxz/viewer'
+import { createBrowserViewerHost, createIframeViewerHost, createViewer } from '@hcxz/viewer'
 
 const UNIT_TO_MM = {
   cm: 10,

@@ -29,7 +29,7 @@ Useful architecture docs:
 Every AI-visible material should have `src/ai.ts`:
 
 ```ts
-import type { AIMaterialDescriptor } from '@easyink/shared'
+import type { AIMaterialDescriptor } from '@hcxz/shared'
 
 export const xAIMaterialDescriptor = {
   type: X_TYPE,
@@ -151,7 +151,7 @@ Built-in materials:
 
 1. Export `xAIMaterialDescriptor` from the material package.
 2. Add `aiDescriptor: xAIMaterialDescriptor` to the material entry in `packages/builtin/src/designer.ts`.
-3. Keep root `@easyink/builtin`, `@easyink/builtin/all`, and any applicable reduced-set entry point aligned so the live Designer material manifest reflects what the host registered. Do not route consumers through unpublished `@easyink/builtin/designer`, `@easyink/builtin/viewer`, or `@easyink/builtin/bindings` subpaths.
+3. Keep root `@hcxz/builtin`, `@hcxz/builtin/all`, and any applicable reduced-set entry point aligned so the live Designer material manifest reflects what the host registered. Do not route consumers through unpublished `@hcxz/builtin/designer`, `@hcxz/builtin/viewer`, or `@hcxz/builtin/bindings` subpaths.
 4. Do not add material-specific prompt text. Assistant reads the live material manifest, including binding and data-contract target fields.
 5. Keep Designer capabilities, prop schemas, Viewer behavior, and AI descriptor claims aligned.
 

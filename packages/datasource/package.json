@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/datasource",
+  "name": "@hcxz/datasource",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Data source protocol and field tree for EasyInk designer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,6 +22,6 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/shared": "workspace:*"
+    "@hcxz/shared": "workspace:*"
   }
 }

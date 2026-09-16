@@ -10,8 +10,8 @@ import type {
   SelectionStore,
   SurfacesAPI,
   TransactionAPI,
-} from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+} from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { DiagnosticsChannel } from '../store/diagnostics'
 import { reactive } from 'vue'
 import { dispatchBehaviorEvent } from './behavior-dispatcher'

@@ -8,7 +8,7 @@ const mocks = vi.hoisted(() => ({
   })),
 }))
 
-vi.mock('@easyink/core', () => ({
+vi.mock('@hcxz/core', () => ({
   formatBindingDisplayValue: mocks.formatBindingDisplayValue,
   hasBindingFormat: () => true,
   resolveBindingValue: (_binding: unknown, data: Record<string, unknown>) => (data.customer as { name: string }).name,

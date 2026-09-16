@@ -37,8 +37,8 @@ if errorlevel 1 (
 
 pushd "%REPO_ROOT%" >nul
 
-if not exist "internal-packages\viewer-runtime\node_modules\@easyink\viewer" (
-    echo Missing workspace dependency link for @easyink/viewer in internal-packages\viewer-runtime.
+if not exist "internal-packages\viewer-runtime\node_modules\@hcxz\viewer" (
+    echo Missing workspace dependency link for @hcxz/viewer in internal-packages\viewer-runtime.
     echo Run "pnpm install" from the repository root to refresh workspace node_modules, then rerun this script.
     popd >nul
     exit /b 1

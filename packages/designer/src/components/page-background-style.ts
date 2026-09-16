@@ -1,4 +1,4 @@
-import type { PageBackground } from '@easyink/schema'
+import type { PageBackground } from '@hcxz/schema'
 
 export function resolvePageBackgroundStyle(
   bg: PageBackground | undefined,

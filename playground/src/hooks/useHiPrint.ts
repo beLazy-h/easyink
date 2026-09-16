@@ -1,5 +1,5 @@
-import type { HiPrintDevice, HiPrintPrintRequest } from '@easyink/print-integration-hiprint'
-import { createHiPrintClient, createHiPrintPrinter, DEFAULT_HIPRINT_URL } from '@easyink/print-integration-hiprint'
+import type { HiPrintDevice, HiPrintPrintRequest } from '@hcxz/print-integration-hiprint'
+import { createHiPrintClient, createHiPrintPrinter, DEFAULT_HIPRINT_URL } from '@hcxz/print-integration-hiprint'
 import { computed, reactive, ref, watch } from 'vue'
 import { setupPlaygroundViewerMaterials } from '../viewer-materials'
 

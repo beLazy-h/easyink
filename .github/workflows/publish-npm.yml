@@ -35,7 +35,7 @@ jobs:
           node-version: 24
           cache: pnpm
           registry-url: 'https://registry.npmjs.org'
-          scope: '@easyink'
+          scope: '@hcxz'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -82,7 +82,7 @@ jobs:
   publish-orchestrator-image:
     needs:
       - release
-    if: ${{ needs.release.result == 'success' && needs.release.outputs.published == 'true' && contains(needs.release.outputs.published_packages, '@easyink/assistant-orchestrator') }}
+    if: ${{ needs.release.result == 'success' && needs.release.outputs.published == 'true' && contains(needs.release.outputs.published_packages, '@hcxz/assistant-orchestrator') }}
     permissions:
       contents: read
       packages: write

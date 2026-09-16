@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const chartBarDesignerPropSchemas: PropSchema[] = [
   { key: 'barColor', label: 'materials.chartBar.property.barColor', type: 'color', group: 'appearance' },

@@ -1,4 +1,4 @@
-import type { SchemaBuilder } from '@easyink/assistant-schema-builder'
+import type { SchemaBuilder } from '@hcxz/assistant-schema-builder'
 import type { ToolDefinition } from '../types'
 import { z } from 'zod'
 

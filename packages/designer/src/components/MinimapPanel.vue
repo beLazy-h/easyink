@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { EditorSurfacePlan, Rect } from '@easyink/core'
+import type { EditorSurfacePlan, Rect } from '@hcxz/core'
 import type { MinimapElementFrame, MinimapPageFrame } from './minimap-layout'
-import { createEditorSurfacePlan } from '@easyink/core'
+import { createEditorSurfacePlan } from '@hcxz/core'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useDesignerStore } from '../composables'
 import { resolveMinimapLayout } from './minimap-layout'

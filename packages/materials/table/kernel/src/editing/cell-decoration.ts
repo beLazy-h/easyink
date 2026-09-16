@@ -1,7 +1,7 @@
-import type { EditingSessionRef, Rect, Selection } from '@easyink/core'
-import type { MaterialNode, TableNode } from '@easyink/schema'
+import type { EditingSessionRef, Rect, Selection } from '@hcxz/core'
+import type { MaterialNode, TableNode } from '@hcxz/schema'
 import type { TableCellPayload, TableEditingDelegate } from './types'
-import { isTableNode } from '@easyink/schema'
+import { isTableNode } from '@hcxz/schema'
 import {
   createPointerGesture,
   materialToolbarButtonStyle,
@@ -9,7 +9,7 @@ import {
   materialToolbarGroupStyle,
   materialToolbarIconStyle,
   materialToolbarShellStyle,
-} from '@easyink/shared'
+} from '@hcxz/shared'
 import { computed, defineComponent, h, onUnmounted, ref, watch } from 'vue'
 import { createTableToolbarGroups } from './toolbar'
 

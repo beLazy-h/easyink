@@ -1,5 +1,5 @@
-import type { AssistantResult } from '@easyink/assistant-capabilities'
-import type { AssistantConversationStatus, AssistantEventRecord, AssistantTaskRecord } from '@easyink/assistant-store'
+import type { AssistantResult } from '@hcxz/assistant-capabilities'
+import type { AssistantConversationStatus, AssistantEventRecord, AssistantTaskRecord } from '@hcxz/assistant-store'
 import { AssistantApiError } from '../api'
 
 export function friendlyThinkingText(text: string | undefined, tr: (key: string) => string): string | undefined {

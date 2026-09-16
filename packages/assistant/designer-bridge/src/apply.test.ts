@@ -1,5 +1,5 @@
-import type { AssistantPatchOperation, AssistantResult } from '@easyink/assistant-capabilities'
-import { DesignerStore } from '@easyink/designer'
+import type { AssistantPatchOperation, AssistantResult } from '@hcxz/assistant-capabilities'
+import { DesignerStore } from '@hcxz/designer'
 import { describe, expect, it } from 'vitest'
 import {
   applyAssistantDataSourceToDesigner,

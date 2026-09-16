@@ -1,7 +1,7 @@
-import type { ViewerMeasureContext, ViewerRenderContext, ViewerRenderSize } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
-import { trustedViewerHtml } from '@easyink/core'
-import { escapeHtml } from '@easyink/shared'
+import type { ViewerMeasureContext, ViewerRenderContext, ViewerRenderSize } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
+import { trustedViewerHtml } from '@hcxz/core'
+import { escapeHtml } from '@hcxz/shared'
 import { getTextDisplayValue, getTextProps, isTextAutoHeight, measureTextNode } from './layout'
 import { getTextContainerStyles, getTextContentStyles } from './rendering'
 

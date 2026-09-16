@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/samples",
+  "name": "@hcxz/samples",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Sample templates and demo data for EasyInk",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,8 +22,8 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/datasource": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*"
+    "@hcxz/datasource": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*"
   }
 }

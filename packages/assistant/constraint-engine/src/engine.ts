@@ -1,8 +1,8 @@
 import type {
   ConstraintContext,
   MaterialKnowledgeRegistry,
-} from '@easyink/assistant-material-knowledge'
-import type { MaterialNode } from '@easyink/schema'
+} from '@hcxz/assistant-material-knowledge'
+import type { MaterialNode } from '@hcxz/schema'
 import type {
   AutoFixResult,
   ConstraintEngineOptions,

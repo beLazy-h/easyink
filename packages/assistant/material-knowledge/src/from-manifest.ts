@@ -1,4 +1,4 @@
-import type { AIMaterialDescriptor, MaterialKnowledgeDescriptor } from '@easyink/shared'
+import type { AIMaterialDescriptor, MaterialKnowledgeDescriptor } from '@hcxz/shared'
 import type { FieldType, MaterialBindingSpec, MaterialKnowledge, MaterialPropertySpec } from './types'
 import { MaterialKnowledgeRegistry } from './registry'
 

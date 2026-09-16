@@ -9,8 +9,8 @@ description: EasyInk 打印方案选型指南：Render PDF 渲染、EasyInk Prin
 先看几个最短调用：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createEasyInkPrinter } from '@easyink/print-integration-easyink-printer'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createEasyInkPrinter } from '@hcxz/print-integration-easyink-printer'
 
 const printer = createEasyInkPrinter({
   serviceUrl: 'http://localhost:18080',
@@ -29,8 +29,8 @@ await printer.print({ schema, data })
 这里的 `printer.ready()` 是可选预检，用来提前确认本地服务和打印机列表。实际打印 API 会按需连接，所以你也可以直接调用 `printer.print()`。
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createHiPrintClient, createHiPrintPrinter } from '@easyink/print-integration-hiprint'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createHiPrintClient, createHiPrintPrinter } from '@hcxz/print-integration-hiprint'
 
 const client = createHiPrintClient({
   serviceUrl: 'http://localhost:17521',
@@ -57,8 +57,8 @@ await printer.print({ schema, data })
 LODOP 路径也类似：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createLodopClient, createLodopPrinter } from '@easyink/print-integration-lodop'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createLodopClient, createLodopPrinter } from '@hcxz/print-integration-lodop'
 
 const client = createLodopClient({
   script: {

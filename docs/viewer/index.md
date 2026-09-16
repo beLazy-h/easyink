@@ -1,10 +1,10 @@
 ---
-description: '@easyink/viewer 是独立的渲染运行时，接收 Schema 和数据，负责预览、分页、打印和导出入口。'
+description: '@hcxz/viewer 是独立的渲染运行时，接收 Schema 和数据，负责预览、分页、打印和导出入口。'
 ---
 
 # Viewer {#viewer}
 
-`@easyink/viewer` 是 EasyInk 的消费端运行时。它接收一份 Schema 和一份运行时数据，然后完成校验、绑定、布局、分页和 DOM 渲染。
+`@hcxz/viewer` 是 EasyInk 的消费端运行时。它接收一份 Schema 和一份运行时数据，然后完成校验、绑定、布局、分页和 DOM 渲染。
 
 如果 Designer 解决的是“怎么编辑模板”，Viewer 解决的就是“怎么把这份模板跑起来”。
 
@@ -13,8 +13,8 @@ description: '@easyink/viewer 是独立的渲染运行时，接收 Schema 和数
 先看一段最小代码：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createViewer } from '@easyink/viewer'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createViewer } from '@hcxz/viewer'
 
 const viewer = createViewer({ iframe: iframeElement })
 registerBuiltinViewerMaterials((type, binding, extension) => {
@@ -38,7 +38,7 @@ viewer.destroy()
 - `open({ schema, data })` 校验 Schema、归一化 Schema，然后渲染页面。
 - `destroy()` 清理当前 Host 挂载内容、注册表和字体缓存。
 
-Viewer 不会自动内置官方物料；如果你的模板使用内置物料，需要先从 `@easyink/builtin/all` 或 `@easyink/builtin/basic` 注册对应渲染器。
+Viewer 不会自动内置官方物料；如果你的模板使用内置物料，需要先从 `@hcxz/builtin/all` 或 `@hcxz/builtin/basic` 注册对应渲染器。
 
 ## 创建 Viewer {#create-viewer}
 
@@ -173,7 +173,7 @@ const blob = await viewer.exportDocument({
 Viewer 允许你为某个物料 `type` 注册运行时渲染器。
 
 ```ts
-import { trustedViewerHtml } from '@easyink/core'
+import { trustedViewerHtml } from '@hcxz/core'
 
 viewer.registerMaterial('my-widget', { kind: 'none' }, {
   render(node, context) {

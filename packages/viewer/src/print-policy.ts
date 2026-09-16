@@ -1,6 +1,6 @@
-import type { DocumentSchema } from '@easyink/schema'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { ViewerPageMetrics, ViewerPrintOptions, ViewerPrintPolicy } from './types'
-import { resolvePageModel } from '@easyink/core'
+import { resolvePageModel } from '@hcxz/core'
 
 export interface ResolvePrintPolicyInput {
   schema: DocumentSchema

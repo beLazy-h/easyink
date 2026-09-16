@@ -1,8 +1,8 @@
-import type { ConditionalNodeState, ConditionDiagnostic } from '@easyink/core'
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
+import type { ConditionalNodeState, ConditionDiagnostic } from '@hcxz/core'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
 import type { MaterialRendererRegistry } from './material-registry'
 import type { ViewerDiagnosticEvent } from './types'
-import { resolveConditionalNode } from '@easyink/core'
+import { resolveConditionalNode } from '@hcxz/core'
 
 export interface ConditionalSchemaResolution {
   schema: DocumentSchema

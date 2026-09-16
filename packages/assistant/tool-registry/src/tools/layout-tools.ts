@@ -1,4 +1,4 @@
-import type { ScenarioClassifier } from '@easyink/assistant-scenario-templates'
+import type { ScenarioClassifier } from '@hcxz/assistant-scenario-templates'
 import type { ToolDefinition, ToolExecutionContext } from '../types'
 import { z } from 'zod'
 

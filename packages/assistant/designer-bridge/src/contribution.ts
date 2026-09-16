@@ -1,9 +1,9 @@
-import type { AssistantPatchOperation, AssistantResult } from '@easyink/assistant-capabilities'
-import type { AssistantPlugin } from '@easyink/assistant-plugins'
-import type { AssistantLLMConfigService } from '@easyink/assistant-ui'
-import type { Contribution } from '@easyink/designer'
-import { DexieAssistantStore } from '@easyink/assistant-store'
-import { IconSparkles } from '@easyink/icons'
+import type { AssistantPatchOperation, AssistantResult } from '@hcxz/assistant-capabilities'
+import type { AssistantPlugin } from '@hcxz/assistant-plugins'
+import type { AssistantLLMConfigService } from '@hcxz/assistant-ui'
+import type { Contribution } from '@hcxz/designer'
+import { DexieAssistantStore } from '@hcxz/assistant-store'
+import { IconSparkles } from '@hcxz/icons'
 import { defineAsyncComponent, ref } from 'vue'
 import {
   applyAssistantDataSourceToDesigner,

@@ -13,7 +13,7 @@ import {
   IconSave,
   IconWifi,
   IconWifiOff,
-} from '@easyink/icons'
+} from '@hcxz/icons'
 import { computed } from 'vue'
 import { useDesignerStore } from '../composables'
 

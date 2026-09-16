@@ -1,4 +1,4 @@
-import type { DocumentSchema } from '@easyink/designer'
+import type { DocumentSchema } from '@hcxz/designer'
 
 export interface StoredTemplate {
   id: string

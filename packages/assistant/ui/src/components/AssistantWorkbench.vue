@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { AssistantMaterialManifest, AssistantPatchOperation, AssistantResult } from '@easyink/assistant-capabilities'
-import type { AssistantPlugin } from '@easyink/assistant-plugins'
-import type { AssistantConversationStatus, AssistantStore } from '@easyink/assistant-store'
+import type { AssistantMaterialManifest, AssistantPatchOperation, AssistantResult } from '@hcxz/assistant-capabilities'
+import type { AssistantPlugin } from '@hcxz/assistant-plugins'
+import type { AssistantConversationStatus, AssistantStore } from '@hcxz/assistant-store'
 import type { AssistantApiClient } from '../api'
 import type { AssistantTranslate } from '../i18n'
 import type { AssistantLLMConfigService } from '../runtime-llm'

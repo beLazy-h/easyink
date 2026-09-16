@@ -1,8 +1,8 @@
-import type { DatasourceDropHandler, MaterialDesignerExtension, MaterialExtensionContext } from '@easyink/core'
-import type { BindingRef, MaterialNode } from '@easyink/schema'
+import type { DatasourceDropHandler, MaterialDesignerExtension, MaterialExtensionContext } from '@hcxz/core'
+import type { BindingRef, MaterialNode } from '@hcxz/schema'
 import type { ChartCustomProps } from './schema'
-import { createChartDesignerRenderHost, mountFullECharts } from '@easyink/material-chart-kernel/full'
-import { getBindingRefs, getNodeProps } from '@easyink/schema'
+import { createChartDesignerRenderHost, mountFullECharts } from '@hcxz/material-chart-kernel/full'
+import { getBindingRefs, getNodeProps } from '@hcxz/schema'
 import { resolveChartCustomOption, resolveChartCustomProps } from './options'
 
 export function createChartCustomExtension(context: MaterialExtensionContext): MaterialDesignerExtension {

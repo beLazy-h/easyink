@@ -21,7 +21,7 @@ Typical files:
 In `schema.ts`:
 
 - Export a canonical `TYPE` string and do not rename it after release.
-- Use `generateId(prefix)` from `@easyink/shared` for IDs.
+- Use `generateId(prefix)` from `@hcxz/shared` for IDs.
 - Use `convertUnit(value, 'mm', unit)` when defaults are authored in mm and `unit` may differ.
 - Merge defaults before partial props, and do not let `partial.props` accidentally overwrite the entire node before you normalize it.
 - Default nodes must be visible without external data.
@@ -139,7 +139,7 @@ Do not implement material-specific page planning. Materials may provide:
 
 The Viewer owns layout, pagination, page overlay cloning, page number context, and `ViewerPageMetrics`.
 
-`page.layers` is not a material behavior field. It stores page-level render layers, currently text watermarks, and is resolved through `@easyink/core` page-layer helpers. New materials should not write `page.layers` unless the task is explicitly about whole-page, non-element, non-editable, non-bindable rendering; editable or data-bound repeated visuals belong in `schema.elements[]` with `repeat.scope='every-output-page'`.
+`page.layers` is not a material behavior field. It stores page-level render layers, currently text watermarks, and is resolved through `@hcxz/core` page-layer helpers. New materials should not write `page.layers` unless the task is explicitly about whole-page, non-element, non-editable, non-bindable rendering; editable or data-bound repeated visuals belong in `schema.elements[]` with `repeat.scope='every-output-page'`.
 
 ## Designer Control Policy Rules
 
@@ -187,7 +187,7 @@ For font properties:
 - Do not implement custom font preload logic in material-local property editors. The shared property panel prevents preview writes for font fields, loads the family on commit, and rolls back when loading fails.
 - The empty string means default/inherited font. Do not replace it with a hardcoded browser font unless the material intentionally owns that default.
 
-Material package `src/prop-schemas.ts` files own the full Designer property schema list for that material. `@easyink/prop-schemas` only provides shared option arrays and `createLayoutBehaviorPropSchemas()`; it must not know built-in material types or return material-specific schema lists.
+Material package `src/prop-schemas.ts` files own the full Designer property schema list for that material. `@hcxz/prop-schemas` only provides shared option arrays and `createLayoutBehaviorPropSchemas()`; it must not know built-in material types or return material-specific schema lists.
 
 Base layout behavior props are appended by `PropertiesPanel.vue` through `createLayoutBehaviorPropSchemas({ page })`. Do not duplicate placement, break, or repeat controls in material packages unless the material has a truly different sub-selection UI.
 
@@ -209,11 +209,11 @@ For a new built-in material:
 3. Add package dependency to `packages/builtin/package.json`.
 4. Import and register Designer entry in `packages/builtin/src/designer.ts`.
 5. Import and register Viewer entry in `packages/builtin/src/viewer.ts`.
-6. Update the public `@easyink/builtin` entries. `package.json` exposes only the root entry plus `./all`, `./basic`, `./none`, and `./package.json`; do not add or depend on public `./designer`, `./viewer`, or `./bindings` subpaths. Root exports must keep the all-set aliases plus explicit all/basic/none bundle aliases and Viewer registration helpers aligned. `all` must include the new material; `basic` includes it only if it belongs in the reduced set and must import only that reduced dependency set; `none` remains empty.
+6. Update the public `@hcxz/builtin` entries. `package.json` exposes only the root entry plus `./all`, `./basic`, `./none`, and `./package.json`; do not add or depend on public `./designer`, `./viewer`, or `./bindings` subpaths. Root exports must keep the all-set aliases plus explicit all/basic/none bundle aliases and Viewer registration helpers aligned. `all` must include the new material; `basic` includes it only if it belongs in the reduced set and must import only that reduced dependency set; `none` remains empty.
 7. Leave `condition` omitted unless this material explicitly opts out or narrows hidden effects; do not register the framework default.
 8. If Designer rendering is heavy, register metadata synchronously and use `lazyFactory` for the Designer extension chunk only; keep Viewer registration synchronous.
 9. Pass the material-local AI descriptor as `aiDescriptor` in Designer registration. `packages/builtin/src/ai.ts` is derived from the Designer bundle; do not hand-maintain a second descriptor list.
-10. Add `src/locale.ts` in the material package and pass it as `localeMessages` on the Designer material entry. Keep `@easyink/locales` for Designer common strings only.
+10. Add `src/locale.ts` in the material package and pass it as `localeMessages` on the Designer material entry. Keep `@hcxz/locales` for Designer common strings only.
 11. Add the material to the appropriate `catalogs` group in `packages/builtin/src/designer.ts`. If you add a new group id, register `materials.catalog.<id>` in the bundle locale messages.
 12. Update tests or snapshots affected by built-in type lists, catalog grouping, lazy registration, root/subpath exports, package-size boundaries, condition overrides, or binding format tabs. Include a root-entry check when aliases or registration helpers change so consumers are not forced onto unpublished source subpaths.
 13. Run focused package tests and then broader validation when registration, descriptors, or shared Designer/Viewer behavior changed.

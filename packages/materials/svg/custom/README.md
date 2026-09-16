@@ -1,4 +1,4 @@
-# @easyink/material-svg-custom
+# @hcxz/material-svg-custom
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fmaterial-svg-custom?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-svg-custom) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fmaterial-svg-custom?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fmaterial-svg-custom)
 

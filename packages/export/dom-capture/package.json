@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/export-dom-capture",
+  "name": "@hcxz/export-dom-capture",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Shared DOM capture utilities for EasyInk browser export plugins",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,6 +22,6 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/export-runtime": "workspace:*"
+    "@hcxz/export-runtime": "workspace:*"
   }
 }

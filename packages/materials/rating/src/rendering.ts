@@ -1,6 +1,6 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { RatingProps } from './schema'
-import { escapeAttr, escapeHtml } from '@easyink/shared'
+import { escapeAttr, escapeHtml } from '@hcxz/shared'
 import { RATING_DEFAULTS } from './schema'
 
 interface RatingRenderOptions {

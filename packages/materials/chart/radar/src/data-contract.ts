@@ -1,7 +1,7 @@
-import type { ChartCategoryValuePoint } from '@easyink/material-chart-kernel'
-import type { MaterialNode } from '@easyink/schema'
+import type { ChartCategoryValuePoint } from '@hcxz/material-chart-kernel'
+import type { MaterialNode } from '@hcxz/schema'
 import type { ChartRadarProps } from './schema'
-import { resolveMaterialDataContract } from '@easyink/core'
+import { resolveMaterialDataContract } from '@hcxz/core'
 
 export const CHART_RADAR_DATA_CONTRACT = {
   version: 3,

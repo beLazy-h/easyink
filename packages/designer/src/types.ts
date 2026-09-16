@@ -1,8 +1,8 @@
-import type { MaterialBindingDefinition, MaterialConditionCapability, PropSchema } from '@easyink/core'
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { LocaleMessages } from '@easyink/locales'
-import type { DocumentSchema, DocumentSchemaInput, MaterialNode } from '@easyink/schema'
-import type { AIMaterialDescriptor, MaterialCategory } from '@easyink/shared'
+import type { MaterialBindingDefinition, MaterialConditionCapability, PropSchema } from '@hcxz/core'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { LocaleMessages } from '@hcxz/locales'
+import type { DocumentSchema, DocumentSchemaInput, MaterialNode } from '@hcxz/schema'
+import type { AIMaterialDescriptor, MaterialCategory } from '@hcxz/shared'
 import type { Component } from 'vue'
 import type { Contribution } from './contributions/types'
 
@@ -58,9 +58,9 @@ export type {
   ToolbarAction,
   TransactionAPI,
   TxOptions,
-} from '@easyink/core'
-export * from '@easyink/datasource'
-export type { LocaleMessages } from '@easyink/locales'
+} from '@hcxz/core'
+export * from '@hcxz/datasource'
+export type { LocaleMessages } from '@hcxz/locales'
 
 export interface LocaleMessageRegistration {
   /**
@@ -243,9 +243,9 @@ export interface MaterialCatalogGroup {
   items: MaterialCatalogEntry[]
 }
 
-// ─── Material Extensions (re-exported from @easyink/core) ─────────
+// ─── Material Extensions (re-exported from @hcxz/core) ─────────
 
-export * from '@easyink/schema'
+export * from '@hcxz/schema'
 
 // (DeepEditingRuntimeState removed — replaced by EditingSessionManager)
 
@@ -370,7 +370,7 @@ export interface DesignerInteractionProvider {
 export interface EasyInkDesignerProps {
   schema?: DocumentSchemaInput
   dataSources?: DataSourceDescriptor[]
-  fontProvider?: import('@easyink/core').FontProvider
+  fontProvider?: import('@hcxz/core').FontProvider
   preferenceProvider?: PreferenceProvider
   autoSave?: TemplateAutoSaveOptions
   locale?: LocaleMessages

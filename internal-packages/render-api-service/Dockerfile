@@ -16,8 +16,8 @@ COPY lib/EasyInk.Render/host/ lib/EasyInk.Render/host/
 
 RUN pnpm install --frozen-lockfile
 RUN pnpm render:runtime
-RUN pnpm -F @easyink/render-api-service build
-RUN pnpm deploy --legacy --filter=@easyink/render-api-service /deploy
+RUN pnpm -F @hcxz/render-api-service build
+RUN pnpm deploy --legacy --filter=@hcxz/render-api-service /deploy
 
 FROM --platform=$BUILDPLATFORM golang:1.23-bookworm AS render-host-builder
 

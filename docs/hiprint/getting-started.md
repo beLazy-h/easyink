@@ -21,7 +21,7 @@ http://localhost:17521
 安装前端集成包：
 
 ```bash
-pnpm add @easyink/print-integration-hiprint @easyink/builtin
+pnpm add @hcxz/print-integration-hiprint @hcxz/builtin
 ```
 
 这个包内部使用 `vue-plugin-hiprint` 的 runtime 能力，同时提供 EasyInk 的高层打印器。
@@ -31,7 +31,7 @@ pnpm add @easyink/print-integration-hiprint @easyink/builtin
 先只连 runtime 和刷新打印机：
 
 ```ts
-import { createHiPrintClient } from '@easyink/print-integration-hiprint'
+import { createHiPrintClient } from '@hcxz/print-integration-hiprint'
 
 const client = createHiPrintClient({
   serviceUrl: 'http://localhost:17521',
@@ -52,8 +52,8 @@ console.log(printers)
 打印器创建后，业务侧只需要传 `schema + data`：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createHiPrintClient, createHiPrintPrinter } from '@easyink/print-integration-hiprint'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createHiPrintClient, createHiPrintPrinter } from '@hcxz/print-integration-hiprint'
 
 const client = createHiPrintClient({
   serviceUrl: 'http://localhost:17521',
@@ -160,12 +160,12 @@ await client.printHtml({
 如果项目已经自己管理 `vue-plugin-hiprint`，就让 EasyInk 只接管模板渲染和提交：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
 import { hiprint } from 'vue-plugin-hiprint'
 import {
   createHiPrintPrinter,
   createHiPrintRuntimeClient,
-} from '@easyink/print-integration-hiprint'
+} from '@hcxz/print-integration-hiprint'
 
 const client = createHiPrintRuntimeClient({
   hiprint,

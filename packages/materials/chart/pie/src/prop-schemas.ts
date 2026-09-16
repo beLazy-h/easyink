@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 import { CHART_PIE_PALETTE_OPTIONS } from './options'
 
 export const chartPieDesignerPropSchemas: PropSchema[] = [

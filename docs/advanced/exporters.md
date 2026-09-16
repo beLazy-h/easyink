@@ -8,8 +8,8 @@ description: EasyInk 自定义导出插件开发：Viewer 负责渲染页面，E
 
 如果你只是想把 Viewer 页面导出成 PDF 或图片，先看 [打印与导出](/viewer/print-export#official-file-export)。那里会直接使用官方插件：
 
-- `@easyink/export-plugin-dom-pdf`
-- `@easyink/export-plugin-dom-image`
+- `@hcxz/export-plugin-dom-pdf`
+- `@hcxz/export-plugin-dom-image`
 
 这一页会把它们当作参考实现，重点放在你怎么编写自己的导出插件。
 
@@ -68,7 +68,7 @@ async export(context) {
 格式插件只关心输入和输出：
 
 ```ts
-import type { ExportFormatPlugin } from '@easyink/export-runtime'
+import type { ExportFormatPlugin } from '@hcxz/export-runtime'
 
 interface LabelJsonInput {
   schemaName: string
@@ -97,8 +97,8 @@ export const labelJsonPlugin: ExportFormatPlugin<LabelJsonInput, Blob> = {
 桥接代码应该薄一点：
 
 ```ts
-import type { ExportRuntime } from '@easyink/export-runtime'
-import type { ViewerExporter } from '@easyink/viewer'
+import type { ExportRuntime } from '@hcxz/export-runtime'
+import type { ViewerExporter } from '@hcxz/viewer'
 
 export function createLabelJsonViewerExporter(runtime: ExportRuntime): ViewerExporter {
   return {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { EditorSurfacePlan } from '@easyink/core'
-import { getEditorSurfacePageLeft, projectDocumentPointToEditorSurface } from '@easyink/core'
+import type { EditorSurfacePlan } from '@hcxz/core'
+import { getEditorSurfacePageLeft, projectDocumentPointToEditorSurface } from '@hcxz/core'
 import { computed } from 'vue'
 import { useDesignerStore } from '../composables'
 

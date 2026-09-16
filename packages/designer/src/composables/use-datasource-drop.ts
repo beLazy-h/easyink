@@ -1,8 +1,8 @@
-import type { DatasourceDropZone, DatasourceFieldInfo } from '@easyink/core'
-import type { BindingRef } from '@easyink/schema'
-import type { BindingDisplayFormat } from '@easyink/shared'
+import type { DatasourceDropZone, DatasourceFieldInfo } from '@hcxz/core'
+import type { BindingRef } from '@hcxz/schema'
+import type { BindingDisplayFormat } from '@hcxz/shared'
 import type { DesignerStore } from '../store/designer-store'
-import { BindFieldCommand, pointInRect } from '@easyink/core'
+import { BindFieldCommand, pointInRect } from '@hcxz/core'
 import { createGeometryService } from '../editing/geometry-service'
 import { selectOne } from '../interactions/selection-api'
 

@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/material-svg-star",
+  "name": "@hcxz/material-svg-star",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "EasyInk star SVG material",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -30,8 +30,8 @@
     }
   },
   "dependencies": {
-    "@easyink/core": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*"
+    "@hcxz/core": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*"
   }
 }

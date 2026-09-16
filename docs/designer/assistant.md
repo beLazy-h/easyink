@@ -11,10 +11,10 @@ Assistant 是官方的 Designer 模板生成助手。你把一个 Contribution �
 先把 Designer 和助手桥接包装进你的前端项目：
 
 ```bash
-pnpm add @easyink/designer @easyink/assistant-designer-bridge
+pnpm add @hcxz/designer @hcxz/assistant-designer-bridge
 ```
 
-`@easyink/assistant-designer-bridge` 已经把面板、工具栏按钮、命令和应用结果的逻辑封装好了。你不需要自己从零写一个侧边面板。
+`@hcxz/assistant-designer-bridge` 已经把面板、工具栏按钮、命令和应用结果的逻辑封装好了。你不需要自己从零写一个侧边面板。
 
 ## 接入 Designer {#connect-designer}
 
@@ -23,11 +23,11 @@ pnpm add @easyink/designer @easyink/assistant-designer-bridge
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import { EasyInkDesigner, createLocalStoragePreferenceProvider } from '@easyink/designer'
-import { zhCN } from '@easyink/designer/locale'
-import { createAssistantContribution } from '@easyink/assistant-designer-bridge'
-import '@easyink/designer/index.css'
-import '@easyink/assistant-designer-bridge/index.css'
+import { EasyInkDesigner, createLocalStoragePreferenceProvider } from '@hcxz/designer'
+import { zhCN } from '@hcxz/designer/locale'
+import { createAssistantContribution } from '@hcxz/assistant-designer-bridge'
+import '@hcxz/designer/index.css'
+import '@hcxz/assistant-designer-bridge/index.css'
 
 const schema = ref({})
 const preferenceProvider = createLocalStoragePreferenceProvider()
@@ -65,18 +65,18 @@ const contributions = [assistant]
 
 ```bash
 pnpm add \
-  @easyink/assistant-plugin-placeholder-images \
-  @easyink/assistant-plugin-prototype-designer \
-  @easyink/assistant-plugin-receipt-designer
+  @hcxz/assistant-plugin-placeholder-images \
+  @hcxz/assistant-plugin-prototype-designer \
+  @hcxz/assistant-plugin-receipt-designer
 ```
 
 然后把插件传给 Assistant Contribution：
 
 ```ts
-import { createAssistantContribution } from '@easyink/assistant-designer-bridge'
-import { placeholderImagesPlugin } from '@easyink/assistant-plugin-placeholder-images'
-import { prototypeDesignerPlugin } from '@easyink/assistant-plugin-prototype-designer'
-import { receiptDesignerPlugin } from '@easyink/assistant-plugin-receipt-designer'
+import { createAssistantContribution } from '@hcxz/assistant-designer-bridge'
+import { placeholderImagesPlugin } from '@hcxz/assistant-plugin-placeholder-images'
+import { prototypeDesignerPlugin } from '@hcxz/assistant-plugin-prototype-designer'
+import { receiptDesignerPlugin } from '@hcxz/assistant-plugin-receipt-designer'
 
 const assistant = createAssistantContribution({
   endpoint: import.meta.env.VITE_EASYINK_ASSISTANT_ENDPOINT,
@@ -94,9 +94,9 @@ const assistant = createAssistantContribution({
 
 | 包 | 面板名称 | 作用 |
 |----|----------|------|
-| `@easyink/assistant-plugin-placeholder-images` | 占位图助手 | 原型、H5、海报缺少图片素材时，引导生成结果使用 `https://picsum.photos/{width}/{height}` 占位图 |
-| `@easyink/assistant-plugin-prototype-designer` | 专业原型设计师 | 强化屏幕原型、H5、产品 UI 的页面尺寸、信息层级和占位内容 |
-| `@easyink/assistant-plugin-receipt-designer` | 专业小票设计师 | 强化热敏小票的窄纸宽、连续纸、金额对齐和打印可读性 |
+| `@hcxz/assistant-plugin-placeholder-images` | 占位图助手 | 原型、H5、海报缺少图片素材时，引导生成结果使用 `https://picsum.photos/{width}/{height}` 占位图 |
+| `@hcxz/assistant-plugin-prototype-designer` | 专业原型设计师 | 强化屏幕原型、H5、产品 UI 的页面尺寸、信息层级和占位内容 |
+| `@hcxz/assistant-plugin-receipt-designer` | 专业小票设计师 | 强化热敏小票的窄纸宽、连续纸、金额对齐和打印可读性 |
 
 如果你只需要其中一部分，就只传那几个插件：
 
@@ -118,7 +118,7 @@ Playground 已经内置了这三个官方插件。你可以本地打开 Playgrou
 看一个最小插件：
 
 ```ts
-import type { AssistantPlugin } from '@easyink/assistant-designer-bridge'
+import type { AssistantPlugin } from '@hcxz/assistant-designer-bridge'
 
 export const savedPromptPlugin = {
   manifest: {
@@ -304,7 +304,7 @@ EASYINK_ASSISTANT_REQUEST_LLM_INSECURE_BASE_URL=0
 import {
   createAssistantContribution,
   createBrowserAssistantLLMConfigService,
-} from '@easyink/assistant-designer-bridge'
+} from '@hcxz/assistant-designer-bridge'
 
 const llmConfig = createBrowserAssistantLLMConfigService({
   persistence: 'session',

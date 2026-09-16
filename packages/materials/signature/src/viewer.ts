@@ -1,5 +1,5 @@
-import type { MaterialNode } from '@easyink/schema'
-import { trustedViewerHtml } from '@easyink/core'
+import type { MaterialNode } from '@hcxz/schema'
+import { trustedViewerHtml } from '@hcxz/core'
 import { buildSignatureSvg } from './rendering'
 import { getSignatureProps } from './schema'
 

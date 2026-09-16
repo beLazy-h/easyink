@@ -1,6 +1,6 @@
-import type { BarChartStyleOptions, ChartCategoryValuePoint } from '@easyink/material-chart-kernel'
+import type { BarChartStyleOptions, ChartCategoryValuePoint } from '@hcxz/material-chart-kernel'
 import type { ChartBarProps } from './schema'
-import { createBarEChartsOption, DEFAULT_CHART_PREVIEW_DATA, normalizeCategoryValueData } from '@easyink/material-chart-kernel'
+import { createBarEChartsOption, DEFAULT_CHART_PREVIEW_DATA, normalizeCategoryValueData } from '@hcxz/material-chart-kernel'
 import { CHART_BAR_DEFAULTS } from './schema'
 
 export function createChartBarPreviewOption(props: Partial<ChartBarProps>, dataInput?: unknown) {

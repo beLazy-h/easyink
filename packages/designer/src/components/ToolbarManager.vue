@@ -7,7 +7,7 @@ import {
   IconHidden,
   IconPreview,
   IconRestoreDefault,
-} from '@easyink/icons'
+} from '@hcxz/icons'
 import { useDesignerStore } from '../composables'
 import { createDefaultWorkbenchState } from '../store/workbench'
 

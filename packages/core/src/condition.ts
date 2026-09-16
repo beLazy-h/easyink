@@ -7,9 +7,9 @@ import type {
   ConditionValueType,
   MaterialNode,
   RenderCondition,
-} from '@easyink/schema'
-import { castConditionLiteralValue } from '@easyink/schema'
-import { BLOCKED_PATH_KEYS, FIELD_PATH_SEPARATOR } from '@easyink/shared'
+} from '@hcxz/schema'
+import { castConditionLiteralValue } from '@hcxz/schema'
+import { BLOCKED_PATH_KEYS, FIELD_PATH_SEPARATOR } from '@hcxz/shared'
 
 export const CONDITION_MAX_GROUPS = 32
 export const CONDITION_MAX_ROWS = 256

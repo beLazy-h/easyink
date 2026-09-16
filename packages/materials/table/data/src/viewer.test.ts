@@ -1,5 +1,5 @@
-import type { TableNode } from '@easyink/schema'
-import { createFragmentFromNode, readTrustedViewerHtml } from '@easyink/core'
+import type { TableNode } from '@hcxz/schema'
+import { createFragmentFromNode, readTrustedViewerHtml } from '@hcxz/core'
 import { describe, expect, it } from 'vitest'
 import { createTableDataNode } from './schema'
 import { measureTableData, renderTableData, tableDataFragmentPaginator } from './viewer'

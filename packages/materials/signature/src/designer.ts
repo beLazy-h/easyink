@@ -7,20 +7,20 @@ import type {
   Selection,
   SelectionDecorationDef,
   SelectionType,
-} from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
-import type { UnitType } from '@easyink/shared'
+} from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
+import type { UnitType } from '@hcxz/shared'
 import type SignaturePad from 'signature_pad'
 import type { SignaturePointGroup } from './schema'
-import { UnitManager } from '@easyink/core'
-import { IconClear, IconFilePen } from '@easyink/icons/svg-strings'
+import { UnitManager } from '@hcxz/core'
+import { IconClear, IconFilePen } from '@hcxz/icons/svg-strings'
 import {
   materialToolbarButtonStyle,
   materialToolbarDockStyle,
   materialToolbarGroupStyle,
   materialToolbarIconStyle,
   materialToolbarShellStyle,
-} from '@easyink/shared'
+} from '@hcxz/shared'
 import { defineComponent, h } from 'vue'
 import { buildSignatureSvg } from './rendering'
 import { getSignatureProps } from './schema'

@@ -1,4 +1,4 @@
-import type { RuntimeLLMConfig, RuntimeLLMProvider, RuntimeLLMProviderOption } from '@easyink/assistant-llm'
+import type { RuntimeLLMConfig, RuntimeLLMProvider, RuntimeLLMProviderOption } from '@hcxz/assistant-llm'
 import type { Ref } from 'vue'
 import type { AssistantApiClient } from '../api'
 import type { AssistantTranslate } from '../i18n'

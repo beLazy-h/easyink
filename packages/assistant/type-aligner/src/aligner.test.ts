@@ -1,4 +1,4 @@
-import { MaterialKnowledgeRegistry } from '@easyink/assistant-material-knowledge'
+import { MaterialKnowledgeRegistry } from '@hcxz/assistant-material-knowledge'
 import { describe, expect, it } from 'vitest'
 import { TypeAligner } from './aligner'
 

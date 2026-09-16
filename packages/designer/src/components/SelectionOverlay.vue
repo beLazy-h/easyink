@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SelectionDecorationDef } from '@easyink/core'
+import type { SelectionDecorationDef } from '@hcxz/core'
 import { computed } from 'vue'
 import { useDesignerStore } from '../composables'
 

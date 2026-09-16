@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { resolveChartBarRuntimeData } from './data-contract'
 import { CHART_BAR_DEFAULTS } from './schema'

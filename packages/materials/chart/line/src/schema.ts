@@ -1,5 +1,5 @@
-import type { MaterialNode } from '@easyink/schema'
-import { convertUnit, generateId } from '@easyink/shared'
+import type { MaterialNode } from '@hcxz/schema'
+import { convertUnit, generateId } from '@hcxz/shared'
 
 export const CHART_LINE_TYPE = 'chart-line'
 

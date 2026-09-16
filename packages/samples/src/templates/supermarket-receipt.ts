@@ -1,6 +1,6 @@
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { DocumentSchema, MaterialNode, TableDataSchema, TableNode } from '@easyink/schema'
-import { SCHEMA_VERSION } from '@easyink/shared'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { DocumentSchema, MaterialNode, TableDataSchema, TableNode } from '@hcxz/schema'
+import { SCHEMA_VERSION } from '@hcxz/shared'
 
 // ---------------------------------------------------------------------------
 // Supermarket receipt data source

@@ -1,4 +1,4 @@
-import type { FieldType, MaterialKnowledge, MaterialKnowledgeRegistry } from '@easyink/assistant-material-knowledge'
+import type { FieldType, MaterialKnowledge, MaterialKnowledgeRegistry } from '@hcxz/assistant-material-knowledge'
 import type {
   AlignmentResult,
   DataTypeSignature,

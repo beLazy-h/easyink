@@ -25,7 +25,7 @@ import {
   IconSvg,
   IconTable,
   IconText,
-} from '@easyink/icons'
+} from '@hcxz/icons'
 import {
   BARCODE_CAPABILITIES,
   BARCODE_TYPE,
@@ -34,7 +34,7 @@ import {
   barcodeLocaleMessages,
   createBarcodeExtension,
   createBarcodeNode,
-} from '@easyink/material-barcode'
+} from '@hcxz/material-barcode'
 import {
   CHART_BAR_CAPABILITIES,
   CHART_BAR_TYPE,
@@ -43,15 +43,15 @@ import {
   chartBarLocaleMessages,
   createChartBarExtension,
   createChartBarNode,
-} from '@easyink/material-chart-bar'
-import { chartCustomAIMaterialDescriptor } from '@easyink/material-chart-custom/ai'
-import { chartCustomLocaleMessages } from '@easyink/material-chart-custom/locale'
-import { chartCustomDesignerPropSchemas } from '@easyink/material-chart-custom/prop-schemas'
+} from '@hcxz/material-chart-bar'
+import { chartCustomAIMaterialDescriptor } from '@hcxz/material-chart-custom/ai'
+import { chartCustomLocaleMessages } from '@hcxz/material-chart-custom/locale'
+import { chartCustomDesignerPropSchemas } from '@hcxz/material-chart-custom/prop-schemas'
 import {
   CHART_CUSTOM_CAPABILITIES,
   CHART_CUSTOM_TYPE,
   createChartCustomNode,
-} from '@easyink/material-chart-custom/schema'
+} from '@hcxz/material-chart-custom/schema'
 import {
   CHART_GAUGE_CAPABILITIES,
   CHART_GAUGE_TYPE,
@@ -60,7 +60,7 @@ import {
   chartGaugeLocaleMessages,
   createChartGaugeExtension,
   createChartGaugeNode,
-} from '@easyink/material-chart-gauge'
+} from '@hcxz/material-chart-gauge'
 import {
   CHART_LINE_CAPABILITIES,
   CHART_LINE_TYPE,
@@ -69,7 +69,7 @@ import {
   chartLineLocaleMessages,
   createChartLineExtension,
   createChartLineNode,
-} from '@easyink/material-chart-line'
+} from '@hcxz/material-chart-line'
 import {
   CHART_PIE_CAPABILITIES,
   CHART_PIE_TYPE,
@@ -78,7 +78,7 @@ import {
   chartPieLocaleMessages,
   createChartPieExtension,
   createChartPieNode,
-} from '@easyink/material-chart-pie'
+} from '@hcxz/material-chart-pie'
 import {
   CHART_RADAR_CAPABILITIES,
   CHART_RADAR_TYPE,
@@ -87,7 +87,7 @@ import {
   chartRadarLocaleMessages,
   createChartRadarExtension,
   createChartRadarNode,
-} from '@easyink/material-chart-radar'
+} from '@hcxz/material-chart-radar'
 import {
   CHART_SCATTER_CAPABILITIES,
   CHART_SCATTER_TYPE,
@@ -96,7 +96,7 @@ import {
   chartScatterLocaleMessages,
   createChartScatterExtension,
   createChartScatterNode,
-} from '@easyink/material-chart-scatter'
+} from '@hcxz/material-chart-scatter'
 import {
   createEllipseExtension,
   createEllipseNode,
@@ -105,7 +105,7 @@ import {
   ellipseAIMaterialDescriptor,
   ellipseDesignerPropSchemas,
   ellipseLocaleMessages,
-} from '@easyink/material-ellipse'
+} from '@hcxz/material-ellipse'
 import {
   createFlowRowExtension,
   createFlowRowNode,
@@ -114,7 +114,7 @@ import {
   flowRowAIMaterialDescriptor,
   flowRowDesignerPropSchemas,
   flowRowLocaleMessages,
-} from '@easyink/material-flow-row'
+} from '@hcxz/material-flow-row'
 import {
   createImageExtension,
   createImageNode,
@@ -123,7 +123,7 @@ import {
   imageAIMaterialDescriptor,
   imageDesignerPropSchemas,
   imageLocaleMessages,
-} from '@easyink/material-image'
+} from '@hcxz/material-image'
 import {
   createLineExtension,
   createLineNode,
@@ -132,7 +132,7 @@ import {
   lineAIMaterialDescriptor,
   lineDesignerPropSchemas,
   lineLocaleMessages,
-} from '@easyink/material-line'
+} from '@hcxz/material-line'
 import {
   createPageNumberExtension,
   createPageNumberNode,
@@ -141,7 +141,7 @@ import {
   pageNumberAIMaterialDescriptor,
   pageNumberDesignerPropSchemas,
   pageNumberLocaleMessages,
-} from '@easyink/material-page-number'
+} from '@hcxz/material-page-number'
 import {
   createProgressExtension,
   createProgressNode,
@@ -150,7 +150,7 @@ import {
   progressAIMaterialDescriptor,
   progressDesignerPropSchemas,
   progressLocaleMessages,
-} from '@easyink/material-progress'
+} from '@hcxz/material-progress'
 import {
   createQrcodeExtension,
   createQrcodeNode,
@@ -159,7 +159,7 @@ import {
   qrcodeAIMaterialDescriptor,
   qrcodeDesignerPropSchemas,
   qrcodeLocaleMessages,
-} from '@easyink/material-qrcode'
+} from '@hcxz/material-qrcode'
 import {
   createRatingExtension,
   createRatingNode,
@@ -168,7 +168,7 @@ import {
   ratingAIMaterialDescriptor,
   ratingDesignerPropSchemas,
   ratingLocaleMessages,
-} from '@easyink/material-rating'
+} from '@hcxz/material-rating'
 import {
   createRectExtension,
   createRectNode,
@@ -177,7 +177,7 @@ import {
   rectAIMaterialDescriptor,
   rectDesignerPropSchemas,
   rectLocaleMessages,
-} from '@easyink/material-rect'
+} from '@hcxz/material-rect'
 import {
   createRingProgressExtension,
   createRingProgressNode,
@@ -186,7 +186,7 @@ import {
   ringProgressAIMaterialDescriptor,
   ringProgressDesignerPropSchemas,
   ringProgressLocaleMessages,
-} from '@easyink/material-ring-progress'
+} from '@hcxz/material-ring-progress'
 import {
   createSignatureExtension,
   createSignatureNode,
@@ -195,7 +195,7 @@ import {
   signatureAIMaterialDescriptor,
   signatureDesignerPropSchemas,
   signatureLocaleMessages,
-} from '@easyink/material-signature'
+} from '@hcxz/material-signature'
 import {
   createSvgCustomExtension,
   createSvgCustomNode,
@@ -204,7 +204,7 @@ import {
   svgCustomAIMaterialDescriptor,
   svgCustomDesignerPropSchemas,
   svgCustomLocaleMessages,
-} from '@easyink/material-svg-custom'
+} from '@hcxz/material-svg-custom'
 import {
   createSvgHeartExtension,
   createSvgHeartNode,
@@ -213,7 +213,7 @@ import {
   svgHeartAIMaterialDescriptor,
   svgHeartDesignerPropSchemas,
   svgHeartLocaleMessages,
-} from '@easyink/material-svg-heart'
+} from '@hcxz/material-svg-heart'
 import {
   createSvgStarExtension,
   createSvgStarNode,
@@ -222,7 +222,7 @@ import {
   svgStarAIMaterialDescriptor,
   svgStarDesignerPropSchemas,
   svgStarLocaleMessages,
-} from '@easyink/material-svg-star'
+} from '@hcxz/material-svg-star'
 import {
   createTableDataExtension,
   createTableDataNode,
@@ -231,8 +231,8 @@ import {
   tableDataAIMaterialDescriptor,
   tableDataDesignerPropSchemas,
   tableDataLocaleMessages,
-} from '@easyink/material-table-data'
-import { tableKernelLocaleMessages } from '@easyink/material-table-kernel'
+} from '@hcxz/material-table-data'
+import { tableKernelLocaleMessages } from '@hcxz/material-table-kernel'
 import {
   createTableStaticExtension,
   createTableStaticNode,
@@ -241,7 +241,7 @@ import {
   tableStaticAIMaterialDescriptor,
   tableStaticDesignerPropSchemas,
   tableStaticLocaleMessages,
-} from '@easyink/material-table-static'
+} from '@hcxz/material-table-static'
 import {
   createTextExtension,
   createTextNode,
@@ -250,7 +250,7 @@ import {
   textAIMaterialDescriptor,
   textDesignerPropSchemas,
   textLocaleMessages,
-} from '@easyink/material-text'
+} from '@hcxz/material-text'
 import {
   barcodeMaterialBinding,
   chartBarMaterialBinding,
@@ -619,7 +619,7 @@ const ALL_BUILTIN_DESIGNER_MATERIAL_BUNDLE: BuiltinDesignerMaterialBundle = {
       aiDescriptor: chartCustomAIMaterialDescriptor,
       createDefaultNode: createChartCustomNode,
       factory: () => ({ renderContent: () => () => {} }),
-      lazyFactory: async () => (await import('@easyink/material-chart-custom/designer')).createChartCustomExtension,
+      lazyFactory: async () => (await import('@hcxz/material-chart-custom/designer')).createChartCustomExtension,
       propSchemas: chartCustomDesignerPropSchemas,
       localeMessages: chartCustomLocaleMessages,
     },

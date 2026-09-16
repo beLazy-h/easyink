@@ -1,5 +1,5 @@
 {
-  "name": "@easyink/render-api-service",
+  "name": "@hcxz/render-api-service",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -23,7 +23,7 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsx src/bin/server.ts",
-    "pretest:render-smoke": "pnpm --dir ../.. render:runtime && pnpm --dir ../.. -F @easyink/samples build",
+    "pretest:render-smoke": "pnpm --dir ../.. render:runtime && pnpm --dir ../.. -F @hcxz/samples build",
     "start": "node dist/bin/server.mjs",
     "test": "vitest run",
     "test:render-smoke": "tsx scripts/render-supermarket-smoke.ts"
@@ -33,6 +33,6 @@
     "h3": "catalog:framework"
   },
   "devDependencies": {
-    "@easyink/samples": "workspace:*"
+    "@hcxz/samples": "workspace:*"
   }
 }

@@ -1,4 +1,4 @@
-# @easyink/assistant-plugin-placeholder-images
+# @hcxz/assistant-plugin-placeholder-images
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-plugin-placeholder-images?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-plugin-placeholder-images) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-plugin-placeholder-images?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-plugin-placeholder-images)
 

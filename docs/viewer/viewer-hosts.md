@@ -31,7 +31,7 @@ Viewer 只通过这些字段操作外部环境。它不会假设自己一定运�
 Browser Host 会把页面渲染进当前文档里的一个容器。
 
 ```ts
-import { createBrowserViewerHost, createViewer } from '@easyink/viewer'
+import { createBrowserViewerHost, createViewer } from '@hcxz/viewer'
 
 const host = createBrowserViewerHost(containerElement)
 const viewer = createViewer({ host })
@@ -52,7 +52,7 @@ const viewer = createViewer({ container: containerElement })
 Iframe Host 会把页面渲染进 iframe 文档。
 
 ```ts
-import { createIframeViewerHost, createViewer } from '@easyink/viewer'
+import { createIframeViewerHost, createViewer } from '@hcxz/viewer'
 
 const host = createIframeViewerHost(iframeElement)
 const viewer = createViewer({ host })
@@ -73,7 +73,7 @@ const viewer = createViewer({ iframe: iframeElement })
 当你已经有自己的文档、挂载点或打印入口时，可以自己提供 Host。
 
 ```ts
-import { createCustomViewerHost, createViewer } from '@easyink/viewer'
+import { createCustomViewerHost, createViewer } from '@hcxz/viewer'
 
 const host = createCustomViewerHost({
   document: myDocument,

@@ -1,6 +1,6 @@
-import type { AssistantPatchOperation, AssistantResult } from '@easyink/assistant-capabilities'
-import type { ContributionContext } from '@easyink/designer'
-import { applyAssistantPatch, selectAssistantPatchOperationsForElements } from '@easyink/assistant-capabilities'
+import type { AssistantPatchOperation, AssistantResult } from '@hcxz/assistant-capabilities'
+import type { ContributionContext } from '@hcxz/designer'
+import { applyAssistantPatch, selectAssistantPatchOperationsForElements } from '@hcxz/assistant-capabilities'
 
 interface AssistantDesignerExtension {
   lastResultId?: string

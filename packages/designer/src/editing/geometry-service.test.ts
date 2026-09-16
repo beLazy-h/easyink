@@ -1,7 +1,7 @@
 /**
  * @vitest-environment happy-dom
  */
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { DesignerStore } from '../store/designer-store'
 import { createGeometryService } from './geometry-service'

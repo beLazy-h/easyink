@@ -23,7 +23,7 @@ import {
   IconSvg,
   IconTable,
   IconText,
-} from '@easyink/icons'
+} from '@hcxz/icons'
 import {
   BARCODE_CAPABILITIES,
   BARCODE_TYPE,
@@ -33,7 +33,7 @@ import {
   createBarcodeExtension,
   createBarcodeNode,
   renderBarcode,
-} from '@easyink/material-barcode'
+} from '@hcxz/material-barcode'
 import {
   createEllipseExtension,
   createEllipseNode,
@@ -43,7 +43,7 @@ import {
   ellipseDesignerPropSchemas,
   ellipseLocaleMessages,
   renderEllipse,
-} from '@easyink/material-ellipse'
+} from '@hcxz/material-ellipse'
 import {
   createFlowRowExtension,
   createFlowRowNode,
@@ -54,7 +54,7 @@ import {
   flowRowLocaleMessages,
   measureFlowRow,
   renderFlowRow,
-} from '@easyink/material-flow-row'
+} from '@hcxz/material-flow-row'
 import {
   createImageExtension,
   createImageNode,
@@ -64,7 +64,7 @@ import {
   imageDesignerPropSchemas,
   imageLocaleMessages,
   renderImage,
-} from '@easyink/material-image'
+} from '@hcxz/material-image'
 import {
   createLineExtension,
   createLineNode,
@@ -74,7 +74,7 @@ import {
   lineAIMaterialDescriptor,
   lineDesignerPropSchemas,
   lineLocaleMessages,
-} from '@easyink/material-line'
+} from '@hcxz/material-line'
 import {
   createPageNumberExtension,
   createPageNumberNode,
@@ -84,7 +84,7 @@ import {
   pageNumberDesignerPropSchemas,
   pageNumberLocaleMessages,
   renderPageNumber,
-} from '@easyink/material-page-number'
+} from '@hcxz/material-page-number'
 import {
   createProgressExtension,
   createProgressNode,
@@ -94,7 +94,7 @@ import {
   progressDesignerPropSchemas,
   progressLocaleMessages,
   renderProgress,
-} from '@easyink/material-progress'
+} from '@hcxz/material-progress'
 import {
   createQrcodeExtension,
   createQrcodeNode,
@@ -104,7 +104,7 @@ import {
   qrcodeDesignerPropSchemas,
   qrcodeLocaleMessages,
   renderQrcode,
-} from '@easyink/material-qrcode'
+} from '@hcxz/material-qrcode'
 import {
   createRatingExtension,
   createRatingNode,
@@ -114,7 +114,7 @@ import {
   ratingDesignerPropSchemas,
   ratingLocaleMessages,
   renderRating,
-} from '@easyink/material-rating'
+} from '@hcxz/material-rating'
 import {
   createRectExtension,
   createRectNode,
@@ -124,7 +124,7 @@ import {
   rectDesignerPropSchemas,
   rectLocaleMessages,
   renderRect,
-} from '@easyink/material-rect'
+} from '@hcxz/material-rect'
 import {
   createRingProgressExtension,
   createRingProgressNode,
@@ -134,7 +134,7 @@ import {
   ringProgressAIMaterialDescriptor,
   ringProgressDesignerPropSchemas,
   ringProgressLocaleMessages,
-} from '@easyink/material-ring-progress'
+} from '@hcxz/material-ring-progress'
 import {
   createSvgCustomExtension,
   createSvgCustomNode,
@@ -144,7 +144,7 @@ import {
   svgCustomAIMaterialDescriptor,
   svgCustomDesignerPropSchemas,
   svgCustomLocaleMessages,
-} from '@easyink/material-svg-custom'
+} from '@hcxz/material-svg-custom'
 import {
   createSvgHeartExtension,
   createSvgHeartNode,
@@ -154,7 +154,7 @@ import {
   svgHeartAIMaterialDescriptor,
   svgHeartDesignerPropSchemas,
   svgHeartLocaleMessages,
-} from '@easyink/material-svg-heart'
+} from '@hcxz/material-svg-heart'
 import {
   createSvgStarExtension,
   createSvgStarNode,
@@ -164,7 +164,7 @@ import {
   svgStarAIMaterialDescriptor,
   svgStarDesignerPropSchemas,
   svgStarLocaleMessages,
-} from '@easyink/material-svg-star'
+} from '@hcxz/material-svg-star'
 import {
   createTableDataExtension,
   createTableDataNode,
@@ -176,8 +176,8 @@ import {
   tableDataDesignerPropSchemas,
   tableDataFragmentPaginator,
   tableDataLocaleMessages,
-} from '@easyink/material-table-data'
-import { tableKernelLocaleMessages } from '@easyink/material-table-kernel'
+} from '@hcxz/material-table-data'
+import { tableKernelLocaleMessages } from '@hcxz/material-table-kernel'
 import {
   createTableStaticExtension,
   createTableStaticNode,
@@ -187,7 +187,7 @@ import {
   tableStaticAIMaterialDescriptor,
   tableStaticDesignerPropSchemas,
   tableStaticLocaleMessages,
-} from '@easyink/material-table-static'
+} from '@hcxz/material-table-static'
 import {
   createTextExtension,
   createTextNode,
@@ -199,7 +199,7 @@ import {
   textAIMaterialDescriptor,
   textDesignerPropSchemas,
   textLocaleMessages,
-} from '@easyink/material-text'
+} from '@hcxz/material-text'
 import {
   barcodeMaterialBinding,
   customMaterialBinding,

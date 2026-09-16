@@ -1,5 +1,5 @@
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
-import type { DocumentSchema } from '@easyink/schema'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { AssistantPreview } from './types'
 
 export function createAssistantPreview(

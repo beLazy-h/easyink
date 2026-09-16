@@ -1,4 +1,4 @@
-import type { DocumentSchema, MaterialNode, TableNode } from '@easyink/schema'
+import type { DocumentSchema, MaterialNode, TableNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { createViewer } from './index'
 import { applyStackFlowLayout } from './stack-flow-layout'

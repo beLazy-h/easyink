@@ -1,7 +1,7 @@
-import type { BindingRef, DocumentSchema, MaterialNode } from '@easyink/schema'
-import type { AIGenerationPlan } from '@easyink/shared'
-import { getBindingRefs } from '@easyink/schema'
-import { deepClone, FIELD_PATH_SEPARATOR, isObject } from '@easyink/shared'
+import type { BindingRef, DocumentSchema, MaterialNode } from '@hcxz/schema'
+import type { AIGenerationPlan } from '@hcxz/shared'
+import { getBindingRefs } from '@hcxz/schema'
+import { deepClone, FIELD_PATH_SEPARATOR, isObject } from '@hcxz/shared'
 
 export interface GenerationRepairIssue {
   code: string

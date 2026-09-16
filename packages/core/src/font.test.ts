@@ -1,4 +1,4 @@
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
 import type { FontDescriptor, FontProvider } from './font'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { collectFontFamilies, FontManager } from './font'

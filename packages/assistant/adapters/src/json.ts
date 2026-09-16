@@ -1,6 +1,6 @@
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
 import type { ParsedExternalData } from './types'
-import { normalizeDataSource } from '@easyink/datasource'
+import { normalizeDataSource } from '@hcxz/datasource'
 
 export function parseJsonInput(content: string, name = 'sampleData'): ParsedExternalData {
   const sample = JSON.parse(content) as unknown

@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/prop-schemas",
+  "name": "@hcxz/prop-schemas",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "Built-in material property schemas for EasyInk Designer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -23,6 +23,6 @@
     "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@easyink/core": "workspace:*"
+    "@hcxz/core": "workspace:*"
   }
 }

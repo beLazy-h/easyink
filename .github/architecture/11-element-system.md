@@ -179,7 +179,7 @@ Viewer 注册保持同步：`viewer.registerMaterial(type, binding, extension)` 
 - 支持设计器属性面板直接编辑 `props.optionCode`。这段代码是可信模板代码，只保存源码字符串，不把函数对象写入 Schema。
 - 支持 `return { ... }`、对象表达式、返回函数或声明 `function option(ctx) { ... }` 等写法。执行上下文提供运行时 `data`、绑定 option、节点、尺寸、单位和完整 `echarts` 包。
 - 默认设计态渲染器必须通过 `lazyFactory` 加载，避免把完整 ECharts 包拉进 Designer 初始路径；物料元数据、属性 schema、locale 和 AI descriptor 仍同步注册。
-- Viewer 端直接使用 `@easyink/material-chart-kernel/full` 渲染完整 ECharts SVG，优先保证输出路径稳定，不为内置 Viewer 做懒加载。
+- Viewer 端直接使用 `@hcxz/material-chart-kernel/full` 渲染完整 ECharts SVG，优先保证输出路径稳定，不为内置 Viewer 做懒加载。
 
 ### `table-data`
 
@@ -221,7 +221,7 @@ table-data 和 table-static 均实现 `DatasourceDropHandler` 协议：
 - `onDragOver`：hitTestGridCell -> resolveMergeOwner -> computeCellRect，无约束，直接 `accepted`。
 - `onDrop`：通过 `context.tx.run(nodeId, draft => { ... })` 设置 `cell.staticBinding`。
 
-复用 `@easyink/material-table-kernel` 的 `hitTestGridCell`、`resolveMergeOwner`、`computeCellRect` 函数。
+复用 `@hcxz/material-table-kernel` 的 `hitTestGridCell`、`resolveMergeOwner`、`computeCellRect` 函数。
 
 ### 深度编辑工具栏
 
@@ -281,19 +281,19 @@ table-data 的 Designer Extension 在 repeat-template 行下方额外渲染 2 �
 
 属性系统通过 `PropSchema` 驱动，但不能只停留在一个抽象接口。至少核心物料要有明确属性矩阵。
 
-内置基础属性矩阵由 `@easyink/prop-schemas` 维护，避免把 text / image / table 等属性字段维护混在 `@easyink/designer` 工作台实现里。Designer 注册物料时读取基础 Schema，并与物料包通过 `DesignerMaterialRegistration.propSchemas` 提供的追加项合并：
+内置基础属性矩阵由 `@hcxz/prop-schemas` 维护，避免把 text / image / table 等属性字段维护混在 `@hcxz/designer` 工作台实现里。Designer 注册物料时读取基础 Schema，并与物料包通过 `DesignerMaterialRegistration.propSchemas` 提供的追加项合并：
 
 ```typescript
 const props = [
-  ...getPropSchemas(materialType), // from @easyink/prop-schemas
+  ...getPropSchemas(materialType), // from @hcxz/prop-schemas
   ...(registration.propSchemas ?? []), // material-owned additions
 ]
 ```
 
 边界规则：
 
-- `@easyink/prop-schemas` 只依赖 `@easyink/core` 的 `PropSchema` 类型，不依赖 designer。
-- 直接落在 `node.props` 上的内置基础字段放在 `@easyink/prop-schemas`。
+- `@hcxz/prop-schemas` 只依赖 `@hcxz/core` 的 `PropSchema` 类型，不依赖 designer。
+- 直接落在 `node.props` 上的内置基础字段放在 `@hcxz/prop-schemas`。
 - 物料私有结构、非 `node.props` 字段或带副作用的字段放在物料包自己的 `propSchemas` 中，例如 `table-data` 的 `showHeader / showFooter`。
 - PropertiesPanel 只消费最终合并后的 `MaterialDefinition.props`，不得按物料类型硬编码字段。
 
@@ -372,8 +372,8 @@ PropertiesPanel/PropSchemaEditor 根据 `kind` 分发到 `DesignerInteractionPro
 - `commit(node, value, ctx)` 由 PropertiesPanel 在 `confirmProp` 时调用，物料决定如何构造 Command（甚至决定是否需要先退出会话），返回的 Command 走统一 `commitCommand` 通道。
 - 拥有 `commit` 的 schema 不会触发 `previewProp`（避免预览时跑副作用）。
 
-例：`@easyink/material-table-data` 暴露 `tableDataDesignerPropSchemas`，包含 `showHeader / showFooter` 两个 entry，
-内部使用 `UpdateTableVisibilityCommand`（位于 `@easyink/material-table-kernel`）。
+例：`@hcxz/material-table-data` 暴露 `tableDataDesignerPropSchemas`，包含 `showHeader / showFooter` 两个 entry，
+内部使用 `UpdateTableVisibilityCommand`（位于 `@hcxz/material-table-kernel`）。
 PropertiesPanel 既不需要 `import { UpdateTableVisibilityCommand }`，也不需要 `import { isTableNode }`。
 
 ### 所有物料的公共属性组
@@ -649,7 +649,7 @@ CanvasWorkspace 遍历 elements
 - 物料的私有副作用与命令一一对应，撤销/重做天然正确；
 - 新增可缩放物料只需在自己的 `MaterialDesignerExtension.resize` 上实现协议，无需修改 Designer。
 
-参考实现：`@easyink/material-table-kernel` 暴露 `createTableResizeAdapter({ getHiddenRowMask })`，被 `material-table-data` 与 `material-table-static` 复用。
+参考实现：`@hcxz/material-table-kernel` 暴露 `createTableResizeAdapter({ getHiddenRowMask })`，被 `material-table-data` 与 `material-table-static` 复用。
 
 ## 11.7 Viewer 扩展面
 

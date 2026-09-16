@@ -59,7 +59,7 @@ jobs:
       - name: Build playground
         env:
           VITE_EASYINK_ASSISTANT_ENDPOINT: ${{ secrets.EASYINK_ASSISTANT_SERVER_URL }}
-        run: pnpm --filter @easyink/playground build
+        run: pnpm --filter @hcxz/playground build
 
       - name: Build docs
         env:

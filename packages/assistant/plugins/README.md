@@ -1,4 +1,4 @@
-# @easyink/assistant-plugins
+# @hcxz/assistant-plugins
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-plugins?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-plugins) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-plugins?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-plugins)
 

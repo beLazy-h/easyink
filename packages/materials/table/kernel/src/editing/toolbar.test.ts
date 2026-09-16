@@ -1,4 +1,4 @@
-import type { TableNode } from '@easyink/schema'
+import type { TableNode } from '@hcxz/schema'
 import type { TableEditingDelegate } from './types'
 import { describe, expect, it } from 'vitest'
 import { createDefaultTopology } from '../schema'

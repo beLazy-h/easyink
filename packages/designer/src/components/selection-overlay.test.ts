@@ -1,7 +1,7 @@
 /**
  * @vitest-environment happy-dom
  */
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import type { MaterialDesignerExtension } from '../types'
 import { describe, expect, it } from 'vitest'
 import { createApp, defineComponent, h, nextTick, reactive } from 'vue'

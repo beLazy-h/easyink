@@ -1,8 +1,8 @@
-import type { AssistantMaterialManifest } from '@easyink/assistant-capabilities'
-import type { LLMClient } from '@easyink/assistant-llm'
-import type { MaterialKnowledgeRegistry } from '@easyink/assistant-material-knowledge'
-import type { ToolCallResult } from '@easyink/assistant-tool-registry'
-import type { DocumentSchema } from '@easyink/schema'
+import type { AssistantMaterialManifest } from '@hcxz/assistant-capabilities'
+import type { LLMClient } from '@hcxz/assistant-llm'
+import type { MaterialKnowledgeRegistry } from '@hcxz/assistant-material-knowledge'
+import type { ToolCallResult } from '@hcxz/assistant-tool-registry'
+import type { DocumentSchema } from '@hcxz/schema'
 
 export interface ComposerAgentOptions {
   llm: LLMClient

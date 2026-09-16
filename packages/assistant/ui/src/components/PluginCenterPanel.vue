@@ -3,9 +3,9 @@ import type {
   AssistantPlugin,
   AssistantPluginContextItem,
   AssistantPluginSelectionEntry,
-} from '@easyink/assistant-plugins'
+} from '@hcxz/assistant-plugins'
 import type { AssistantTranslate } from '../i18n'
-import { IconCheck, IconLoader } from '@easyink/icons'
+import { IconCheck, IconLoader } from '@hcxz/icons'
 import { computed, ref } from 'vue'
 import { translateAssistant } from '../i18n'
 

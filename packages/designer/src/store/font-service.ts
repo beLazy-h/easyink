@@ -1,7 +1,7 @@
-import type { FontLoadRequest, FontLoadStatus, FontProvider } from '@easyink/core'
-import type { DocumentSchema } from '@easyink/schema'
+import type { FontLoadRequest, FontLoadStatus, FontProvider } from '@hcxz/core'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { DiagnosticsChannel } from './diagnostics'
-import { collectFontFamilies, FontManager } from '@easyink/core'
+import { collectFontFamilies, FontManager } from '@hcxz/core'
 import { markRaw } from 'vue'
 
 export interface EnsureFontLoadedOptions {

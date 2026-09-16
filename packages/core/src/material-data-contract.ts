@@ -3,9 +3,9 @@ import type {
   DataContractFieldMapping,
   DataContractRelation,
   MaterialBinding,
-} from '@easyink/schema'
+} from '@hcxz/schema'
 import type { BindingFormatEditorDefinition } from './binding-format-editor'
-import { deepClone, FIELD_PATH_SEPARATOR, resolveFieldPath } from '@easyink/shared'
+import { deepClone, FIELD_PATH_SEPARATOR, resolveFieldPath } from '@hcxz/shared'
 import { formatBindingDisplayValue, hasBindingFormat } from './binding-format'
 
 export type MaterialDataModelKind = 'tabular'

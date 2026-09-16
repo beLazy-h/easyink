@@ -1,11 +1,11 @@
-import type { ExportDiagnostic, ExportFormatPlugin, ExportProgress } from '@easyink/export-runtime'
+import type { ExportDiagnostic, ExportFormatPlugin, ExportProgress } from '@hcxz/export-runtime'
 import {
   createCanvasCaptureOptions,
   createForeignObjectCaptureOptions,
   cropForeignObjectOffset,
   isLikelyBlankForeignObjectCanvas as isLikelyBlankCaptureCanvas,
   waitForRenderableAssets,
-} from '@easyink/export-dom-capture'
+} from '@hcxz/export-dom-capture'
 
 const DEFAULT_EXPORT_DPI = 300
 const DEFAULT_ASSET_LOAD_TIMEOUT_MS = 10000

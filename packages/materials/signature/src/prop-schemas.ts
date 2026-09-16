@@ -1,4 +1,4 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 
 export const signatureDesignerPropSchemas: PropSchema[] = [
   { key: 'backgroundColor', label: 'materials.signature.property.backgroundColor', type: 'color', group: 'appearance' },

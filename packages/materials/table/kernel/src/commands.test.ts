@@ -1,4 +1,4 @@
-import type { TableDataSchema, TableNode } from '@easyink/schema'
+import type { TableDataSchema, TableNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { UpdateTableVisibilityCommand } from './commands'
 

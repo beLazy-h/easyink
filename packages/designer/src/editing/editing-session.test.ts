@@ -1,5 +1,5 @@
-import type { GeometryService, MaterialDesignerExtension, MaterialGeometry, TransactionAPI } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { GeometryService, MaterialDesignerExtension, MaterialGeometry, TransactionAPI } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { EditingSession } from './editing-session'
 import { createSelectionStore } from './selection-store'

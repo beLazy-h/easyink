@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { BindingFormatEditorDefinition, BindingFormatEditorTab } from '@easyink/core'
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { BindingRef } from '@easyink/schema'
-import type { BindingDisplayFormat, BindingFormatPresetType, BindingPresetFormat } from '@easyink/shared'
-import { findDataFieldNode, getDataFieldCustomFormatTemplates, getDefaultDataFieldCustomFormatTemplate } from '@easyink/datasource'
-import { IconCheck, IconEdit } from '@easyink/icons'
-import { EiDialog, EiIcon, EiInput } from '@easyink/ui'
+import type { BindingFormatEditorDefinition, BindingFormatEditorTab } from '@hcxz/core'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { BindingRef } from '@hcxz/schema'
+import type { BindingDisplayFormat, BindingFormatPresetType, BindingPresetFormat } from '@hcxz/shared'
+import { findDataFieldNode, getDataFieldCustomFormatTemplates, getDefaultDataFieldCustomFormatTemplate } from '@hcxz/datasource'
+import { IconCheck, IconEdit } from '@hcxz/icons'
+import { EiDialog, EiIcon, EiInput } from '@hcxz/ui'
 import { computed, defineAsyncComponent, ref } from 'vue'
 import { createBindingCodeExamples, DEFAULT_CUSTOM_FORMAT_SOURCE } from './binding-format-templates'
 

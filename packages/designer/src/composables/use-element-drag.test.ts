@@ -1,9 +1,9 @@
 /**
  * @vitest-environment happy-dom
  */
-import type { MaterialNode, PageSchema } from '@easyink/schema'
+import type { MaterialNode, PageSchema } from '@hcxz/schema'
 import type { ElementDragContext } from './use-element-drag'
-import { MoveMaterialCommand } from '@easyink/core'
+import { MoveMaterialCommand } from '@hcxz/core'
 import { describe, expect, it, vi } from 'vitest'
 import { DesignerStore } from '../store/designer-store'
 import { useElementDrag } from './use-element-drag'

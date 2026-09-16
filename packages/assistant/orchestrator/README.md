@@ -1,4 +1,4 @@
-# @easyink/assistant-orchestrator
+# @hcxz/assistant-orchestrator
 
 [![npm version](https://img.shields.io/npm/v/%40easyink%2Fassistant-orchestrator?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-orchestrator) [![npm downloads](https://img.shields.io/npm/dm/%40easyink%2Fassistant-orchestrator?logo=npm)](https://www.npmjs.com/package/%40easyink%2Fassistant-orchestrator)
 

@@ -1,4 +1,4 @@
-import type { DocumentSchema } from '@easyink/viewer'
+import type { DocumentSchema } from '@hcxz/viewer'
 import { describe, expect, it, vi } from 'vitest'
 import { createManagedPrintViewer, EasyInkPrintError, getViewerPages, resolvePrintLandscape, resolvePrintOffset, resolvePrintSize, resolveViewerPdfPages, toMillimeters } from './index'
 

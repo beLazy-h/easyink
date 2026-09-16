@@ -6,7 +6,7 @@
 
 Designer 需要支持外部能力注入（AI 面板、审计面板、素材市场等），但不能为每个新能力新增 prop 或 event。Contribution 机制借鉴 VS Code 的 Extension Point 思路：Designer 只暴露注册协议，外部包通过协议注入能力。
 
-Contribution 还应拥有自己的语义文案。Designer 内置语言包只维护 Designer 自身文案，外部 contribution 不应把自己的 UI 文案追加到 `@easyink/locales`。需要多语言时，contribution 在激活阶段向 `DesignerStore` 注册扩展文案。
+Contribution 还应拥有自己的语义文案。Designer 内置语言包只维护 Designer 自身文案，外部 contribution 不应把自己的 UI 文案追加到 `@hcxz/locales`。需要多语言时，contribution 在激活阶段向 `DesignerStore` 注册扩展文案。
 
 ## 23.2 核心接口
 
@@ -205,7 +205,7 @@ activate(ctx) {
 3. contribution 注册的默认 `messages`。
 4. 原始 key。
 
-这个优先级保证宿主可以覆盖任意 contribution 文案，同时 contribution 不需要修改 `@easyink/locales` 就能交付默认中英文文案。`EasyInkDesigner` 会对内置 `zh-CN` / `en-US` locale 自动推断 `localeCode`；宿主使用自定义语言包时可以显式传入 `localeCode`。
+这个优先级保证宿主可以覆盖任意 contribution 文案，同时 contribution 不需要修改 `@hcxz/locales` 就能交付默认中英文文案。`EasyInkDesigner` 会对内置 `zh-CN` / `en-US` locale 自动推断 `localeCode`；宿主使用自定义语言包时可以显式传入 `localeCode`。
 
 Toolbar action 的 `label` 建议使用 locale key。Designer 渲染工具栏时会通过 `store.t(action.label)` 转换，未命中时显示原始字符串。
 
@@ -246,7 +246,7 @@ EasyInkDesigner unmount
 
 ## 23.11 实际应用：Assistant Contribution
 
-`@easyink/assistant-designer-bridge` 是 Contribution 机制的典型应用，它注册了：
+`@hcxz/assistant-designer-bridge` 是 Contribution 机制的典型应用，它注册了：
 
 - 9 个命令（open、close、togglePanel、applyResult、applyPatch、applySelectedElements、applyDataSource、rollback、attachCurrentSelection）
 - 1 个工具栏按钮（AI 助手开关）

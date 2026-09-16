@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/material-page-number",
+  "name": "@hcxz/material-page-number",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "EasyInk page-number material",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -22,9 +22,9 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@easyink/core": "workspace:*",
-    "@easyink/prop-schemas": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*"
+    "@hcxz/core": "workspace:*",
+    "@hcxz/prop-schemas": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*"
   }
 }

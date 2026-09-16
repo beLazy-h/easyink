@@ -1,13 +1,13 @@
 /**
  * @vitest-environment happy-dom
  */
-import type { AssistantResult } from '@easyink/assistant-capabilities'
-import type { RuntimeLLMConfig } from '@easyink/assistant-llm'
-import type { AssistantPlugin } from '@easyink/assistant-plugins'
-import type { AssistantEventRecord, AssistantTaskRecord } from '@easyink/assistant-store'
+import type { AssistantResult } from '@hcxz/assistant-capabilities'
+import type { RuntimeLLMConfig } from '@hcxz/assistant-llm'
+import type { AssistantPlugin } from '@hcxz/assistant-plugins'
+import type { AssistantEventRecord, AssistantTaskRecord } from '@hcxz/assistant-store'
 import type { AssistantApiClient, AssistantStreamHandlers } from '../api'
 import type { AssistantLLMConfigService } from '../runtime-llm'
-import { MemoryAssistantStore } from '@easyink/assistant-store'
+import { MemoryAssistantStore } from '@hcxz/assistant-store'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { createApp, nextTick } from 'vue'
 import ConversationPanel from './ConversationPanel.vue'

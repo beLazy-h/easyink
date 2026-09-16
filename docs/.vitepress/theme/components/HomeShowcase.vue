@@ -36,17 +36,17 @@ const stages = [
 const packageGroups = [
   {
     title: '让用户编辑模板',
-    packages: ['@easyink/designer', '@easyink/builtin', '@easyink/ui'],
+    packages: ['@hcxz/designer', '@hcxz/builtin', '@hcxz/ui'],
     text: '从 Designer 开始。你会接到画布、物料、属性面板、扩展入口和自动保存。',
   },
   {
     title: '渲染已有模板',
-    packages: ['@easyink/viewer', '@easyink/core', '@easyink/export-runtime'],
+    packages: ['@hcxz/viewer', '@hcxz/core', '@hcxz/export-runtime'],
     text: '从 Viewer 开始。你传入 Schema 和业务数据，它负责预览、分页、字体、导出和打印入口。',
   },
   {
     title: '处理 Schema 和数据',
-    packages: ['@easyink/schema', '@easyink/schema-tools', '@easyink/datasource'],
+    packages: ['@hcxz/schema', '@hcxz/schema-tools', '@hcxz/datasource'],
     text: '如果你要生成、校验或批量处理模板，先看这些包。它们提供模型、数据源和字段树工具。',
   },
 ]
@@ -441,21 +441,21 @@ watch(activeStage, () => {
         </div>
         <div class="ei-arch-band ei-arch-band--surface">
           <span>页面层</span>
-          <strong>@easyink/designer</strong>
-          <strong>@easyink/viewer</strong>
-          <strong>@easyink/builtin</strong>
+          <strong>@hcxz/designer</strong>
+          <strong>@hcxz/viewer</strong>
+          <strong>@hcxz/builtin</strong>
         </div>
         <div class="ei-arch-band ei-arch-band--runtime">
           <span>运行时</span>
-          <strong>@easyink/core</strong>
-          <strong>@easyink/datasource</strong>
-          <strong>@easyink/export-runtime</strong>
+          <strong>@hcxz/core</strong>
+          <strong>@hcxz/datasource</strong>
+          <strong>@hcxz/export-runtime</strong>
         </div>
         <div class="ei-arch-band ei-arch-band--model">
           <span>文档模型</span>
-          <strong>@easyink/schema</strong>
-          <strong>@easyink/schema-tools</strong>
-          <strong>@easyink/material-*</strong>
+          <strong>@hcxz/schema</strong>
+          <strong>@hcxz/schema-tools</strong>
+          <strong>@hcxz/material-*</strong>
         </div>
       </div>
     </section>

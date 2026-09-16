@@ -1,4 +1,4 @@
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
 import type { LayoutDocument, LayoutFragment } from './layout-plan'
 import { createFragmentFromNode } from './layout-plan'
 import { resolvePageModel } from './page-model'

@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { resolveChartGaugeRuntimeData } from './data-contract'
 import { CHART_GAUGE_DEFAULTS } from './schema'

@@ -126,8 +126,8 @@ Use as the custom ECharts reference:
 - Code-authored options support body and expression styles such as `return { ... }`, `({ ... })`, `(ctx) => ({ ... })`, and `function option(ctx) { ... }`.
 - Option code is trusted template code. It is not a sandbox; failures become warning diagnostics and fall back to a visible default option.
 - Designer registration keeps metadata synchronous and loads the heavy renderer through `lazyFactory`.
-- Viewer registration is synchronous and renders SVG through `@easyink/material-chart-kernel/full`.
-- `@easyink/material-chart-kernel` has a lightweight default entry for built-in chart types and a `./full` subpath for the complete ECharts package.
+- Viewer registration is synchronous and renders SVG through `@hcxz/material-chart-kernel/full`.
+- `@hcxz/material-chart-kernel` has a lightweight default entry for built-in chart types and a `./full` subpath for the complete ECharts package.
 
 What to copy:
 

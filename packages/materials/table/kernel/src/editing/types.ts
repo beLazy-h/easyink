@@ -1,4 +1,4 @@
-import type { TableNode } from '@easyink/schema'
+import type { TableNode } from '@hcxz/schema'
 
 /** Selection payload for table cell selection. */
 export interface TableCellPayload {

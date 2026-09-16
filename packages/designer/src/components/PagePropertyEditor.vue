@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { AssetUrlPropertyValueInput } from '@easyink/core'
+import type { AssetUrlPropertyValueInput } from '@hcxz/core'
 import type { PagePropertyDescriptor } from '../page-properties'
 import type { DesignerResolvedAsset } from '../types'
-import { EiColorPicker, EiFontPicker, EiInput, EiNumberInput, EiNumberSlider, EiSelect, EiSwitch } from '@easyink/ui'
+import { EiColorPicker, EiFontPicker, EiInput, EiNumberInput, EiNumberSlider, EiSelect, EiSwitch } from '@hcxz/ui'
 import { computed } from 'vue'
 import { useDesignerStore } from '../composables'
 import ImageSourceEditor from './ImageSourceEditor.vue'

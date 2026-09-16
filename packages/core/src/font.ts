@@ -1,5 +1,5 @@
-import type { DocumentSchema } from '@easyink/schema'
-import { traverseNodes } from '@easyink/schema'
+import type { DocumentSchema } from '@hcxz/schema'
+import { traverseNodes } from '@hcxz/schema'
 
 /**
  * Font descriptor from a font provider.

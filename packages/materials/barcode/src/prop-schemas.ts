@@ -1,5 +1,5 @@
-import type { PropSchema } from '@easyink/core'
-import { STROKE_STYLE_OPTIONS } from '@easyink/prop-schemas'
+import type { PropSchema } from '@hcxz/core'
+import { STROKE_STYLE_OPTIONS } from '@hcxz/prop-schemas'
 import { BARCODE_FORMATS } from './schema'
 
 export const barcodeDesignerPropSchemas: PropSchema[] = [

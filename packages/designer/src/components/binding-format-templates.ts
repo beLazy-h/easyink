@@ -1,4 +1,4 @@
-import type { DataFieldCustomFormatTemplate } from '@easyink/datasource'
+import type { DataFieldCustomFormatTemplate } from '@hcxz/datasource'
 
 export interface BindingCodeExample {
   label: string

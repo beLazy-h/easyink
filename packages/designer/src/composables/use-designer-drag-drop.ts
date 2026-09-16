@@ -1,7 +1,7 @@
-import type { DatasourceDropZone, DatasourceFieldInfo, MaterialDataContract, MaterialDataModelField, Rect } from '@easyink/core'
-import type { DataUnionBinding } from '@easyink/datasource'
-import type { BindingRef, MaterialNode } from '@easyink/schema'
-import type { BindingDisplayFormat } from '@easyink/shared'
+import type { DatasourceDropZone, DatasourceFieldInfo, MaterialDataContract, MaterialDataModelField, Rect } from '@hcxz/core'
+import type { DataUnionBinding } from '@hcxz/datasource'
+import type { BindingRef, MaterialNode } from '@hcxz/schema'
+import type { BindingDisplayFormat } from '@hcxz/shared'
 import type { InjectionKey } from 'vue'
 import type { DesignerStore } from '../store/designer-store'
 import type { MaterialCatalogEntry } from '../types'
@@ -16,8 +16,8 @@ import {
   projectEditorSurfacePointToDocument,
   UnitManager,
   UpdateMaterialBindingCommand,
-} from '@easyink/core'
-import { deepClone } from '@easyink/shared'
+} from '@hcxz/core'
+import { deepClone } from '@hcxz/shared'
 import { createGeometryService } from '../editing/geometry-service'
 import { selectMany, selectOne } from '../interactions/selection-api'
 

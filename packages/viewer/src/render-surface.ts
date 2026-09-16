@@ -1,9 +1,9 @@
-import type { PageLayerRenderPlan, PageLayerRenderPlanBuckets, PagePlanEntry, TextWatermarkPageLayerPlan, TrustedViewerHtml } from '@easyink/core'
-import type { MaterialNode, PageBackground, PageSchema } from '@easyink/schema'
+import type { PageLayerRenderPlan, PageLayerRenderPlanBuckets, PagePlanEntry, TextWatermarkPageLayerPlan, TrustedViewerHtml } from '@hcxz/core'
+import type { MaterialNode, PageBackground, PageSchema } from '@hcxz/schema'
 import type { MaterialRendererRegistry } from './material-registry'
 import type { ViewerDiagnosticEvent, ViewerRenderContext, ViewerRenderSize } from './types'
-import { groupPageLayerPlansByPlacement, PAGE_CONTENT_LAYER_STACK_INDEX, readTrustedViewerHtml, resolvePageLayerPlans, resolvePageLayerStackIndex, trustedViewerHtml } from '@easyink/core'
-import { escapeHtml, UNIT_FACTOR } from '@easyink/shared'
+import { groupPageLayerPlansByPlacement, PAGE_CONTENT_LAYER_STACK_INDEX, readTrustedViewerHtml, resolvePageLayerPlans, resolvePageLayerStackIndex, trustedViewerHtml } from '@hcxz/core'
+import { escapeHtml, UNIT_FACTOR } from '@hcxz/shared'
 import { isErrorSentinel, safeRender } from './diagnostic-middleware'
 
 export interface RenderSurfaceOptions {

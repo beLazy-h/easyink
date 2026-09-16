@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 
 export type MaterialCategory = 'data' | 'layout' | 'decoration' | 'typography' | 'visualization'
 export type BindingMode = 'none' | 'scalar' | 'collection' | 'multi-scalar'

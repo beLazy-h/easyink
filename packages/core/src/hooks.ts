@@ -3,7 +3,7 @@
  * No external dependencies. Serves only internal use cases.
  */
 
-import type { DocumentSchema } from '@easyink/schema'
+import type { DocumentSchema } from '@hcxz/schema'
 
 type SyncHookCallback<T extends unknown[]> = (...args: T) => void
 type SyncWaterfallCallback<T> = (value: T) => T

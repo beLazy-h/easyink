@@ -1,8 +1,8 @@
-import type { MaterialDesignerExtension, MaterialDesignerRenderContext, MaterialExtensionContext } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialDesignerExtension, MaterialDesignerRenderContext, MaterialExtensionContext } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
 import type { PageNumberProps } from './schema'
-import { getNodeProps } from '@easyink/schema'
-import { escapeHtml } from '@easyink/shared'
+import { getNodeProps } from '@hcxz/schema'
+import { escapeHtml } from '@hcxz/shared'
 import { formatPageNumberDisplay } from './rendering'
 
 function buildHtml(node: MaterialNode, unit: string, renderContext?: MaterialDesignerRenderContext): string {

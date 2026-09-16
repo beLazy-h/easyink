@@ -1,5 +1,5 @@
-import type { EditorSurfacePlan } from '@easyink/core'
-import { getEditorSurfacePageLeft } from '@easyink/core'
+import type { EditorSurfacePlan } from '@hcxz/core'
+import { getEditorSurfacePageLeft } from '@hcxz/core'
 
 export interface PageBreakRulerModel {
   key: string

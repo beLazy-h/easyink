@@ -49,7 +49,7 @@ EasyInk 的 Designer 按”顶层双栏 + 画布内窗口系统 + 状态栏”�
 - 保存、自定义模板入口、预览入口等全局动作
 - 任意自定义内容
 
-框架不再内置 Logo、保存按钮、预览按钮或模板库入口。外部用户通过 `useDesignerStore()` 访问 store 来操作编辑器状态，并在宿主层自行接入 `@easyink/viewer`、模板选择与未保存确认。
+框架不再内置 Logo、保存按钮、预览按钮或模板库入口。外部用户通过 `useDesignerStore()` 访问 store 来操作编辑器状态，并在宿主层自行接入 `@hcxz/viewer`、模板选择与未保存确认。
 
 物料窗口、数据源窗口等浮动窗口的显隐控制已移入 Toolbar Manager（见下文）。
 
@@ -337,7 +337,7 @@ interface PropertyPanelOverlay {
 **渲染模型**（从上到下）：
 
 1. **Geometry** -- 位置/尺寸，始终显示
-2. **基础层** -- `MaterialDefinition.props` 驱动，始终显示；内置物料的基础字段由 `@easyink/prop-schemas` 提供，注册时再合并物料包自身的 `propSchemas`
+2. **基础层** -- `MaterialDefinition.props` 驱动，始终显示；内置物料的基础字段由 `@hcxz/prop-schemas` 提供，注册时再合并物料包自身的 `propSchemas`
 3. **叠加层** -- `PropertyPanelOverlay.schemas` 驱动，仅 deep editing 推送时显示
 4. **BindingSection** -- 按规则显隐（见下）
 5. **可见性/锁定** -- 始终显示
@@ -752,12 +752,12 @@ CanvasWorkspace 遍历 elements
 
 ## 10.10 预览由宿主引入 Viewer
 
-全量预览仍然由 `@easyink/viewer` 承担，但 designer 不再内置 Viewer 宿主或预览状态。
+全量预览仍然由 `@hcxz/viewer` 承担，但 designer 不再内置 Viewer 宿主或预览状态。
 
 推荐流程：
 
 1. 宿主从 designer 读取当前 schema。
-2. 宿主准备预览 data，并自行挂载 `@easyink/viewer`。
+2. 宿主准备预览 data，并自行挂载 `@hcxz/viewer`。
 3. Viewer 完成真实分页、字体加载、打印和导出适配。
 
 交互边界：
@@ -877,7 +877,7 @@ threshold: snapState.threshold / Math.max(zoom, 0.0001)
 ### 多选包围盒
 
 drag 时不再用"第一个被选中节点"作参考，而是 `getSelectionBox(nodes, node.width / node.height)`
-（基于 `@easyink/core` 的 `getBoundingRect`）。多选拖动时，整个选区的左 / 中 / 右 / 上 / 中 / 下作为测试值参与吸附，
+（基于 `@hcxz/core` 的 `getBoundingRect`）。多选拖动时，整个选区的左 / 中 / 右 / 上 / 中 / 下作为测试值参与吸附，
 视觉表现是"整组对齐到目标"。
 
 元素在设计器中的选择、吸附、框选与 overlay 外框统一以 schema `width / height` 为准。物料可以在内部渲染预览层，但不能通过 designer-only visual height 改变元素语义高度。

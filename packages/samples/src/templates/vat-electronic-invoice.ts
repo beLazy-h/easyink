@@ -1,5 +1,5 @@
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
-import { SCHEMA_VERSION } from '@easyink/shared'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
+import { SCHEMA_VERSION } from '@hcxz/shared'
 
 const TAX_RED = '#8b1e1e'
 const BLACK = '#111111'

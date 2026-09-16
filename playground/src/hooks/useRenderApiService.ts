@@ -1,5 +1,5 @@
-import type { DocumentSchema } from '@easyink/designer'
-import type { RenderApiFailure, RenderApiRequest, RenderRuntimeOptions } from '@easyink/render-api-service'
+import type { DocumentSchema } from '@hcxz/designer'
+import type { RenderApiFailure, RenderApiRequest, RenderRuntimeOptions } from '@hcxz/render-api-service'
 import { computed, reactive, ref, watch } from 'vue'
 
 export type RenderApiConnectionState = 'idle' | 'checking' | 'connected' | 'error'

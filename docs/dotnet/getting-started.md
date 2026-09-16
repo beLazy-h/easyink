@@ -22,7 +22,7 @@ curl http://localhost:18080/api/printers
 安装 EasyInk Printer 集成包：
 
 ```bash
-pnpm add @easyink/print-integration-easyink-printer @easyink/builtin
+pnpm add @hcxz/print-integration-easyink-printer @hcxz/builtin
 ```
 
 这个包同时封装了 HTTP 打印机列表、WebSocket 打印提交、PDF 分片上传和高层托管 Viewer。
@@ -32,8 +32,8 @@ pnpm add @easyink/print-integration-easyink-printer @easyink/builtin
 先用默认 PDF 提交路径：
 
 ```ts
-import { registerBuiltinViewerMaterials } from '@easyink/builtin/all'
-import { createEasyInkPrinter } from '@easyink/print-integration-easyink-printer'
+import { registerBuiltinViewerMaterials } from '@hcxz/builtin/all'
+import { createEasyInkPrinter } from '@hcxz/print-integration-easyink-printer'
 
 const printer = createEasyInkPrinter({
   serviceUrl: 'http://localhost:18080',
@@ -142,7 +142,7 @@ HTML 渲染仍由本地 Printer 服务完成。你只需要提供 HTML、纸张�
 如果你要调试底层协议或接入自定义上传流程，可以直接创建客户端：
 
 ```ts
-import { createEasyInkPrinterClient } from '@easyink/print-integration-easyink-printer'
+import { createEasyInkPrinterClient } from '@hcxz/print-integration-easyink-printer'
 
 const client = createEasyInkPrinterClient({
   serviceUrl: 'http://localhost:18080',

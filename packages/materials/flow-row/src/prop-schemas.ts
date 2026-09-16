@@ -1,8 +1,8 @@
-import type { PropSchema } from '@easyink/core'
+import type { PropSchema } from '@hcxz/core'
 import {
   FONT_STYLE_OPTIONS,
   FONT_WEIGHT_OPTIONS,
-} from '@easyink/prop-schemas'
+} from '@hcxz/prop-schemas'
 
 export const flowRowDesignerPropSchemas: PropSchema[] = [
   { key: 'gap', label: 'materials.flowRow.property.gap', type: 'number', group: 'layout', min: 0, max: 20, step: 0.5 },

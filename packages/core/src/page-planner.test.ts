@@ -1,4 +1,4 @@
-import type { DocumentSchema, MaterialNode } from '@easyink/schema'
+import type { DocumentSchema, MaterialNode } from '@hcxz/schema'
 import { describe, expect, it } from 'vitest'
 import { createPagePlan } from './page-planner'
 

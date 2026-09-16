@@ -1,6 +1,6 @@
-import type { LazyMaterialExtensionFactory, MaterialBindingDefinition, MaterialConditionCapability, MaterialExtensionFactory, MaterialViewerExtension, PropSchema } from '@easyink/core'
-import type { MaterialNode } from '@easyink/schema'
-import type { AIMaterialDescriptor, MaterialCategory } from '@easyink/shared'
+import type { LazyMaterialExtensionFactory, MaterialBindingDefinition, MaterialConditionCapability, MaterialExtensionFactory, MaterialViewerExtension, PropSchema } from '@hcxz/core'
+import type { MaterialNode } from '@hcxz/schema'
+import type { AIMaterialDescriptor, MaterialCategory } from '@hcxz/shared'
 import type { Component } from 'vue'
 
 export type BuiltinPanelSectionId = 'geometry' | 'props' | 'overlay' | 'binding' | 'condition' | 'visibility'

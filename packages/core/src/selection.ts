@@ -1,4 +1,4 @@
-import type { MaterialNode } from '@easyink/schema'
+import type { MaterialNode } from '@hcxz/schema'
 
 /**
  * Single source of truth for "can this node be modified through direct canvas

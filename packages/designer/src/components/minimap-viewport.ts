@@ -1,4 +1,4 @@
-import type { Point, Rect } from '@easyink/core'
+import type { Point, Rect } from '@hcxz/core'
 import type { CSSProperties } from 'vue'
 
 export interface MinimapCanvasRect {

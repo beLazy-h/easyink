@@ -1,6 +1,6 @@
-import type { DataFieldNode, DataSourceDescriptor } from '@easyink/datasource'
-import type { ExpectedDataSource, ExpectedField } from '@easyink/schema'
-import { AI_NAMESPACE } from '@easyink/datasource'
+import type { DataFieldNode, DataSourceDescriptor } from '@hcxz/datasource'
+import type { ExpectedDataSource, ExpectedField } from '@hcxz/schema'
+import { AI_NAMESPACE } from '@hcxz/datasource'
 
 export interface BuildDataSourceDescriptorOptions {
   id?: string

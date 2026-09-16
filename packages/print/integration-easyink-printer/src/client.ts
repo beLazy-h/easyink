@@ -1,6 +1,6 @@
-import type { DocumentSchema } from '@easyink/viewer'
+import type { DocumentSchema } from '@hcxz/viewer'
 import type { UseWebSocketReturn } from '@vueuse/core'
-import { EasyInkPrintError, normalizeJobStatus } from '@easyink/print-core'
+import { EasyInkPrintError, normalizeJobStatus } from '@hcxz/print-core'
 import { useWebSocket } from '@vueuse/core'
 
 export const DEFAULT_EASYINK_PRINTER_URL = 'http://localhost:18080'

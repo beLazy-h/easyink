@@ -1,5 +1,5 @@
 import type { DesignerStore } from '../store/designer-store'
-import { AddMaterialCommand } from '@easyink/core'
+import { AddMaterialCommand } from '@hcxz/core'
 import { createGeometryService } from '../editing/geometry-service'
 import { selectOne } from '../interactions/selection-api'
 

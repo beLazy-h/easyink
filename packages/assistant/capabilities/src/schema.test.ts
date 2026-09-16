@@ -1,5 +1,5 @@
-import type { DataSourceDescriptor } from '@easyink/datasource'
-import type { DocumentSchema } from '@easyink/schema'
+import type { DataSourceDescriptor } from '@hcxz/datasource'
+import type { DocumentSchema } from '@hcxz/schema'
 import type { AssistantMaterialManifest } from './types'
 import { describe, expect, it } from 'vitest'
 import { collectDeterministicErrors, createAssistantPreview, repairAssistantSchema, validateAssistantSchema } from './index'

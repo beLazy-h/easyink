@@ -1,7 +1,7 @@
 {
-  "name": "@easyink/assistant-schema-builder",
+  "name": "@hcxz/assistant-schema-builder",
   "type": "module",
-  "version": "0.0.30",
+  "version": "0.0.1",
   "description": "High-level schema construction DSL with incremental building and instant validation for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
@@ -23,9 +23,9 @@
     "test": "vitest run src/**/*.test.ts"
   },
   "dependencies": {
-    "@easyink/assistant-constraint-engine": "workspace:*",
-    "@easyink/assistant-material-knowledge": "workspace:*",
-    "@easyink/schema": "workspace:*",
-    "@easyink/shared": "workspace:*"
+    "@hcxz/assistant-constraint-engine": "workspace:*",
+    "@hcxz/assistant-material-knowledge": "workspace:*",
+    "@hcxz/schema": "workspace:*",
+    "@hcxz/shared": "workspace:*"
   }
 }
