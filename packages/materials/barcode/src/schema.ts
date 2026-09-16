@@ -42,6 +42,9 @@ export interface BarcodeProps {
   borderWidth: number
   borderColor: string
   borderType: 'solid' | 'dashed' | 'dotted'
+  lineHeight: number
+  fontSize: number
+  margin: number
 }
 
 export const BARCODE_DEFAULTS: BarcodeProps = {
@@ -54,6 +57,9 @@ export const BARCODE_DEFAULTS: BarcodeProps = {
   borderWidth: 0,
   borderColor: '#000000',
   borderType: 'solid',
+  lineHeight: 60,
+  fontSize: 14,
+  margin: 4,
 }
 
 export function resolveBarcodeProps(node: MaterialNode): BarcodeProps {
@@ -66,6 +72,9 @@ export function resolveBarcodeProps(node: MaterialNode): BarcodeProps {
     backgroundColor: props.backgroundColor || BARCODE_DEFAULTS.backgroundColor,
     borderColor: props.borderColor || BARCODE_DEFAULTS.borderColor,
     borderType: props.borderType || BARCODE_DEFAULTS.borderType,
+    lineHeight: props.lineHeight || BARCODE_DEFAULTS.lineHeight,
+    fontSize: props.fontSize || BARCODE_DEFAULTS.fontSize,
+    margin: props.margin || BARCODE_DEFAULTS.margin,
   }
 }
 

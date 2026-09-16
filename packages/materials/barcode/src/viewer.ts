@@ -25,6 +25,9 @@ export function renderBarcode(node: MaterialNode) {
         lineColor: props.lineColor,
         backgroundColor: props.backgroundColor,
         showText: props.showText,
+        lineHeight: props.lineHeight,
+        fontSize: props.fontSize,
+        margin: props.margin,
       })),
     }
   }

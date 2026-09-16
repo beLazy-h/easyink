@@ -17,6 +17,9 @@ function buildPlaceholder(p: BarcodeProps, label: string): string {
       lineColor: p.lineColor,
       backgroundColor: p.backgroundColor,
       showText: false,
+      lineHeight: p.lineHeight,
+      fontSize: p.fontSize,
+      margin: p.margin,
     })
   }
   catch {
