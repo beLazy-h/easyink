@@ -1,4 +1,5 @@
 import JsBarcode from 'jsbarcode'
+// @ts-expect-error -- xmldom has no type declarations
 import { DOMImplementation, XMLSerializer } from 'xmldom'
 
 export interface BarcodeSvgOptions {
