@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/assistant-plugin-receipt-designer",
   "type": "module",
-  "version": "1.1.1",
+  "version": "0.0.0",
   "description": "Official receipt designer persona plugin for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

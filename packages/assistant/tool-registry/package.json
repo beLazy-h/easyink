@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/assistant-tool-registry",
   "type": "module",
-  "version": "1.1.1",
+  "version": "0.0.0",
   "description": "Agent tool registry with material, data, layout, schema and validation tools for EasyInk Composer Agent",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

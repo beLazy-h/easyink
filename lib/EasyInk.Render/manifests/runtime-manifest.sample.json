@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "protocolVersion": "1.0",
   "host": {
-    "version": "0.1.0",
+    "version": "0.0.0",
     "platform": "linux-arm64",
     "executable": "easyink-render",
     "url": "",
@@ -19,7 +19,7 @@
     "size": 0
   },
   "easyinkRuntime": {
-    "version": "0.1.0",
+    "version": "0.0.0",
     "bundled": true,
     "entry": "runtime/easyink-viewer/index.html"
   },

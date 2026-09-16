@@ -3,7 +3,7 @@
   "source": {
     "type": "easyink",
     "schema": {
-      "version": "1.0",
+      "version": "0.0.0",
       "page": {
         "width": 80,
         "height": 120,
