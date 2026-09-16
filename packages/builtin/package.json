@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/builtin",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Internal built-in material registry for EasyInk runtimes",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

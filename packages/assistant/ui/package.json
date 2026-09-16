@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/assistant-ui",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Vue task workbench UI for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

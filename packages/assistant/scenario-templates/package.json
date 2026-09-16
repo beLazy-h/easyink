@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/assistant-scenario-templates",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Scenario-based template library with classifier and progressive context loading for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/print-integration-hiprint",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Official HiPrint client and managed document printer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
