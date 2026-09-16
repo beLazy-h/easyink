@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/ui",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "UI components for EasyInk designer workbench",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

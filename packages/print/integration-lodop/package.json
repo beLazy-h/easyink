@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/print-integration-lodop",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Official LODOP client and managed document printer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/locales",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Built-in locale messages for EasyInk Designer",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
