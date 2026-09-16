@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/shared",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Common types, utilities, and constants for EasyInk",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/export-plugin-dom-image",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "DOM-to-image export plugin for @hcxz/export-runtime (html2canvas)",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
