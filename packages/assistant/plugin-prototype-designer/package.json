@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/assistant-plugin-prototype-designer",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Official prototype designer persona plugin for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/assistant-schema-builder",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "High-level schema construction DSL with incremental building and instant validation for EasyInk Assistant",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",

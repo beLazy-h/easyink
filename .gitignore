@@ -32,3 +32,5 @@ docker-compose.*.yml
 # AI
 .claude
 .agents
+
+.npmrc

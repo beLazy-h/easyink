@@ -1,7 +1,7 @@
 {
   "name": "@hcxz/print-core",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared print utilities for EasyInk print drivers",
   "author": "hackycy <hackycy@outlook.com>",
   "license": "MIT",
