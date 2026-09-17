@@ -28,6 +28,7 @@ export function renderBarcode(node: MaterialNode) {
         lineHeight: props.lineHeight,
         fontSize: props.fontSize,
         margin: props.margin,
+        fontOptions: props.fontOptions,
       })),
     }
   }

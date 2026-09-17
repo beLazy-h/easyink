@@ -11,6 +11,7 @@ export interface BarcodeSvgOptions {
   margin?: number
   lineHeight?: number
   fontSize?: number
+  fontOptions?: string
 }
 
 function escapeSvgAttr(value: string): string {
@@ -34,6 +35,7 @@ export function generateBarcodeSvg(value: string, options: Partial<BarcodeSvgOpt
   const margin = options.margin || 4
   const lineHeight = options.lineHeight || 60
   const fontSize = options.fontSize || 14
+  const fontOptions = options.fontOptions || ''
 
   const document = new DOMImplementation().createDocument('http://www.w3.org/1999/xhtml', 'html', null)
   const svgNode = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
@@ -47,6 +49,7 @@ export function generateBarcodeSvg(value: string, options: Partial<BarcodeSvgOpt
     margin,
     lineColor,
     fontSize,
+    fontOptions,
     displayValue: showText,
   })
   svgNode.setAttribute('width', '100%')

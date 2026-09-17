@@ -45,6 +45,7 @@ export interface BarcodeProps {
   lineHeight: number
   fontSize: number
   margin: number
+  fontOptions: string
 }
 
 export const BARCODE_DEFAULTS: BarcodeProps = {
@@ -60,6 +61,7 @@ export const BARCODE_DEFAULTS: BarcodeProps = {
   lineHeight: 60,
   fontSize: 14,
   margin: 4,
+  fontOptions: '',
 }
 
 export function resolveBarcodeProps(node: MaterialNode): BarcodeProps {

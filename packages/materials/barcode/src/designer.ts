@@ -20,6 +20,7 @@ function buildPlaceholder(p: BarcodeProps, label: string): string {
       lineHeight: p.lineHeight,
       fontSize: p.fontSize,
       margin: p.margin,
+      fontOptions: p.fontOptions,
     })
   }
   catch {
